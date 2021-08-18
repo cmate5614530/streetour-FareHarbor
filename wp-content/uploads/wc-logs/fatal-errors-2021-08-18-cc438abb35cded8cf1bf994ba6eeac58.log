@@ -1,0 +1,62 @@
+2021-08-18T03:29:27+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(716): load_template('F:\\Works\\Work\\P...', false, Array)
+#2 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\Works\\Work\\P...')
+#5 F:\Works\Work\PHP\booking\php-fareharbor\wp-blog-header.php(19): require_once('F:\\Works\\Work\\P...')
+#6 F:\Works\Work\PHP\booking\php-fareharbor\index.php(17): require('F:\\Works\\Work\\P...')
+#7 {main}
+  thrown in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-18T03:29:57+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(716): load_template('F:\\Works\\Work\\P...', false, Array)
+#2 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\Works\\Work\\P...')
+#5 F:\Works\Work\PHP\booking\php-fareharbor\wp-blog-header.php(19): require_once('F:\\Works\\Work\\P...')
+#6 F:\Works\Work\PHP\booking\php-fareharbor\index.php(17): require('F:\\Works\\Work\\P...')
+#7 {main}
+  thrown in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-18T03:30:07+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(716): load_template('F:\\Works\\Work\\P...', false, Array)
+#2 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\Works\\Work\\P...')
+#5 F:\Works\Work\PHP\booking\php-fareharbor\wp-blog-header.php(19): require_once('F:\\Works\\Work\\P...')
+#6 F:\Works\Work\PHP\booking\php-fareharbor\index.php(17): require('F:\\Works\\Work\\P...')
+#7 {main}
+  thrown in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-18T03:35:24+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(716): load_template('F:\\Works\\Work\\P...', false, Array)
+#2 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\Works\\Work\\P...')
+#5 F:\Works\Work\PHP\booking\php-fareharbor\wp-blog-header.php(19): require_once('F:\\Works\\Work\\P...')
+#6 F:\Works\Work\PHP\booking\php-fareharbor\index.php(17): require('F:\\Works\\Work\\P...')
+#7 {main}
+  thrown in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-18T03:35:43+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(716): load_template('F:\\Works\\Work\\P...', false, Array)
+#2 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\Works\\Work\\P...')
+#5 F:\Works\Work\PHP\booking\php-fareharbor\wp-blog-header.php(19): require_once('F:\\Works\\Work\\P...')
+#6 F:\Works\Work\PHP\booking\php-fareharbor\index.php(17): require('F:\\Works\\Work\\P...')
+#7 {main}
+  thrown in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-18T04:47:01+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\taxonomy.php on line 265
+

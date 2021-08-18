@@ -1,0 +1,251 @@
+[dir=rtl] {
+  [class*=el-col-] {
+    float: right;
+  }
+
+  .amelia-app-booking #am-search-booking .am-search-results .am-search-input .el-input input {
+    padding-right: @padding-medium*2;
+    padding-left: @padding-medium;
+  }
+
+  .el-input__prefix {
+    left: auto;
+    right: 5px;
+  }
+
+  .amelia-app-booking #am-search-booking .am-search-filters {
+    border-right: 1px solid @color-divider-gray;
+    border-left: none;
+  }
+
+  .el-select-dropdown__wrap, .el-scrollbar__wrap {
+    margin-right: 0 !important;
+    margin-left: -17px;
+  }
+
+  .el-checkbox__label, .el-radio__label {
+    margin-left: 0;
+    padding-right: @margin-small;
+
+  }
+
+  .c-header .c-arrow-layout {
+    transform: rotate(180deg);
+  }
+
+  .amelia-app-booking #am-search-booking.am-collapsed .am-search-results .am-search-input .el-input {
+    margin-left: 0;
+    margin-right: @margin-big*2;
+  }
+
+  .amelia-app-booking #am-search-booking.am-collapsed .am-search-filters {
+    left: auto;
+    right: -360px;
+    border-left: 1px solid @color-divider-gray;
+
+  }
+  .amelia-app-booking #am-search-booking.am-collapsed .am-search-filters.am-show-filters {
+    transform: translate(-360px, 0);
+  }
+  .amelia-app-booking #am-search-booking .am-search-filters .am-close-icon {
+    right: auto;
+    left: 32px;
+  }
+
+  .amelia-app-booking #am-search-booking.am-collapsed .am-search-results .am-service-list-container .am-service .am-service-header .am-service-price {
+    right: auto;
+    left: 24px;
+  }
+
+  .amelia-app-booking #am-search-booking .am-search-results .am-service-list-container .am-service .am-service-header .am-service-price {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .el-icon-arrow-right:before {
+    content: "\E600";
+  }
+  .el-icon-arrow-left:before {
+    content: "\E604";
+  }
+
+  .amelia-app-booking #am-search-booking .am-search-results .am-service-list-container .am-service .am-service-header .am-service-data .am-service-info div {
+    border-left: 1px solid @color-divider-gray;
+    margin-right: 0;
+    margin-left: @margin-small;
+    padding-right:0;
+    padding-left: @padding-small;
+    border-right: none;
+  }
+  .amelia-app-booking #am-search-booking .am-search-results .am-service-list-container .am-service .am-service-header .am-service-data .am-service-info div:last-child {
+    border-left: none;
+  }
+
+  .amelia-app-booking #am-search-booking .am-search-results .am-service-list-container .am-service .am-service-header .am-service-data .am-service-info div:first-child {
+    border-left: 1px solid @color-divider-gray;
+  }
+
+  .amelia-app-booking .am-align-right, .am-modal.am-in-body .am-align-right {
+    text-align: left !important;
+  }
+  .am-confirmation-booking-cost p:not(.am-align-right) {
+    text-align: right;
+  }
+  .am-add-coupon > div {
+    text-align: right;
+  }
+
+  .amelia-app-booking #am-step-booking .am-select-date, .amelia-app-booking .am-step-booking-catalog .am-select-date {
+    right: auto;
+    left: -45%;
+  }
+
+  .amelia-app-booking #am-step-booking.am-active-confirm .am-select-date, .amelia-app-booking .am-step-booking-catalog.am-active-confirm .am-select-date {
+    left: auto;
+    right: -47%;
+  }
+
+  .amelia-app-booking #am-step-booking.am-active-confirm .am-confirm-booking, .amelia-app-booking .am-step-booking-catalog.am-active-confirm .am-confirm-booking {
+    left: 0;
+    right: 3%;
+  }
+
+  .amelia-app-booking #am-step-booking.am-active-recurring-dates .am-recurring-dates, .amelia-app-booking .am-step-booking-catalog.am-active-recurring-dates .am-recurring-dates, .amelia-app-booking #am-step-booking.am-active-package-list .am-recurring-dates, .amelia-app-booking .am-step-booking-catalog.am-active-package-list .am-recurring-dates, .amelia-app-booking #am-step-booking.am-active-recurring-dates .am-package-list, .amelia-app-booking .am-step-booking-catalog.am-active-recurring-dates .am-package-list, .amelia-app-booking #am-step-booking.am-active-package-list .am-package-list, .amelia-app-booking .am-step-booking-catalog.am-active-package-list .am-package-list {
+    left: 0;
+    right: 3%;
+  }
+
+  .amelia-app-booking #am-step-booking.am-active-recurring-dates .am-select-date, .amelia-app-booking .am-step-booking-catalog.am-active-recurring-dates .am-select-date, .amelia-app-booking #am-step-booking.am-active-package-list .am-select-date, .amelia-app-booking .am-step-booking-catalog.am-active-package-list .am-select-date {
+    left: auto;
+    right: -47%;
+  }
+
+  .amelia-app-booking #am-step-booking.am-mobile-collapsed .am-select-date, .amelia-app-booking .am-step-booking-catalog.am-mobile-collapsed .am-select-date {
+    left: -100%;
+    right: auto;
+  }
+
+  .amelia-app-booking #am-step-booking.am-active-picker .am-select-date, .amelia-app-booking .am-step-booking-catalog.am-active-picker .am-select-date{
+    left: 0;
+  }
+
+  element.style {
+  }
+
+  .amelia-app-booking #am-step-booking.am-mobile-collapsed.am-active-confirm .am-confirm-booking, .amelia-app-booking .am-step-booking-catalog.am-mobile-collapsed.am-active-confirm .am-confirm-booking {
+    position: relative;
+  }
+  @media only screen and (max-width: 767px) {
+    .amelia-app-booking #am-step-booking.am-active-confirm .am-confirm-booking, .amelia-app-booking .am-step-booking-catalog.am-active-confirm .am-confirm-booking, .amelia-app-booking #am-step-booking.am-active-recurring-dates .am-recurring-dates, .amelia-app-booking .am-step-booking-catalog.am-active-recurring-dates .am-recurring-dates, .amelia-app-booking #am-step-booking.am-active-package-list .am-recurring-dates, .amelia-app-booking .am-step-booking-catalog.am-active-package-list .am-recurring-dates, .amelia-app-booking #am-step-booking.am-active-recurring-dates .am-package-list, .amelia-app-booking .am-step-booking-catalog.am-active-recurring-dates .am-package-list, .amelia-app-booking #am-step-booking.am-active-package-list .am-package-list, .amelia-app-booking .am-step-booking-catalog.am-active-package-list .am-package-list {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .amelia-app-booking #am-step-booking.am-active-confirm .am-confirm-booking, .amelia-app-booking .am-step-booking-catalog.am-active-confirm .am-confirm-booking, .amelia-app-booking #am-step-booking.am-active-recurring-dates .am-recurring-dates, .amelia-app-booking .am-step-booking-catalog.am-active-recurring-dates .am-recurring-dates, .amelia-app-booking #am-step-booking.am-active-package-list .am-recurring-dates, .amelia-app-booking .am-step-booking-catalog.am-active-package-list .am-recurring-dates, .amelia-app-booking #am-step-booking.am-active-recurring-dates .am-package-list, .amelia-app-booking .am-step-booking-catalog.am-active-recurring-dates .am-package-list, .amelia-app-booking #am-step-booking.am-active-package-list .am-package-list, .amelia-app-booking .am-step-booking-catalog.am-active-package-list .am-package-list {
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+  }
+
+  .amelia-app-booking #am-step-booking.am-mobile-collapsed .am-select-service, .amelia-app-booking .am-step-booking-catalog.am-mobile-collapsed .am-select-service {
+    //transform: translateX(0%);
+  }
+
+  .amelia-app-booking #am-step-booking.am-mobile-collapsed.am-active-picker .am-select-date, .amelia-app-booking .am-step-booking-catalog.am-mobile-collapsed.am-active-picker .am-select-date {
+    //transform: translateX(0%);
+  }
+  #am-catalog .am-category-services-thumbs span {
+    margin-right: @margin-small;
+  }
+  .amelia-app-booking #am-step-booking.am-mobile-collapsed .am-confirmation-booking-details > div, .amelia-app-booking .am-step-booking-catalog.am-mobile-collapsed .am-confirmation-booking-details > div p {
+    text-align: right;
+  }
+
+  .el-form--label-top .el-form-item__label {
+    display: block;
+    text-align: right;
+  }
+
+  .amelia-app-booking .el-input-group--prepend .el-input__inner, .am-modal.am-in-body .el-input-group--prepend .el-input__inner, .amelia-app-booking .el-input-group__append, .am-modal.am-in-body .el-input-group__append {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .el-input-group--append .el-input__inner, .el-input-group__prepend {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .el-input-group__prepend {
+    border-right: 1px solid #DCDFE6 ;
+  }
+
+  .amelia-app-booking #am-search-booking .am-search-results .am-service-list-container .am-service .el-collapse-item .el-collapse-item__header .el-collapse-item__arrow.el-icon-arrow-right:before {
+    content: "\E604";
+  }
+
+  .amelia-app-booking #am-search-booking .am-search-results .am-service-list-container .am-service .el-collapse-item .el-collapse-item__header .el-collapse-item__arrow.el-icon-arrow-left:before {
+    content: "\E600";
+  }
+
+  .am-modal .am-confirm-booking-form .am-confirmation-booking-details {
+    text-align: right;
+  }
+  .am-modal .am-confirmation-extras-cost .el-collapse .el-collapse-item__header i {
+    margin-right: @margin-small;
+  }
+  .amelia-app-booking #am-service-booking .am-service .am-service-info .am-extra .el-collapse-item__header {
+    padding: 0 @margin-medium 0 0;
+  }
+
+  .amelia-app-booking #am-service-booking .am-service .am-service-header .am-service-data .am-service-info div {
+    border-right: 0;
+    border-left: 1px solid @color-divider-gray;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-left: @margin-small;
+    padding-left: @margin-small;
+  }
+  .amelia-app-booking #am-service-booking .am-service .am-service-header .am-service-data .am-service-info div:last-child {
+    border-left: 0;
+  }
+
+  .el-icon-back:before {
+    content: "\E604";
+  }
+
+  .amelia-app-booking #am-service-booking .am-service .am-service-providers .am-service-provider {
+    margin-right: 0;
+    margin-left: @margin-small;
+  }
+  .amelia-app-booking #am-service-booking .am-service .am-service-providers .am-service-provider img {
+    margin-left: @margin-small/2;
+    margin-right: 0;
+  }
+  .amelia-app-booking #am-step-booking .am-confirm-booking .am-confirmation-extras-cost .el-collapse .el-collapse-item__header .am-extras-total-cost, .amelia-app-booking .am-step-booking-catalog .am-confirm-booking .am-confirmation-extras-cost .el-collapse .el-collapse-item__header .am-extras-total-cost {
+    margin-left: @margin-small;
+  }
+  .amelia-app-booking .am-custom-fields .el-checkbox, .am-modal.am-in-body .am-custom-fields .el-checkbox, .amelia-app-booking .am-custom-fields .el-radio, .am-modal.am-in-body .am-custom-fields .el-radio {
+    margin-right: 0;
+    text-align: right;
+  }
+
+  .amelia-app-booking #am-events-booking .am-event-list .am-event .am-event-data .am-event-price {
+    right: auto;
+    left: 16px;
+  }
+
+  .amelia-app-booking #am-events-booking .am-event-list .am-event .am-event-data .am-event-info .am-event-title {
+    margin-right: 0;
+    margin-left: @margin-medium;
+    padding-right: 0;
+    padding-left: @padding-big;
+  }
+
+  .amelia-app-booking #am-events-booking .am-event-list .am-event .am-event-data .am-event-info .am-event-sub-info > div {
+    margin-right: 0;
+    margin-left: @margin-medium*2;
+  }
+}

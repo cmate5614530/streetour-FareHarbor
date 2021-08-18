@@ -1,0 +1,24 @@
+a.turitop_booking_system_wp_cart{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -1px;
+  margin-left: -2px;
+}
+
+a.turitop_booking_system_wp_cart:hover > span.turitop_booking_system_cart_counter{
+  border: 1px solid #1e73be;
+}
+
+a.turitop_booking_system_wp_cart > *{
+  margin: 0 2px;
+}
+
+a.turitop_booking_system_wp_cart span.turitop_booking_system_cart_counter{
+  border: 1px solid black;
+  padding: 0 7px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 20px;
+}

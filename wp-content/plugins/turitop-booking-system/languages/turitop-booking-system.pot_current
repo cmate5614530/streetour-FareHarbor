@@ -1,0 +1,1212 @@
+# Copyright (C) 2019 Turitop Booking System
+# This file is distributed under the same license as the Turitop Booking System package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Turitop Booking System 1.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/turitop-booking-"
+"system\n"
+"POT-Creation-Date: 2019-02-15 11:58:22+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin-settings-page/class.turitop-booking-system-connection.php:176
+msgctxt "TuriTop connection"
+msgid "Pending to connect"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-connection.php:182
+msgctxt "TuriTop connection"
+msgid "Credentials ok"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-connection.php:188
+msgctxt "TuriTop connection"
+msgid "Wrong credentials"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-connection.php:222
+msgctxt "TuriTop connection"
+msgid ""
+"The TuriTop company ID has been saved as empty, the booking system will not "
+"be displayed"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-connection.php:226
+msgctxt "TuriTop connection"
+msgid ""
+"The TuriTop Secret Key has been saved as empty, the services will not be "
+"syncrhonized"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-connection.php:268
+msgctxt "TuriTop connection"
+msgid ""
+"The TuriTop Company ID or The TuriTop Secret Key are not correct, the "
+"connection between your WordPress installation and TuriTop could not be done."
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-connection.php:300
+msgctxt "TuriTop conenction"
+msgid "Connection"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-connection.php:328
+msgctxt "TuriTop connection"
+msgid "Connect to TuriTop"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings-page-main.php:93
+msgctxt "admin pages"
+msgid "Connection"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings-page-main.php:95
+msgctxt "admin pages"
+msgid "Settings"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings-page-main.php:97
+msgctxt "admin pages"
+msgid "Synchronization"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:212
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:167
+msgctxt "settings"
+msgid "English"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:216
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:171
+msgctxt "settings"
+msgid "Spanish"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:220
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:175
+msgctxt "settings"
+msgid "German"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:224
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:179
+msgctxt "settings"
+msgid "Russian"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:228
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:183
+msgctxt "settings"
+msgid "Italian"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:232
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:187
+msgctxt "settings"
+msgid "Portuguese"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:236
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:191
+msgctxt "settings"
+msgid "French"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:240
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:195
+msgctxt "settings"
+msgid "Polish"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:244
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:199
+msgctxt "settings"
+msgid "Chinese"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:248
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:203
+msgctxt "settings"
+msgid "Turkish"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:252
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:207
+msgctxt "settings"
+msgid "Swedish"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:256
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:211
+msgctxt "settings"
+msgid "Finnish"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:260
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:215
+msgctxt "settings"
+msgid "Norwegian"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:264
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:219
+msgctxt "settings"
+msgid "Greek"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:268
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:223
+msgctxt "settings"
+msgid "Slovak"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:272
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:227
+msgctxt "settings"
+msgid "Czech"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:276
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:231
+msgctxt "settings"
+msgid "Dutch"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:280
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:235
+msgctxt "settings"
+msgid "Danish"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:284
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:239
+msgctxt "settings"
+msgid "Basque"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:288
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:243
+msgctxt "settings"
+msgid "Catalan"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:292
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:247
+msgctxt "settings"
+msgid "Galician"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:296
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:251
+msgctxt "settings"
+msgid "Japanese"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:300
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:255
+msgctxt "settings"
+msgid "Korean"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:304
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:259
+msgctxt "settings"
+msgid "Hindi"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:308
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:263
+msgctxt "settings"
+msgid "Thai"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:312
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:267
+msgctxt "settings"
+msgid "Arabic"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:316
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:271
+msgctxt "settings"
+msgid "Hebrew"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:320
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:275
+msgctxt "settings"
+msgid "Croatian"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:324
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:279
+msgctxt "settings"
+msgid "Latvian"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:328
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:283
+msgctxt "settings"
+msgid "Estonian"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:336
+msgctxt "common translations"
+msgid "-- Choose a menu --"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:366
+msgctxt "settings"
+msgid "Affiliate attribute"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:369
+msgctxt "settings"
+msgid "Introduce your affiliate attribute"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:386
+#: includes/blocks/class.turitop-booking-system-blocks.php:137
+#: includes/class.turitop-booking-system-admin.php:210
+#: includes/class.turitop-booking-system-shortcodes.php:214
+msgid "Book now"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:422
+msgctxt "common translations"
+msgid "check this box to activate the button customization options"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:486
+msgctxt "common translations"
+msgid "check this box to activate the cart on your menu"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:549
+msgctxt "cart customization"
+msgid "check this box to activate the cart customization options"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:554
+msgctxt "cart customization"
+msgid "check this box to display the icon on the cart"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:559
+msgctxt "cart customization"
+msgid "check this box to display the below text on the cart"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:563
+msgid "Cart"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:568
+msgctxt "cart customization"
+msgid "check this box to display the counter on the cart"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:618
+msgctxt "common translations"
+msgid ""
+"<span>check this box to activate the VIP features. This option will allow "
+"you to synchronize your TuriTop services with your WordPress installation."
+"<span/><span style=\"display: block; font-weight: bold; margin-top: 5px;"
+"\">YOU MUST HAVE A TURITOP VIP ACCOUNT IN ORDER TO MAKE IT WORK</span>"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:622
+msgctxt "common translations"
+msgid "check this box to activate the advanced options"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:681
+msgctxt "admin settings"
+msgid "synchronize"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:894
+msgctxt "turitop settings"
+msgid ""
+"In order to make your \"TuriTop Booking System\" work in your WordPress "
+"installation you can use the following ways:"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:899
+msgctxt "turitop settings"
+msgid "Use the gutenberg block \"Turitop Booking System\"."
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:900
+msgctxt "turitop settings"
+msgid ""
+"Use the shortcode \"turitop_booking_system\" with the following attributes:"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:902
+msgctxt "turitop settings"
+msgid "company ( Turitop company ID )."
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:903
+msgctxt "turitop settings"
+msgid "product_id ( Turitop product ID )."
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:904
+msgctxt "turitop settings"
+msgid "embed ( button, box )."
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:905
+msgctxt "turitop settings"
+msgid "buttoncolor ( green, orange, blue, red, yellow, black, white)."
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:906
+msgctxt "turitop settings"
+msgid "button_text ( text of the button )."
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:909
+msgctxt "turitop settings"
+msgid "wc_product_id ( WooCommerce product id )"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:911
+msgctxt "turitop settings"
+msgid ""
+"Example: [turitop_booking_system product_id=\"P1\" embed=\"button\" "
+"buttoncolor=\"red\" button_text=\"Click here to book\"]"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:916
+msgctxt "turitop settings"
+msgid "Configure a WooCoomerce simple prodruct."
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:921
+msgctxt "turitop settings"
+msgid ""
+"Use the bellow form to configure a general settings to be used in the whole "
+"WordPress installation which behavior can be modified with the above options "
+"mentioned."
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:928
+msgctxt "turitop settings"
+msgid "General settings"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:963
+msgctxt "turitop settings"
+msgid "Button settings"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:980
+msgctxt "turitop settings"
+msgid "Button customization"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:1051
+msgctxt "turitop settings"
+msgid "Cart settings"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:1087
+msgctxt "turitop settings"
+msgid "Cart customization"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:1168
+msgctxt "turitop settings"
+msgid "Service page settings"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:1189
+msgctxt "turitop settings"
+msgid "Advanced"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-settings.php:1218
+msgctxt "turitop settings"
+msgid "Save settings"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:336
+msgctxt "turitop settings"
+msgid "Services Synchronization"
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:343
+msgctxt "turitop settings"
+msgid ""
+"In order to synchronize the services you have to fill the fields \"Turitop "
+"Company ID\" and \"TuriTop Secret key\" located on the \"Connection\" tab."
+msgstr ""
+
+#: admin-settings-page/class.turitop-booking-system-synchronization.php:361
+msgctxt "turitop settings"
+msgid "services has been syncrhonized"
+msgstr ""
+
+#: includes/class.turitop-booking-system-admin.php:157
+msgctxt "product admin page"
+msgid "Activate"
+msgstr ""
+
+#: includes/class.turitop-booking-system-admin.php:158
+msgid "Check this option to activate this product as a turitop booking system"
+msgstr ""
+
+#: includes/class.turitop-booking-system-admin.php:181
+msgctxt "product admin page"
+msgid "Product ID"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:248
+msgctxt "common translations"
+msgid "TuriTop Company ID"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:249
+msgctxt "common translations"
+msgid "Introduce your Turitop company ID."
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:250
+msgctxt "common translations"
+msgid "TuriTop Secret key"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:251
+msgctxt "common translations"
+msgid ""
+"Introduce the secret key in order to synchronize the TuriTop services on "
+"your WordPres installation"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:252
+msgctxt "common translations"
+msgid "Turitop service ID"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:253
+msgctxt "common translations"
+msgid "Introduce your Turitop service ID."
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:254
+msgctxt "common translations"
+msgid "Woocommerce product ID"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:255
+msgctxt "common translations"
+msgid "Google analytics"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:256
+msgctxt "common translations"
+msgid "Select if you are using google analytics."
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:257
+msgctxt "common translations"
+msgid "Yes"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:258
+msgctxt "common translations"
+msgid "No"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:259
+msgctxt "common translations"
+msgid "Display as"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:260
+msgctxt "common translations"
+msgid "Select how to display your turitop booking system."
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:261
+msgctxt "common translations"
+msgid "box"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:262
+msgctxt "common translations"
+msgid "button"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:263
+msgctxt "common translations"
+msgid "details and box"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:264
+msgctxt "common translations"
+msgid "details and button"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:267
+msgctxt "common translations"
+msgid "Button text"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:268
+msgctxt "common translations"
+msgid "Introduce the text you want to display in the button."
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:269
+msgctxt "common translations"
+msgid "Button color"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:270
+msgctxt "common translations"
+msgid ""
+"Select the color of the button. Select the \"customize\" option in order to "
+"adjust your own button"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:271
+msgctxt "common translations"
+msgid "Green"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:272
+msgctxt "common translations"
+msgid "Orange"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:273
+msgctxt "common translations"
+msgid "Blue"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:274
+msgctxt "common translations"
+msgid "Red"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:275
+msgctxt "common translations"
+msgid "Yellow"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:276
+msgctxt "common translations"
+msgid "Black"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:277
+msgctxt "common translations"
+msgid "White"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:278
+msgctxt "common translations"
+msgid "Customized"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:279
+msgctxt "common translations"
+msgid "Default"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:282
+#: includes/class.turitop-booking-system-main.php:322
+#: includes/class.turitop-booking-system-main.php:356
+msgctxt "common translations"
+msgid "Activate"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:283
+#: includes/class.turitop-booking-system-main.php:325
+#: includes/class.turitop-booking-system-main.php:334
+msgctxt "common translations"
+msgid "Background color"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:284
+msgctxt "common translations"
+msgid "Introduce the background of the button"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:285
+#: includes/class.turitop-booking-system-main.php:336
+msgctxt "common translations"
+msgid "Border color"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:286
+msgctxt "common translations"
+msgid "Introduce the border color of the button"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:287
+#: includes/class.turitop-booking-system-main.php:338
+msgctxt "common translations"
+msgid "Font color"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:288
+msgctxt "common translations"
+msgid "Introduce the color of the button text"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:289
+msgctxt "common translations"
+msgid "Font size"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:290
+msgctxt "common translations"
+msgid ""
+"Introduce the size of the font button text ( examples: 20px, 2rem, 2em )"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:291
+msgctxt "common translations"
+msgid "Font weight"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:292
+msgctxt "common translations"
+msgid "Introduce the weight of the font button text"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:293
+#: includes/class.turitop-booking-system-main.php:344
+msgctxt "common translations"
+msgid "Border radio"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:294
+msgctxt "common translations"
+msgid "Choose the how you want to display the corners of your button"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:295
+msgctxt "common translations"
+msgid "radio"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:296
+msgctxt "common translations"
+msgid "square"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:297
+#: includes/class.turitop-booking-system-main.php:340
+msgctxt "common translations"
+msgid "Minimun heigh"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:298
+msgctxt "common translations"
+msgid "Introduce the minimun heigh of the button  examples: 20px, 2rem, 2em )."
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:299
+#: includes/class.turitop-booking-system-main.php:342
+msgctxt "common translations"
+msgid "Minimun width"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:300
+msgctxt "common translations"
+msgid "Introduce the minimun width of the button  examples: 20px, 2rem, 2em )"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:303
+#: includes/class.turitop-booking-system-main.php:348
+msgctxt "common translations"
+msgid "Background color hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:304
+msgctxt "common translations"
+msgid "Introduce the background of the button when mouser hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:305
+msgctxt "common translations"
+msgid "Color hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:306
+msgctxt "common translations"
+msgid "Introduce the border color of the button when mouse hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:307
+#: includes/class.turitop-booking-system-main.php:352
+msgctxt "common translations"
+msgid "Font color hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:308
+msgctxt "common translations"
+msgid "Introduce the color of the button text when mouse hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:309
+msgctxt "common translations"
+msgid "Font size hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:310
+msgctxt "common translations"
+msgid ""
+"Introduce the size of the font button text when mouse hover ( examples: "
+"20px, 2rem, 2em )"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:311
+msgctxt "common translations"
+msgid "Font weight hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:312
+msgctxt "common translations"
+msgid "Introduce the weight of the font button text when mouse hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:315
+msgctxt "common translations"
+msgid "Cart on menu"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:316
+msgctxt "common translations"
+msgid "Cart elements"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:317
+msgctxt "common translations"
+msgid ""
+"Choose which elements you want to display on the cart ( Icon, Text and "
+"Counter )"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:318
+msgctxt "common translations"
+msgid "Choose menu"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:319
+msgctxt "common translations"
+msgid "Menu position"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:320
+msgctxt "common translations"
+msgid "First menu item"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:321
+msgctxt "common translations"
+msgid "Last menu item"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:323
+msgctxt "common translations"
+msgid "Icon color"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:324
+msgctxt "common translations"
+msgid "Select the color of the icon."
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:326
+msgctxt "common translations"
+msgid "Select the color of the backgroubd."
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:329
+msgctxt "common translations"
+msgid "Icon"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:330
+msgctxt "common translations"
+msgid "Text"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:332
+msgctxt "common translations"
+msgid "Type the text you want to display on the cart"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:333
+msgctxt "common translations"
+msgid "Counter"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:335
+msgctxt "common translations"
+msgid "Introduce the background of the cart"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:337
+msgctxt "common translations"
+msgid "Introduce the border color of the cart"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:339
+msgctxt "common translations"
+msgid "Introduce the color of the cart content"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:341
+msgctxt "common translations"
+msgid "Introduce the minimun heigh of the cart  examples: 20px, 2rem, 2em )"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:343
+msgctxt "common translations"
+msgid "Introduce the minimun width of the cart  examples: 20px, 2rem, 2em )"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:345
+msgctxt "common translations"
+msgid "Choose the how you want to display the corners of your cart"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:349
+msgctxt "common translations"
+msgid "Introduce the background of the cart when mouse hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:350
+msgctxt "common translations"
+msgid "Border color hover "
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:351
+msgctxt "common translations"
+msgid "Introduce the border color of the cart when mouse hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:353
+msgctxt "common translations"
+msgid "Introduce the color of the cart content when mouse hover"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:357
+msgctxt "common translations"
+msgid "Additional CSS"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:358
+msgctxt "common translations"
+msgid ""
+"Introduce your additional css you may want to use to cusomize your TuriTop "
+"Booking System"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:359
+msgctxt "common translations"
+msgid "Activate VIP"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:362
+msgctxt "common translations"
+msgid "Layout"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:363
+msgctxt "common translations"
+msgid ""
+"Choose the layout you would like to use by default to display the services"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:364
+msgctxt "common translations"
+msgid "image left"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:365
+msgctxt "common translations"
+msgid "image rigth"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:366
+msgctxt "common translations"
+msgid "image top center"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:367
+msgctxt "common translations"
+msgid "Content"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:368
+msgctxt "common translations"
+msgid ""
+"Choose if you want to display the whole content of the services by default "
+"or just the summary"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:369
+msgctxt "common translations"
+msgid "whole content"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:370
+msgctxt "common translations"
+msgid "summary"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:371
+msgctxt "common translations"
+msgid "Display with"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:372
+msgctxt "common translations"
+msgid "Choose to display the services with box or button"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:373
+msgctxt "common translations"
+msgid "Default language"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:374
+msgctxt "common translations"
+msgid "Choose the language you want to display in case there is no translation"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:375
+msgctxt "common translations"
+msgid "Page"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:376
+msgctxt "common translations"
+msgid "Choose a page"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:377
+msgctxt "common translations"
+msgid "URL parameteres"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:378
+msgctxt "common translations"
+msgid "Introduce parameters to the page URL you have selected previously"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:379
+#: includes/class.turitop-booking-system-main.php:388
+msgctxt "common translations"
+msgid "Custom URL"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:380
+msgctxt "common translations"
+msgid "Introduce a custom URL for the service to be redirect on the shop page"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:381
+msgctxt "common translations"
+msgid "Open new tab"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:384
+msgctxt "common translations"
+msgid "Choose languages"
+msgstr ""
+
+#: includes/class.turitop-booking-system-main.php:385
+msgctxt "common translations"
+msgid ""
+"Choose the languages you want to use to synchronize your TuriTop services "
+"with your WordPres installation"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:45
+msgid "Service"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:46
+msgid "Services"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:61
+msgid "Turitop ID"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:62
+msgid "Name"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:63
+msgid "Summary"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:64
+msgid "Order"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:65
+msgid "Page"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:113
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:166
+msgid "Choose a page"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:151
+msgid "All"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:152
+msgid "Published"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:153
+msgid "Trash"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:270
+msgid "Delete permanently"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:274
+msgid "Delete"
+msgstr ""
+
+#. translators: %s: post title
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:314
+msgid "Edit &#8220;%s&#8221;"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:315
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:109
+msgid "Edit"
+msgstr ""
+
+#. translators: %s: post title
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:325
+msgid "Restore &#8220;%s&#8221; from the Trash"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:326
+msgid "Restore"
+msgstr ""
+
+#. translators: %s: post title
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:333
+msgid "Move &#8220;%s&#8221; to the Trash"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:334
+msgctxt "verb"
+msgid "Trash"
+msgstr ""
+
+#. translators: %s: post title
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:342
+msgid "Delete &#8220;%s&#8221; permanently"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt-table.php:343
+msgid "Delete Permanently"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:107
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:108
+msgid "TuriTop service"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:110
+msgid "TuriTop service name"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:111
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:112
+msgid "View TuriTop service"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:113
+msgid "Search TuriTop service"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:114
+msgid "No TuriTop service found"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:115
+msgid "No TuriTop service found in trash"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:116
+msgid "Parent TuriTop service"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:117
+msgctxt "Admin menu name"
+msgid "TuriTop services"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:118
+msgid "All TuriTop services"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:122
+msgid "List of TuriTop services"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:124
+msgid "TuriTop services."
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:197
+msgctxt "service cpt settings"
+msgid ""
+"check this option to open a new tab when click on the service on the shop "
+"page"
+msgstr ""
+
+#: includes/cpt/service/class.turitop-booking-system-service-cpt.php:219
+msgctxt "TuriTop Service cpt settings"
+msgid "Service settings"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Turitop Booking System"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://turitop.com/wordpress-turitop-booking-system"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"<a href=\"https://www.turitop.com\"> TuriTop </a> is an integral platform "
+"for the management of your reservations, no matter if it made from your web, "
+"third party web, from your social networks or directly (phone, email, "
+"agency). We offer a fully responsive control panel for easy and quick "
+"management."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "TuriTop"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.turitop.com"
+msgstr ""

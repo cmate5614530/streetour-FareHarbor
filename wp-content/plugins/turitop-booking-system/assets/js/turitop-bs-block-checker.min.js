@@ -1,0 +1,1 @@
+jQuery(document).ready(function(n){function o(){}o.prototype.testing=function(){console.log("init hidden"),n("body").on("change",".turitop_embed_attribute",function(n){console.log("hidden")})};new o});

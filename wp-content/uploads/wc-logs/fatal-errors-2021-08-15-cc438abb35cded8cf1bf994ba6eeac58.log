@@ -1,0 +1,32 @@
+2021-08-15T17:13:15+00:00 CRITICAL Out of memory (allocated 58720256) (tried to allocate 20480 bytes) in F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\pomo\mo.php on line 323
+
+2021-08-15T17:13:21+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(716): load_template('F:\\Works\\Work\\P...', false, Array)
+#2 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\Works\\Work\\P...')
+#5 F:\Works\Work\PHP\booking\php-fareharbor\wp-blog-header.php(19): require_once('F:\\Works\\Work\\P...')
+#6 F:\Works\Work\PHP\booking\php-fareharbor\index.php(17): require('F:\\Works\\Work\\P...')
+#7 {main}
+  thrown in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-15T17:13:52+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template.php(716): load_template('F:\\Works\\Work\\P...', false, Array)
+#2 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\Works\Work\PHP\booking\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\Works\\Work\\P...')
+#5 F:\Works\Work\PHP\booking\php-fareharbor\wp-blog-header.php(19): require_once('F:\\Works\\Work\\P...')
+#6 F:\Works\Work\PHP\booking\php-fareharbor\index.php(17): require('F:\\Works\\Work\\P...')
+#7 {main}
+  thrown in F:\Works\Work\PHP\booking\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-15T20:28:53+00:00 CRITICAL Uncaught Httpful\Exception\ConnectionErrorException: Unable to connect to "https://demo.fareharbor.com/api/external/v1//companies/bodyglove/items/": 35 OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to demo.fareharbor.com:443  in phar://F:/Works/Work/PHP/booking/php-fareharbor/wp-content/plugins/streetours-fareharbor/generator/httpful.phar/Httpful/Request.php:208
+Stack trace:
+#0 F:\Works\Work\PHP\booking\php-fareharbor\wp-content\plugins\streetours-fareharbor\generator\fh-entire.php(18): Httpful\Request->send()
+#1 {main}
+  thrown in phar://F:/Works/Work/PHP/booking/php-fareharbor/wp-content/plugins/streetours-fareharbor/generator/httpful.phar/Httpful/Request.php on line 208
+

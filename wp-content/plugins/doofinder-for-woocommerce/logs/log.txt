@@ -1,0 +1,543 @@
+
+15 Jul 21, 00:00
+'plugin enabled'
+
+15 Jul 21, 00:00
+'Migrate - Set Api key'
+
+15 Jul 21, 00:00
+'Host: '
+
+15 Jul 21, 00:00
+'Host prefix: eu1'
+
+15 Jul 21, 00:00
+'Migrate - Set Api Host'
+
+15 Jul 21, 00:00
+'Migrate - Set Admin Endpoint'
+
+15 Jul 21, 00:00
+'Migrate - Set Search Server'
+
+15 Jul 21, 00:00
+'Migrate - Add custom notice'
+
+15 Jul 21, 00:00
+'Migrate - Migration Completed'
+
+15 Jul 21, 00:01
+'Processing Wizard Step 2'
+
+15 Jul 21, 00:01
+'Wizard Step 2 - Prepare Search Enginge body : '
+
+15 Jul 21, 00:01
+'Wizard Step 2 - Try Create Search Engine'
+
+15 Jul 21, 00:01
+'=== API CALL === '
+
+15 Jul 21, 00:01
+'Wizard Step 2 - Created Search Engine: '
+
+15 Jul 21, 00:01
+'Wizard Step 2 - Save search engine '
+
+15 Jul 21, 00:01
+'Wizard Step 2 - Save search engine  - option suffix: '
+
+15 Jul 21, 00:01
+'Wizard Step 2 - Save search engine  - hash id: 1b8bfdf9d97f93c6800664ce19634adc'
+
+15 Jul 21, 00:01
+'Wizard Step 2 - Save search engine  - Saved'
+
+15 Jul 21, 00:01
+'Throttling createTemporaryIndex: 1'
+
+15 Jul 21, 00:01
+'Throttling createTemporaryIndex: 2'
+
+15 Jul 21, 00:01
+'Throttling createTemporaryIndex: 3'
+
+15 Jul 21, 00:01
+'Throttling createTemporaryIndex: 4'
+
+15 Jul 21, 00:01
+'Throttling createTemporaryIndex: 5'
+
+15 Jul 21, 00:01
+'Setup Wizard - Connect'
+
+15 Jul 21, 00:01
+'Processing Wizard Step 1 - Processing...'
+
+15 Jul 21, 00:01
+'Processing Wizard Step 1 - Error - Invalid token'
+
+15 Jul 21, 00:01
+'Processing Wizard Step 1 - Recieved Token - aa77c0efd82ac4565f7faa366a1b04be'
+
+15 Jul 21, 00:01
+'Processing Wizard Step 1 - Saved Token - 37b464364ee8aaacdbba4cdfa2f4dfd0'
+
+15 Jul 21, 00:01
+'Processing Wizard Step 3'
+
+15 Jul 21, 00:02
+'Processing Wizard Step 3'
+
+15 Jul 21, 00:02
+'Processing Wizard Step 3'
+
+15 Jul 21, 00:02
+'Processing Wizard Step 3'
+
+15 Jul 21, 00:03
+'Processing Wizard Step 4'
+
+15 Jul 21, 00:03
+'Creating JS layer for '
+
+15 Jul 21, 00:03
+'Create JS layer'
+
+15 Jul 21, 00:03
+'=== API CALL === '
+
+15 Jul 21, 00:03
+'Processing Wizard Step 4 - JS Layer Created'
+
+15 Jul 21, 00:03
+'Processing Wizard Step 4'
+
+15 Jul 21, 00:03
+'Creating JS layer for '
+
+15 Jul 21, 00:03
+'Create JS layer'
+
+15 Jul 21, 00:03
+'=== API CALL === '
+
+15 Jul 21, 00:03
+'Processing Wizard Step 4 - JS Layer Created'
+
+15 Jul 21, 00:07
+'Processing Wizard Step 4'
+
+15 Jul 21, 00:07
+'Creating JS layer for '
+
+15 Jul 21, 00:07
+'Create JS layer'
+
+15 Jul 21, 00:07
+'=== API CALL === '
+
+15 Jul 21, 00:07
+'Processing Wizard Step 4 - JS Layer Created'
+
+15 Jul 21, 00:07
+'Processing Wizard Step 5'
+
+15 Jul 21, 00:07
+'Processing Wizard Step 2'
+
+15 Jul 21, 00:08
+'Processing Wizard Step 3'
+
+15 Jul 21, 00:08
+'Processing Wizard Step 3'
+
+15 Jul 21, 04:19
+'upgrader_process - start'
+
+15 Jul 21, 04:19
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+15 Jul 21, 04:19
+Array
+(
+    [plugin] => contact-form-7-mailchimp-extension/chimpmatic-lite.php
+    [type] => plugin
+    [action] => update
+)
+
+15 Jul 21, 04:19
+'upgrader_process - updating plugin'
+
+15 Jul 21, 04:19
+Array
+(
+    [0] => contact-form-7-mailchimp-extension/chimpmatic-lite.php
+)
+
+15 Jul 21, 04:19
+'contact-form-7-mailchimp-extension/chimpmatic-lite.php'
+
+21 Jul 21, 04:07
+'upgrader_process - start'
+
+21 Jul 21, 04:07
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+21 Jul 21, 04:07
+Array
+(
+    [action] => update
+    [type] => core
+)
+
+28 Jul 21, 16:14
+'upgrader_process - start'
+
+28 Jul 21, 16:14
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+28 Jul 21, 16:14
+Array
+(
+    [action] => update
+    [type] => translation
+    [bulk] => 1
+    [translations] => Array
+        (
+            [0] => Array
+                (
+                    [language] => en_GB
+                    [type] => core
+                    [slug] => default
+                    [version] => 5.8
+                )
+
+        )
+
+)
+
+29 Jul 21, 16:10
+'upgrader_process - start'
+
+29 Jul 21, 16:10
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+29 Jul 21, 16:10
+Array
+(
+    [action] => update
+    [type] => translation
+    [bulk] => 1
+    [translations] => Array
+        (
+            [0] => Array
+                (
+                    [language] => en_GB
+                    [type] => core
+                    [slug] => default
+                    [version] => 5.8
+                )
+
+        )
+
+)
+
+30 Jul 21, 16:09
+'upgrader_process - start'
+
+30 Jul 21, 16:09
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+30 Jul 21, 16:09
+Array
+(
+    [action] => update
+    [type] => translation
+    [bulk] => 1
+    [translations] => Array
+        (
+            [0] => Array
+                (
+                    [language] => en_GB
+                    [type] => core
+                    [slug] => default
+                    [version] => 5.8
+                )
+
+        )
+
+)
+
+4 Aug 21, 15:59
+'upgrader_process - start'
+
+4 Aug 21, 15:59
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+4 Aug 21, 15:59
+Array
+(
+    [action] => update
+    [type] => plugin
+    [bulk] => 1
+    [plugins] => Array
+        (
+            [0] => turitop-booking-system/init.php
+        )
+
+)
+
+4 Aug 21, 15:59
+'upgrader_process - updating plugin'
+
+4 Aug 21, 15:59
+Array
+(
+    [0] => turitop-booking-system/init.php
+)
+
+4 Aug 21, 15:59
+'turitop-booking-system/init.php'
+
+4 Aug 21, 15:59
+'upgrader_process - start'
+
+4 Aug 21, 15:59
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+4 Aug 21, 15:59
+Array
+(
+    [action] => update
+    [type] => plugin
+    [bulk] => 1
+    [plugins] => Array
+        (
+            [0] => woocommerce/woocommerce.php
+        )
+
+)
+
+4 Aug 21, 15:59
+'upgrader_process - updating plugin'
+
+4 Aug 21, 15:59
+Array
+(
+    [0] => woocommerce/woocommerce.php
+)
+
+4 Aug 21, 15:59
+'woocommerce/woocommerce.php'
+
+6 Aug 21, 04:10
+'upgrader_process - start'
+
+6 Aug 21, 04:10
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+6 Aug 21, 04:10
+Array
+(
+    [plugin] => contact-form-7-mailchimp-extension/chimpmatic-lite.php
+    [type] => plugin
+    [action] => update
+)
+
+6 Aug 21, 04:10
+'upgrader_process - updating plugin'
+
+6 Aug 21, 04:10
+Array
+(
+    [0] => contact-form-7-mailchimp-extension/chimpmatic-lite.php
+)
+
+6 Aug 21, 04:10
+'contact-form-7-mailchimp-extension/chimpmatic-lite.php'
+
+6 Aug 21, 15:47
+'upgrader_process - start'
+
+6 Aug 21, 15:47
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+6 Aug 21, 15:47
+Array
+(
+    [type] => plugin
+    [action] => install
+)
+
+6 Aug 21, 15:47
+'upgrader_process - start'
+
+6 Aug 21, 15:47
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+6 Aug 21, 15:47
+Array
+(
+    [action] => update
+    [type] => translation
+    [bulk] => 1
+    [translations] => Array
+        (
+            [0] => Array
+                (
+                    [language] => en_GB
+                    [type] => plugin
+                    [slug] => wordpress-seo
+                    [version] => 16.8
+                )
+
+        )
+
+)
+
+6 Aug 21, 16:20
+'upgrader_process - start'
+
+6 Aug 21, 16:20
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+6 Aug 21, 16:20
+Array
+(
+    [type] => plugin
+    [action] => install
+)
+
+6 Aug 21, 16:20
+'upgrader_process - start'
+
+6 Aug 21, 16:20
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+6 Aug 21, 16:20
+Array
+(
+    [action] => update
+    [type] => translation
+    [bulk] => 1
+    [translations] => Array
+        (
+            [0] => Array
+                (
+                    [language] => en_GB
+                    [type] => plugin
+                    [slug] => wp-fastest-cache
+                    [version] => 0.9.2
+                )
+
+        )
+
+)
+
+8 Aug 21, 00:52
+'upgrader_process - start'
+
+8 Aug 21, 00:52
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+8 Aug 21, 00:52
+Array
+(
+    [type] => plugin
+    [action] => install
+)
+
+8 Aug 21, 00:52
+'upgrader_process - start'
+
+8 Aug 21, 00:52
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+8 Aug 21, 00:52
+Array
+(
+    [action] => update
+    [type] => translation
+    [bulk] => 1
+    [translations] => Array
+        (
+            [0] => Array
+                (
+                    [language] => en_GB
+                    [type] => plugin
+                    [slug] => autoptimize
+                    [version] => 2.9.0
+                )
+
+        )
+
+)
+
+10 Aug 21, 16:08
+'upgrader_process - start'
+
+10 Aug 21, 16:08
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+10 Aug 21, 16:08
+Array
+(
+    [plugin] => wordpress-seo/wp-seo.php
+    [type] => plugin
+    [action] => update
+)
+
+10 Aug 21, 16:08
+'upgrader_process - updating plugin'
+
+10 Aug 21, 16:08
+Array
+(
+    [0] => wordpress-seo/wp-seo.php
+)
+
+10 Aug 21, 16:08
+'wordpress-seo/wp-seo.php'
+
+10 Aug 21, 16:08
+'upgrader_process - start'
+
+10 Aug 21, 16:08
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+10 Aug 21, 16:08
+Array
+(
+    [action] => update
+    [type] => translation
+    [bulk] => 1
+    [translations] => Array
+        (
+            [0] => Array
+                (
+                    [language] => en_GB
+                    [type] => plugin
+                    [slug] => wordpress-seo
+                    [version] => 16.9
+                )
+
+        )
+
+)
+
+12 Aug 21, 07:21
+'upgrader_process - start'
+
+12 Aug 21, 07:21
+'doofinder-for-woocommerce/doofinder-for-woocommerce.php'
+
+12 Aug 21, 07:21
+Array
+(
+    [type] => plugin
+    [action] => install
+)
+
+12 Aug 21, 09:58
+'plugin disabled'

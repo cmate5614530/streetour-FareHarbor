@@ -1,0 +1,8 @@
+<wpml-config>
+    <admin-texts>
+      <key name="turitop_booking_system_settings_data">
+        <key name="button_text"/>
+        <key name="cart_text"/>
+      </key>
+    </admin-texts>
+</wpml-config>

@@ -1,0 +1,2187 @@
+
+15 Jul 21, 00:01
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:01
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:01
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:01
+'Load Languages'
+
+15 Jul 21, 00:01
+NULL
+
+15 Jul 21, 00:01
+'Load Post Types'
+
+15 Jul 21, 00:01
+Array
+(
+    [0] => product
+)
+
+15 Jul 21, 00:01
+'Calculate Progress - Get Count All'
+
+15 Jul 21, 00:01
+'Calculate Progress - Split Variabable: '
+
+15 Jul 21, 00:01
+'Calculate Progress - All posts to index: 3'
+
+15 Jul 21, 00:01
+'Load Post IDs'
+
+15 Jul 21, 00:01
+'Load Posts Ids - lang : '
+
+15 Jul 21, 00:01
+'Load Posts Ids - post_type : product'
+
+15 Jul 21, 00:01
+'Get Posts IDs - Query:'
+
+15 Jul 21, 00:01
+'
+			SELECT DISTINCT wp_posts.ID
+			FROM wp_posts
+			WHERE wp_posts.post_type = \'product\'
+			AND wp_posts.post_status = \'publish\'
+			AND wp_posts.ID > 0
+			ORDER BY wp_posts.ID
+			LIMIT 25
+		'
+
+15 Jul 21, 00:01
+'Post IDs : '
+
+15 Jul 21, 00:01
+Array
+(
+    [0] => 381
+    [1] => 389
+    [2] => 397
+)
+
+15 Jul 21, 00:01
+'Index Posts  - lang: '
+
+15 Jul 21, 00:01
+'Index Posts  - Get API Client Instance'
+
+15 Jul 21, 00:01
+'Crate Api Client'
+
+15 Jul 21, 00:01
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+15 Jul 21, 00:01
+'API Host: https://eu1-api.doofinder.com'
+
+15 Jul 21, 00:01
+'Start Get search engine
+'
+
+15 Jul 21, 00:01
+'=== API CALL === '
+
+15 Jul 21, 00:01
+'Get search engine - hash: 1b8bfdf9d97f93c6800664ce19634adc'
+
+15 Jul 21, 00:01
+'Search Engine: '
+
+15 Jul 21, 00:01
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+15 Jul 21, 00:01
+'End Get search engine - success
+'
+
+15 Jul 21, 00:01
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+15 Jul 21, 00:01
+'Generate items - Start '
+
+15 Jul 21, 00:01
+'Current Memory Usage: 65 487 680 bytes  (62.45 MB)'
+
+15 Jul 21, 00:01
+'Generate items - Get Data Feed Instance '
+
+15 Jul 21, 00:01
+'Load products'
+
+15 Jul 21, 00:01
+'Load products - Count: 3'
+
+15 Jul 21, 00:01
+'Current Memory Usage: 65 642 256 bytes  (62.6 MB)'
+
+15 Jul 21, 00:01
+'Generate items - Get Items '
+
+15 Jul 21, 00:01
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:01
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 23
+            [name] => Tours
+            [slug] => tours
+            [term_group] => 0
+            [term_taxonomy_id] => 23
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 2
+            [filter] => raw
+        )
+
+)
+
+15 Jul 21, 00:01
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:01
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 23
+            [name] => Tours
+            [slug] => tours
+            [term_group] => 0
+            [term_taxonomy_id] => 23
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 2
+            [filter] => raw
+        )
+
+)
+
+15 Jul 21, 00:01
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:01
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 28
+            [name] => Food &amp; Drink
+            [slug] => food-drink
+            [term_group] => 0
+            [term_taxonomy_id] => 28
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+)
+
+15 Jul 21, 00:01
+'Generate items - Set Current Progress '
+
+15 Jul 21, 00:01
+'Generate items - Items generated : 3'
+
+15 Jul 21, 00:01
+'Generate items - Items : '
+
+15 Jul 21, 00:01
+Array
+(
+    [0] => Array
+        (
+            [id] => 381
+            [link] => https://streetours.com/product/harry-potter-tour-in-edinburgh/
+            [title] => Harry Potter Tour in Edinburgh
+            [description] => Although most people think that Harry Potter was raised in London, it was actually in Edinburgh where he gave his first steps.
+Since the author, J K Rowling, couldn't focus at home, she used to go to many coffee shops to write her novel. Sometimes, among long hours of writing, she would walk around the city of Edinburgh in search of inspiration.
+
+Here you will discover the events that shaped the author's life, the places that she used to go and many more insights about the book.
+
+The tour begins where Rowling finished, at the Balmoral Hotel, and walks around some of the most beautiful places in Edinburgh and their connection with Harry Potter.
+
+Check the highlights to see what we'll cover in the tour!
+            [availability] => in stock
+            [image_link] => https://streetours.com/wp-content/uploads/2021/05/Victoria-Street-150x150.jpg
+            [price] => 15
+            [categories] => Array
+                (
+                    [0] => Tours
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 389
+            [link] => https://streetours.com/product/edinburgh-old-town-tour/
+            [title] => Edinburgh Old Town Tour
+            [description] => In this guided walk around Edinburgh you will discover some of the most important landmarks, historical sites and secrets about Scotland's beautiful capital.
+
+For example, did you know that the famous story of Dr Jekyll and Mr Hyde was based on an Edinburgh criminal? And that the most visited tomb in the city is not the one of Adam Smith or David Hume, but a dog's tomb?  Or how a woman throwing a stool started a war? Incredible things happened in Edinburgh,  and this tour will show you those stories that shaped the city's character and its people.
+
+&nbsp;
+
+&nbsp;
+            [availability] => out of stock
+            [image_link] => https://streetours.com/wp-content/uploads/2021/06/Edinburgh-Castle-150x150.jpg
+            [categories] => Array
+                (
+                    [0] => Tours
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 397
+            [link] => https://streetours.com/product/whisky-and-folklore-edinburgh-tour/
+            [title] => Whisky and Folklore Edinburgh Tour
+            [description] => Whisky has had an incredible influence on the history of Scotland, but the history of Scotland has had a big influence on its whisky too! Throughout this tour, your excellent guide will take you through whisky’s history in Scotland and also demonstrate its importance.
+
+We have carefully discussed and selected 4 whiskies from what are generally considered the 4 main whisky regions of Scotland. You will be able to enjoy a whisky from each of the following regions: Lowlands, Highlands, Speyside and Islay.
+
+Each whisky brings its own taste and character. As a result, we find that each of our guests comes out of the whisky tour with a favourite region.
+
+Don’t like whisky? We also have drink alternatives, including non-alcoholic drinks!
+            [availability] => in stock
+            [image_link] => https://streetours.com/wp-content/uploads/2021/05/Scotch-in-a-whisky-glass-150x150.jpg
+            [price] => 29
+            [categories] => Array
+                (
+                    [0] => Food & Drink
+                )
+
+        )
+
+)
+
+15 Jul 21, 00:01
+'Start Send Batch
+'
+
+15 Jul 21, 00:01
+'Send batch - items type: "product"'
+
+15 Jul 21, 00:01
+'Send batch - language: ""'
+
+15 Jul 21, 00:01
+'Send Batch  - Temp Index Status'
+
+15 Jul 21, 00:01
+Array
+(
+)
+
+15 Jul 21, 00:01
+'Send batch - Try to create Temp Index
+'
+
+15 Jul 21, 00:01
+'=== API CALL === '
+
+15 Jul 21, 00:01
+'Send batch - Exception - Real Index Not Found
+'
+
+15 Jul 21, 00:01
+'Send batch - Try to create Real Index
+'
+
+15 Jul 21, 00:01
+'=== API CALL === '
+
+15 Jul 21, 00:01
+'Send batch - Real Index Created
+'
+
+15 Jul 21, 00:01
+'Send batch - Try to create Temp Index
+'
+
+15 Jul 21, 00:01
+'=== API CALL === '
+
+15 Jul 21, 00:01
+'Send batch - Temp Index Created
+'
+
+15 Jul 21, 00:01
+'Send Batch  - Before Create Bulk Temp Index Status'
+
+15 Jul 21, 00:01
+Array
+(
+    [0] => product
+)
+
+15 Jul 21, 00:01
+'[{"id":381,"link":"https:\\/\\/streetours.com\\/product\\/harry-potter-tour-in-edinburgh\\/","title":"Harry Potter Tour in Edinburgh","description":"Although most people think that Harry Potter was raised in London, it was actually in Edinburgh where he gave his first steps.\\r\\nSince the author, J K Rowling, couldn\'t focus at home, she used to go to many coffee shops to write her novel. Sometimes, among long hours of writing, she would walk around the city of Edinburgh in search of inspiration.\\r\\n\\r\\nHere you will discover the events that shaped the author\'s life, the places that she used to go and many more insights about the book.\\r\\n\\r\\nThe tour begins where Rowling finished, at the Balmoral Hotel, and walks around some of the most beautiful places in Edinburgh and their connection with Harry Potter.\\r\\n\\r\\nCheck the highlights to see what we\'ll cover in the tour!","availability":"in stock","image_link":"https:\\/\\/streetours.com\\/wp-content\\/uploads\\/2021\\/05\\/Victoria-Street-150x150.jpg","price":15,"categories":["Tours"]},{"id":389,"link":"https:\\/\\/streetours.com\\/product\\/edinburgh-old-town-tour\\/","title":"Edinburgh Old Town Tour","description":"In this guided walk around Edinburgh you will discover some of the most important landmarks, historical sites and secrets about Scotland\'s beautiful capital.\\r\\n\\r\\nFor example, did you know that the famous story of Dr Jekyll and Mr Hyde was based on an Edinburgh criminal? And that the most visited tomb in the city is not the one of Adam Smith or David Hume, but a dog\'s tomb? \\u00a0Or how a woman throwing a stool started a war? Incredible things happened in Edinburgh,\\u00a0 and this tour will show you those stories that shaped the city\'s character and its people.\\r\\n\\r\\n&nbsp;\\r\\n\\r\\n&nbsp;","availability":"out of stock","image_link":"https:\\/\\/streetours.com\\/wp-content\\/uploads\\/2021\\/06\\/Edinburgh-Castle-150x150.jpg","categories":["Tours"]},{"id":397,"link":"https:\\/\\/streetours.com\\/product\\/whisky-and-folklore-edinburgh-tour\\/","title":"Whisky and Folklore Edinburgh Tour","description":"Whisky has had an incredible influence on the history of Scotland, but the history of Scotland has had a big influence on its whisky too! Throughout this tour, your excellent guide will take you through whisky\\u2019s history in Scotland and also demonstrate its importance.\\r\\n\\r\\nWe have carefully discussed and selected 4 whiskies from what are generally considered the 4 main whisky regions of Scotland. You will be able to enjoy a whisky from each of the following regions: Lowlands, Highlands, Speyside and Islay.\\r\\n\\r\\nEach whisky brings its own taste and character. As a result, we find that each of our guests comes out of the whisky tour with a favourite region.\\r\\n\\r\\nDon\\u2019t like whisky? We also have drink alternatives, including non-alcoholic drinks!","availability":"in stock","image_link":"https:\\/\\/streetours.com\\/wp-content\\/uploads\\/2021\\/05\\/Scotch-in-a-whisky-glass-150x150.jpg","price":29,"categories":["Food & Drink"]}]'
+
+15 Jul 21, 00:01
+'=== API CALL === '
+
+15 Jul 21, 00:01
+'Send batch - Batch Sent'
+
+15 Jul 21, 00:01
+'Send batch - API CALLS ------  : 4'
+
+15 Jul 21, 00:01
+'Push Pointer Forwards'
+
+15 Jul 21, 00:01
+'Current Memory Usage: 66 142 216 bytes  (63.08 MB)'
+
+15 Jul 21, 00:01
+'Peak Memory Usage: 66 249 128 bytes  (63.18 MB)'
+
+15 Jul 21, 00:01
+'Calculate Progress - Split Variabable: '
+
+15 Jul 21, 00:01
+'Calculate Progress - current lang: ""'
+
+15 Jul 21, 00:01
+'Calculate Progress - Query:'
+
+15 Jul 21, 00:01
+'
+			SELECT
+			(
+				SELECT COUNT(DISTINCT posts.ID)
+				FROM wp_posts as posts
+				LEFT JOIN wp_posts as postparents
+                	ON posts.post_parent = postparents.ID
+				WHERE posts.post_type IN (\'product\')
+				AND posts.post_status = \'publish\'
+				AND (postparents.post_status IS NULL OR postparents.post_status = \'publish\')
+				AND (
+					posts.ID NOT IN (
+						SELECT object_id
+						FROM wp_term_relationships
+						WHERE term_taxonomy_id IN (
+							SELECT term_id
+							FROM `wp_terms`
+							WHERE slug = \'exclude-from-search\'
+						)
+					)
+				)
+			
+
+			)
+			AS \'all_posts\'
+			'
+
+15 Jul 21, 00:01
+'Calculate Progress - Current Progress get: 3'
+
+15 Jul 21, 00:01
+'Calculate Progress - Processed: 3 out of: 3'
+
+15 Jul 21, 00:01
+'Calculate Progress - Summary: 100%'
+
+15 Jul 21, 00:01
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:01
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:01
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:01
+'Load Languages'
+
+15 Jul 21, 00:01
+NULL
+
+15 Jul 21, 00:01
+'Load Post Types'
+
+15 Jul 21, 00:01
+Array
+(
+    [0] => product
+)
+
+15 Jul 21, 00:01
+'Calculate Progress - Get Count All'
+
+15 Jul 21, 00:01
+'Calculate Progress - Split Variabable: '
+
+15 Jul 21, 00:01
+'Calculate Progress - All posts to index: 3'
+
+15 Jul 21, 00:01
+'Load Post IDs'
+
+15 Jul 21, 00:01
+'Load Posts Ids - lang : '
+
+15 Jul 21, 00:01
+'Load Posts Ids - post_type : product'
+
+15 Jul 21, 00:01
+'Get Posts IDs - Query:'
+
+15 Jul 21, 00:01
+'
+			SELECT DISTINCT wp_posts.ID
+			FROM wp_posts
+			WHERE wp_posts.post_type = \'product\'
+			AND wp_posts.post_status = \'publish\'
+			AND wp_posts.ID > 397
+			ORDER BY wp_posts.ID
+			LIMIT 25
+		'
+
+15 Jul 21, 00:01
+'Post IDs : '
+
+15 Jul 21, 00:01
+Array
+(
+)
+
+15 Jul 21, 00:01
+'Index Posts  - lang: '
+
+15 Jul 21, 00:01
+'Index Posts  - Get API Client Instance'
+
+15 Jul 21, 00:01
+'Crate Api Client'
+
+15 Jul 21, 00:01
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+15 Jul 21, 00:01
+'API Host: https://eu1-api.doofinder.com'
+
+15 Jul 21, 00:01
+'Start Get search engine
+'
+
+15 Jul 21, 00:01
+'=== API CALL === '
+
+15 Jul 21, 00:01
+'Get search engine - hash: 1b8bfdf9d97f93c6800664ce19634adc'
+
+15 Jul 21, 00:01
+'Search Engine: '
+
+15 Jul 21, 00:01
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [datasources] => Array
+                                (
+                                )
+
+                            [name] => product
+                            [options] => stdClass Object
+                                (
+                                    [exclude_out_of_stock_items] => 1
+                                    [group_variants] => 
+                                )
+
+                            [preset] => product
+                        )
+
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+15 Jul 21, 00:01
+'End Get search engine - success
+'
+
+15 Jul 21, 00:01
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [datasources] => Array
+                                (
+                                )
+
+                            [name] => product
+                            [options] => stdClass Object
+                                (
+                                    [exclude_out_of_stock_items] => 1
+                                    [group_variants] => 
+                                )
+
+                            [preset] => product
+                        )
+
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+15 Jul 21, 00:01
+'Index Posts  - Call replace Index'
+
+15 Jul 21, 00:01
+'Replace Index Start
+'
+
+15 Jul 21, 00:01
+'Replace Index - Clear Inner Temp Index Status'
+
+15 Jul 21, 00:01
+Array
+(
+)
+
+15 Jul 21, 00:01
+'Replace Index - Replace with: product'
+
+15 Jul 21, 00:01
+'=== API CALL === '
+
+15 Jul 21, 00:01
+'Replace Index - "product" index replaced successfully'
+
+15 Jul 21, 00:01
+'Replace Index - API CALLS ------  : 2'
+
+15 Jul 21, 00:01
+'success'
+
+15 Jul 21, 00:01
+'Current Memory Usage: 65 477 968 bytes  (62.44 MB)'
+
+15 Jul 21, 00:01
+'Peak Memory Usage: 65 561 968 bytes  (62.52 MB)'
+
+15 Jul 21, 00:01
+'Calculate Progress - Split Variabable: '
+
+15 Jul 21, 00:01
+'Calculate Progress - current lang: ""'
+
+15 Jul 21, 00:01
+'Calculate Progress - Query:'
+
+15 Jul 21, 00:01
+'
+			SELECT
+			(
+				SELECT COUNT(DISTINCT posts.ID)
+				FROM wp_posts as posts
+				LEFT JOIN wp_posts as postparents
+                	ON posts.post_parent = postparents.ID
+				WHERE posts.post_type IN (\'product\')
+				AND posts.post_status = \'publish\'
+				AND (postparents.post_status IS NULL OR postparents.post_status = \'publish\')
+				AND (
+					posts.ID NOT IN (
+						SELECT object_id
+						FROM wp_term_relationships
+						WHERE term_taxonomy_id IN (
+							SELECT term_id
+							FROM `wp_terms`
+							WHERE slug = \'exclude-from-search\'
+						)
+					)
+				)
+			
+
+			)
+			AS \'all_posts\'
+			'
+
+15 Jul 21, 00:01
+'Calculate Progress - Current Progress get: 3'
+
+15 Jul 21, 00:01
+'Calculate Progress - Processed: 3 out of: 3'
+
+15 Jul 21, 00:01
+'Calculate Progress - Summary: 100%'
+
+15 Jul 21, 00:04
+'Load products'
+
+15 Jul 21, 00:04
+'Load products - Count: 3'
+
+15 Jul 21, 00:04
+'Current Memory Usage: 54 665 848 bytes  (52.13 MB)'
+
+15 Jul 21, 00:04
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:04
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 23
+            [name] => Tours
+            [slug] => tours
+            [term_group] => 0
+            [term_taxonomy_id] => 23
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 2
+            [filter] => raw
+        )
+
+)
+
+15 Jul 21, 00:04
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:04
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 23
+            [name] => Tours
+            [slug] => tours
+            [term_group] => 0
+            [term_taxonomy_id] => 23
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 2
+            [filter] => raw
+        )
+
+)
+
+15 Jul 21, 00:04
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:04
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 28
+            [name] => Food &amp; Drink
+            [slug] => food-drink
+            [term_group] => 0
+            [term_taxonomy_id] => 28
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+)
+
+15 Jul 21, 00:07
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:07
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:07
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:07
+'Ajax Handler - Reset indexing data '
+
+15 Jul 21, 00:07
+'Load Languages'
+
+15 Jul 21, 00:07
+NULL
+
+15 Jul 21, 00:07
+'Load Post Types'
+
+15 Jul 21, 00:07
+Array
+(
+    [0] => product
+)
+
+15 Jul 21, 00:07
+'Calculate Progress - Get Count All'
+
+15 Jul 21, 00:07
+'Calculate Progress - Split Variabable: '
+
+15 Jul 21, 00:07
+'Calculate Progress - All posts to index: 3'
+
+15 Jul 21, 00:07
+'Load Post IDs'
+
+15 Jul 21, 00:07
+'Load Posts Ids - lang : '
+
+15 Jul 21, 00:07
+'Load Posts Ids - post_type : product'
+
+15 Jul 21, 00:07
+'Get Posts IDs - Query:'
+
+15 Jul 21, 00:07
+'
+			SELECT DISTINCT wp_posts.ID
+			FROM wp_posts
+			WHERE wp_posts.post_type = \'product\'
+			AND wp_posts.post_status = \'publish\'
+			AND wp_posts.ID > 0
+			ORDER BY wp_posts.ID
+			LIMIT 25
+		'
+
+15 Jul 21, 00:07
+'Post IDs : '
+
+15 Jul 21, 00:07
+Array
+(
+    [0] => 381
+    [1] => 389
+    [2] => 397
+)
+
+15 Jul 21, 00:07
+'Index Posts  - lang: '
+
+15 Jul 21, 00:07
+'Index Posts  - Get API Client Instance'
+
+15 Jul 21, 00:07
+'Crate Api Client'
+
+15 Jul 21, 00:07
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+15 Jul 21, 00:07
+'API Host: https://eu1-api.doofinder.com'
+
+15 Jul 21, 00:07
+'Start Get search engine
+'
+
+15 Jul 21, 00:07
+'=== API CALL === '
+
+15 Jul 21, 00:07
+'Get search engine - hash: 1b8bfdf9d97f93c6800664ce19634adc'
+
+15 Jul 21, 00:07
+'Search Engine: '
+
+15 Jul 21, 00:07
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [datasources] => Array
+                                (
+                                )
+
+                            [name] => product
+                            [options] => stdClass Object
+                                (
+                                    [exclude_out_of_stock_items] => 1
+                                    [group_variants] => 
+                                )
+
+                            [preset] => product
+                        )
+
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+15 Jul 21, 00:07
+'End Get search engine - success
+'
+
+15 Jul 21, 00:07
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [datasources] => Array
+                                (
+                                )
+
+                            [name] => product
+                            [options] => stdClass Object
+                                (
+                                    [exclude_out_of_stock_items] => 1
+                                    [group_variants] => 
+                                )
+
+                            [preset] => product
+                        )
+
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+15 Jul 21, 00:07
+'Generate items - Start '
+
+15 Jul 21, 00:07
+'Current Memory Usage: 65 489 400 bytes  (62.46 MB)'
+
+15 Jul 21, 00:07
+'Generate items - Get Data Feed Instance '
+
+15 Jul 21, 00:07
+'Load products'
+
+15 Jul 21, 00:07
+'Load products - Count: 3'
+
+15 Jul 21, 00:07
+'Current Memory Usage: 65 643 976 bytes  (62.6 MB)'
+
+15 Jul 21, 00:07
+'Generate items - Get Items '
+
+15 Jul 21, 00:07
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:07
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 23
+            [name] => Tours
+            [slug] => tours
+            [term_group] => 0
+            [term_taxonomy_id] => 23
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 2
+            [filter] => raw
+        )
+
+)
+
+15 Jul 21, 00:07
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:07
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 23
+            [name] => Tours
+            [slug] => tours
+            [term_group] => 0
+            [term_taxonomy_id] => 23
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 2
+            [filter] => raw
+        )
+
+)
+
+15 Jul 21, 00:07
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:07
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 28
+            [name] => Food &amp; Drink
+            [slug] => food-drink
+            [term_group] => 0
+            [term_taxonomy_id] => 28
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+)
+
+15 Jul 21, 00:07
+'Generate items - Set Current Progress '
+
+15 Jul 21, 00:07
+'Generate items - Items generated : 3'
+
+15 Jul 21, 00:07
+'Generate items - Items : '
+
+15 Jul 21, 00:07
+Array
+(
+    [0] => Array
+        (
+            [id] => 381
+            [link] => https://streetours.com/product/harry-potter-tour-in-edinburgh/
+            [title] => Harry Potter Tour in Edinburgh
+            [description] => Although most people think that Harry Potter was raised in London, it was actually in Edinburgh where he gave his first steps.
+Since the author, J K Rowling, couldn't focus at home, she used to go to many coffee shops to write her novel. Sometimes, among long hours of writing, she would walk around the city of Edinburgh in search of inspiration.
+
+Here you will discover the events that shaped the author's life, the places that she used to go and many more insights about the book.
+
+The tour begins where Rowling finished, at the Balmoral Hotel, and walks around some of the most beautiful places in Edinburgh and their connection with Harry Potter.
+
+Check the highlights to see what we'll cover in the tour!
+            [availability] => in stock
+            [image_link] => https://streetours.com/wp-content/uploads/2021/05/Victoria-Street-150x150.jpg
+            [price] => 15
+            [categories] => Array
+                (
+                    [0] => Tours
+                )
+
+        )
+
+    [1] => Array
+        (
+            [id] => 389
+            [link] => https://streetours.com/product/edinburgh-old-town-tour/
+            [title] => Edinburgh Old Town Tour
+            [description] => In this guided walk around Edinburgh you will discover some of the most important landmarks, historical sites and secrets about Scotland's beautiful capital.
+
+For example, did you know that the famous story of Dr Jekyll and Mr Hyde was based on an Edinburgh criminal? And that the most visited tomb in the city is not the one of Adam Smith or David Hume, but a dog's tomb?  Or how a woman throwing a stool started a war? Incredible things happened in Edinburgh,  and this tour will show you those stories that shaped the city's character and its people.
+
+&nbsp;
+
+&nbsp;
+            [availability] => out of stock
+            [image_link] => https://streetours.com/wp-content/uploads/2021/06/Edinburgh-Castle-150x150.jpg
+            [categories] => Array
+                (
+                    [0] => Tours
+                )
+
+        )
+
+    [2] => Array
+        (
+            [id] => 397
+            [link] => https://streetours.com/product/whisky-and-folklore-edinburgh-tour/
+            [title] => Whisky and Folklore Edinburgh Tour
+            [description] => Whisky has had an incredible influence on the history of Scotland, but the history of Scotland has had a big influence on its whisky too! Throughout this tour, your excellent guide will take you through whisky’s history in Scotland and also demonstrate its importance.
+
+We have carefully discussed and selected 4 whiskies from what are generally considered the 4 main whisky regions of Scotland. You will be able to enjoy a whisky from each of the following regions: Lowlands, Highlands, Speyside and Islay.
+
+Each whisky brings its own taste and character. As a result, we find that each of our guests comes out of the whisky tour with a favourite region.
+
+Don’t like whisky? We also have drink alternatives, including non-alcoholic drinks!
+            [availability] => in stock
+            [image_link] => https://streetours.com/wp-content/uploads/2021/05/Scotch-in-a-whisky-glass-150x150.jpg
+            [price] => 29
+            [categories] => Array
+                (
+                    [0] => Food & Drink
+                )
+
+        )
+
+)
+
+15 Jul 21, 00:07
+'Start Send Batch
+'
+
+15 Jul 21, 00:07
+'Send batch - items type: "product"'
+
+15 Jul 21, 00:07
+'Send batch - language: ""'
+
+15 Jul 21, 00:07
+'Send Batch  - Temp Index Status'
+
+15 Jul 21, 00:07
+Array
+(
+)
+
+15 Jul 21, 00:07
+'Send batch - Try to create Temp Index
+'
+
+15 Jul 21, 00:07
+'=== API CALL === '
+
+15 Jul 21, 00:07
+'Send batch - Temp Index Created
+'
+
+15 Jul 21, 00:07
+'Send Batch  - Before Create Bulk Temp Index Status'
+
+15 Jul 21, 00:07
+Array
+(
+    [0] => product
+)
+
+15 Jul 21, 00:07
+'[{"id":381,"link":"https:\\/\\/streetours.com\\/product\\/harry-potter-tour-in-edinburgh\\/","title":"Harry Potter Tour in Edinburgh","description":"Although most people think that Harry Potter was raised in London, it was actually in Edinburgh where he gave his first steps.\\r\\nSince the author, J K Rowling, couldn\'t focus at home, she used to go to many coffee shops to write her novel. Sometimes, among long hours of writing, she would walk around the city of Edinburgh in search of inspiration.\\r\\n\\r\\nHere you will discover the events that shaped the author\'s life, the places that she used to go and many more insights about the book.\\r\\n\\r\\nThe tour begins where Rowling finished, at the Balmoral Hotel, and walks around some of the most beautiful places in Edinburgh and their connection with Harry Potter.\\r\\n\\r\\nCheck the highlights to see what we\'ll cover in the tour!","availability":"in stock","image_link":"https:\\/\\/streetours.com\\/wp-content\\/uploads\\/2021\\/05\\/Victoria-Street-150x150.jpg","price":15,"categories":["Tours"]},{"id":389,"link":"https:\\/\\/streetours.com\\/product\\/edinburgh-old-town-tour\\/","title":"Edinburgh Old Town Tour","description":"In this guided walk around Edinburgh you will discover some of the most important landmarks, historical sites and secrets about Scotland\'s beautiful capital.\\r\\n\\r\\nFor example, did you know that the famous story of Dr Jekyll and Mr Hyde was based on an Edinburgh criminal? And that the most visited tomb in the city is not the one of Adam Smith or David Hume, but a dog\'s tomb? \\u00a0Or how a woman throwing a stool started a war? Incredible things happened in Edinburgh,\\u00a0 and this tour will show you those stories that shaped the city\'s character and its people.\\r\\n\\r\\n&nbsp;\\r\\n\\r\\n&nbsp;","availability":"out of stock","image_link":"https:\\/\\/streetours.com\\/wp-content\\/uploads\\/2021\\/06\\/Edinburgh-Castle-150x150.jpg","categories":["Tours"]},{"id":397,"link":"https:\\/\\/streetours.com\\/product\\/whisky-and-folklore-edinburgh-tour\\/","title":"Whisky and Folklore Edinburgh Tour","description":"Whisky has had an incredible influence on the history of Scotland, but the history of Scotland has had a big influence on its whisky too! Throughout this tour, your excellent guide will take you through whisky\\u2019s history in Scotland and also demonstrate its importance.\\r\\n\\r\\nWe have carefully discussed and selected 4 whiskies from what are generally considered the 4 main whisky regions of Scotland. You will be able to enjoy a whisky from each of the following regions: Lowlands, Highlands, Speyside and Islay.\\r\\n\\r\\nEach whisky brings its own taste and character. As a result, we find that each of our guests comes out of the whisky tour with a favourite region.\\r\\n\\r\\nDon\\u2019t like whisky? We also have drink alternatives, including non-alcoholic drinks!","availability":"in stock","image_link":"https:\\/\\/streetours.com\\/wp-content\\/uploads\\/2021\\/05\\/Scotch-in-a-whisky-glass-150x150.jpg","price":29,"categories":["Food & Drink"]}]'
+
+15 Jul 21, 00:07
+'=== API CALL === '
+
+15 Jul 21, 00:07
+'Send batch - Batch Sent'
+
+15 Jul 21, 00:07
+'Send batch - API CALLS ------  : 3'
+
+15 Jul 21, 00:07
+'Push Pointer Forwards'
+
+15 Jul 21, 00:07
+'Current Memory Usage: 65 947 744 bytes  (62.89 MB)'
+
+15 Jul 21, 00:07
+'Peak Memory Usage: 66 021 712 bytes  (62.96 MB)'
+
+15 Jul 21, 00:07
+'Calculate Progress - Split Variabable: '
+
+15 Jul 21, 00:07
+'Calculate Progress - current lang: ""'
+
+15 Jul 21, 00:07
+'Calculate Progress - Query:'
+
+15 Jul 21, 00:07
+'
+			SELECT
+			(
+				SELECT COUNT(DISTINCT posts.ID)
+				FROM wp_posts as posts
+				LEFT JOIN wp_posts as postparents
+                	ON posts.post_parent = postparents.ID
+				WHERE posts.post_type IN (\'product\')
+				AND posts.post_status = \'publish\'
+				AND (postparents.post_status IS NULL OR postparents.post_status = \'publish\')
+				AND (
+					posts.ID NOT IN (
+						SELECT object_id
+						FROM wp_term_relationships
+						WHERE term_taxonomy_id IN (
+							SELECT term_id
+							FROM `wp_terms`
+							WHERE slug = \'exclude-from-search\'
+						)
+					)
+				)
+			
+
+			)
+			AS \'all_posts\'
+			'
+
+15 Jul 21, 00:07
+'Calculate Progress - Current Progress get: 3'
+
+15 Jul 21, 00:07
+'Calculate Progress - Processed: 3 out of: 3'
+
+15 Jul 21, 00:07
+'Calculate Progress - Summary: 100%'
+
+15 Jul 21, 00:08
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:08
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:08
+'-------------------------------------------------------------------------------------------------------------------------------------'
+
+15 Jul 21, 00:08
+'Load Languages'
+
+15 Jul 21, 00:08
+NULL
+
+15 Jul 21, 00:08
+'Load Post Types'
+
+15 Jul 21, 00:08
+Array
+(
+    [0] => product
+)
+
+15 Jul 21, 00:08
+'Calculate Progress - Get Count All'
+
+15 Jul 21, 00:08
+'Calculate Progress - Split Variabable: '
+
+15 Jul 21, 00:08
+'Calculate Progress - All posts to index: 3'
+
+15 Jul 21, 00:08
+'Load Post IDs'
+
+15 Jul 21, 00:08
+'Load Posts Ids - lang : '
+
+15 Jul 21, 00:08
+'Load Posts Ids - post_type : product'
+
+15 Jul 21, 00:08
+'Get Posts IDs - Query:'
+
+15 Jul 21, 00:08
+'
+			SELECT DISTINCT wp_posts.ID
+			FROM wp_posts
+			WHERE wp_posts.post_type = \'product\'
+			AND wp_posts.post_status = \'publish\'
+			AND wp_posts.ID > 397
+			ORDER BY wp_posts.ID
+			LIMIT 25
+		'
+
+15 Jul 21, 00:08
+'Post IDs : '
+
+15 Jul 21, 00:08
+Array
+(
+)
+
+15 Jul 21, 00:08
+'Index Posts  - lang: '
+
+15 Jul 21, 00:08
+'Index Posts  - Get API Client Instance'
+
+15 Jul 21, 00:08
+'Crate Api Client'
+
+15 Jul 21, 00:08
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+15 Jul 21, 00:08
+'API Host: https://eu1-api.doofinder.com'
+
+15 Jul 21, 00:08
+'Start Get search engine
+'
+
+15 Jul 21, 00:08
+'=== API CALL === '
+
+15 Jul 21, 00:08
+'Get search engine - hash: 1b8bfdf9d97f93c6800664ce19634adc'
+
+15 Jul 21, 00:08
+'Search Engine: '
+
+15 Jul 21, 00:08
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [datasources] => Array
+                                (
+                                )
+
+                            [name] => product
+                            [options] => stdClass Object
+                                (
+                                    [exclude_out_of_stock_items] => 1
+                                    [group_variants] => 
+                                )
+
+                            [preset] => product
+                        )
+
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+15 Jul 21, 00:08
+'End Get search engine - success
+'
+
+15 Jul 21, 00:08
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [datasources] => Array
+                                (
+                                )
+
+                            [name] => product
+                            [options] => stdClass Object
+                                (
+                                    [exclude_out_of_stock_items] => 1
+                                    [group_variants] => 
+                                )
+
+                            [preset] => product
+                        )
+
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+15 Jul 21, 00:08
+'Index Posts  - Call replace Index'
+
+15 Jul 21, 00:08
+'Replace Index Start
+'
+
+15 Jul 21, 00:08
+'Replace Index - Clear Inner Temp Index Status'
+
+15 Jul 21, 00:08
+Array
+(
+)
+
+15 Jul 21, 00:08
+'Replace Index - Replace with: product'
+
+15 Jul 21, 00:08
+'=== API CALL === '
+
+15 Jul 21, 00:08
+'Replace Index - "product" index replaced successfully'
+
+15 Jul 21, 00:08
+'Replace Index - API CALLS ------  : 2'
+
+15 Jul 21, 00:08
+'success'
+
+15 Jul 21, 00:08
+'Current Memory Usage: 65 477 288 bytes  (62.44 MB)'
+
+15 Jul 21, 00:08
+'Peak Memory Usage: 65 561 640 bytes  (62.52 MB)'
+
+15 Jul 21, 00:08
+'Calculate Progress - Split Variabable: '
+
+15 Jul 21, 00:08
+'Calculate Progress - current lang: ""'
+
+15 Jul 21, 00:08
+'Calculate Progress - Query:'
+
+15 Jul 21, 00:08
+'
+			SELECT
+			(
+				SELECT COUNT(DISTINCT posts.ID)
+				FROM wp_posts as posts
+				LEFT JOIN wp_posts as postparents
+                	ON posts.post_parent = postparents.ID
+				WHERE posts.post_type IN (\'product\')
+				AND posts.post_status = \'publish\'
+				AND (postparents.post_status IS NULL OR postparents.post_status = \'publish\')
+				AND (
+					posts.ID NOT IN (
+						SELECT object_id
+						FROM wp_term_relationships
+						WHERE term_taxonomy_id IN (
+							SELECT term_id
+							FROM `wp_terms`
+							WHERE slug = \'exclude-from-search\'
+						)
+					)
+				)
+			
+
+			)
+			AS \'all_posts\'
+			'
+
+15 Jul 21, 00:08
+'Calculate Progress - Current Progress get: 3'
+
+15 Jul 21, 00:08
+'Calculate Progress - Processed: 3 out of: 3'
+
+15 Jul 21, 00:08
+'Calculate Progress - Summary: 100%'
+
+15 Jul 21, 00:12
+'Load products'
+
+15 Jul 21, 00:12
+'Load products - Count: 3'
+
+15 Jul 21, 00:12
+'Current Memory Usage: 54 380 248 bytes  (51.86 MB)'
+
+15 Jul 21, 00:12
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:12
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 23
+            [name] => Tours
+            [slug] => tours
+            [term_group] => 0
+            [term_taxonomy_id] => 23
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 2
+            [filter] => raw
+        )
+
+)
+
+15 Jul 21, 00:12
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:12
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 23
+            [name] => Tours
+            [slug] => tours
+            [term_group] => 0
+            [term_taxonomy_id] => 23
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 2
+            [filter] => raw
+        )
+
+)
+
+15 Jul 21, 00:12
+'Data Feed Item - Get Categories: '
+
+15 Jul 21, 00:12
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 28
+            [name] => Food &amp; Drink
+            [slug] => food-drink
+            [term_group] => 0
+            [term_taxonomy_id] => 28
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+)
+
+28 Jul 21, 14:27
+'Crate Api Client'
+
+28 Jul 21, 14:27
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+28 Jul 21, 14:27
+'API Host: https://eu1-api.doofinder.com'
+
+28 Jul 21, 14:27
+'Start Get search engine
+'
+
+28 Jul 21, 14:27
+'=== API CALL === '
+
+28 Jul 21, 14:27
+'Get search engine - hash: 1b8bfdf9d97f93c6800664ce19634adc'
+
+28 Jul 21, 14:27
+'Search Engine: '
+
+28 Jul 21, 14:27
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [datasources] => Array
+                                (
+                                )
+
+                            [name] => product
+                            [options] => stdClass Object
+                                (
+                                    [exclude_out_of_stock_items] => 1
+                                    [group_variants] => 
+                                )
+
+                            [preset] => product
+                        )
+
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+28 Jul 21, 14:27
+'End Get search engine - success
+'
+
+28 Jul 21, 14:27
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [datasources] => Array
+                                (
+                                )
+
+                            [name] => product
+                            [options] => stdClass Object
+                                (
+                                    [exclude_out_of_stock_items] => 1
+                                    [group_variants] => 
+                                )
+
+                            [preset] => product
+                        )
+
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+28 Jul 21, 14:27
+'Load products'
+
+28 Jul 21, 14:27
+'Load products - Count: 1'
+
+28 Jul 21, 14:27
+'Current Memory Usage: 66 840 112 bytes  (63.74 MB)'
+
+28 Jul 21, 14:27
+'Data Feed Item - Get Categories: '
+
+28 Jul 21, 14:27
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 28
+            [name] => Food &amp; Drink
+            [slug] => food-drink
+            [term_group] => 0
+            [term_taxonomy_id] => 28
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+)
+
+28 Jul 21, 14:27
+'Update Item
+'
+
+28 Jul 21, 14:27
+'Update Item - Try update item
+'
+
+28 Jul 21, 14:27
+'product'
+
+28 Jul 21, 14:27
+397
+
+28 Jul 21, 14:27
+Array
+(
+    [id] => 397
+    [link] => https://streetours.com/product/whisky-and-folklore-edinburgh-tour/
+    [title] => Whisky and Folklore Edinburgh Tour
+    [description] => Whisky has had an incredible influence on the history of Scotland, but the history of Scotland has had a big influence on its whisky too! Throughout this tour, your excellent guide will take you through whisky’s history in Scotland and also demonstrate its importance.
+
+We have carefully discussed and selected 4 whiskies from what are generally considered the 4 main whisky regions of Scotland. You will be able to enjoy a whisky from each of the following regions: Lowlands, Highlands, Speyside and Islay.
+
+Each whisky brings its own taste and character. As a result, we find that each of our guests comes out of the whisky tour with a favourite region.
+
+Don’t like whisky? We also have drink alternatives, including non-alcoholic drinks! Alternatively you can also book the tour without drinks.
+    [availability] => in stock
+    [image_link] => https://streetours.com/wp-content/uploads/2021/05/Scotch-in-a-whisky-glass-150x150.jpg
+    [price] => 29
+    [categories] => Array
+        (
+            [0] => Food & Drink
+        )
+
+)
+
+28 Jul 21, 14:27
+'1b8bfdf9d97f93c6800664ce19634adc'
+
+28 Jul 21, 14:27
+'=== API CALL === '
+
+28 Jul 21, 14:27
+'Update Item - Item updated
+'
+
+28 Jul 21, 14:28
+'Crate Api Client'
+
+28 Jul 21, 14:28
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+28 Jul 21, 14:28
+'API Host: https://eu1-api.doofinder.com'
+
+28 Jul 21, 14:28
+'Start Get search engine
+'
+
+28 Jul 21, 14:28
+'=== API CALL === '
+
+28 Jul 21, 14:28
+'Get search engine - hash: 1b8bfdf9d97f93c6800664ce19634adc'
+
+28 Jul 21, 14:28
+'Search Engine: '
+
+28 Jul 21, 14:28
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [datasources] => Array
+                                (
+                                )
+
+                            [name] => product
+                            [options] => stdClass Object
+                                (
+                                    [exclude_out_of_stock_items] => 1
+                                    [group_variants] => 
+                                )
+
+                            [preset] => product
+                        )
+
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+28 Jul 21, 14:28
+'End Get search engine - success
+'
+
+28 Jul 21, 14:28
+DoofinderManagement\Model\SearchEngine Object
+(
+    [container:protected] => Array
+        (
+            [hashid] => 1b8bfdf9d97f93c6800664ce19634adc
+            [inactive] => 
+            [indices] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [datasources] => Array
+                                (
+                                )
+
+                            [name] => product
+                            [options] => stdClass Object
+                                (
+                                    [exclude_out_of_stock_items] => 1
+                                    [group_variants] => 
+                                )
+
+                            [preset] => product
+                        )
+
+                )
+
+            [language] => en
+            [name] => streetours.com
+            [search_url] => https://eu1-search.doofinder.com
+            [site_url] => https://streetours.com
+            [stopwords] => 
+        )
+
+)
+
+28 Jul 21, 14:28
+'Load products'
+
+28 Jul 21, 14:28
+'Load products - Count: 1'
+
+28 Jul 21, 14:28
+'Current Memory Usage: 66 832 144 bytes  (63.74 MB)'
+
+28 Jul 21, 14:28
+'Data Feed Item - Get Categories: '
+
+28 Jul 21, 14:28
+Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 28
+            [name] => Food &amp; Drink
+            [slug] => food-drink
+            [term_group] => 0
+            [term_taxonomy_id] => 28
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+)
+
+28 Jul 21, 14:28
+'Update Item
+'
+
+28 Jul 21, 14:28
+'Update Item - Try update item
+'
+
+28 Jul 21, 14:28
+'product'
+
+28 Jul 21, 14:28
+397
+
+28 Jul 21, 14:28
+Array
+(
+    [id] => 397
+    [link] => https://streetours.com/product/whisky-and-folklore-edinburgh-tour/
+    [title] => Whisky and Folklore Edinburgh Tour
+    [description] => Whisky has had an incredible influence on the history of Scotland, but the history of Scotland has had a big influence on its whisky too! Throughout this tour, your excellent guide will take you through whisky’s history in Scotland and also demonstrate its importance.
+
+We have carefully discussed and selected 4 whiskies from what are generally considered the 4 main whisky regions of Scotland. You will be able to enjoy a whisky from each of the following regions: Lowlands, Highlands, Speyside and Islay.
+
+Each whisky brings its own taste and character. As a result, we find that each of our guests comes out of the whisky tour with a favourite region.
+
+Don’t like whisky? We also have drink alternatives, including non-alcoholic drinks! Alternatively you can also book the tour without drinks.
+    [availability] => in stock
+    [image_link] => https://streetours.com/wp-content/uploads/2021/05/Scotch-in-a-whisky-glass-150x150.jpg
+    [price] => 29
+    [categories] => Array
+        (
+            [0] => Food & Drink
+        )
+
+)
+
+28 Jul 21, 14:28
+'1b8bfdf9d97f93c6800664ce19634adc'
+
+28 Jul 21, 14:28
+'=== API CALL === '
+
+28 Jul 21, 14:28
+'Update Item - Item updated
+'
+
+7 Aug 21, 00:14
+'Crate Api Client'
+
+7 Aug 21, 00:14
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:14
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:14
+'Crate Api Client'
+
+7 Aug 21, 00:14
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:14
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:16
+'Crate Api Client'
+
+7 Aug 21, 00:16
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:16
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:18
+'Crate Api Client'
+
+7 Aug 21, 00:18
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:18
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:18
+'Crate Api Client'
+
+7 Aug 21, 00:18
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:18
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:18
+'Crate Api Client'
+
+7 Aug 21, 00:18
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:18
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:19
+'Crate Api Client'
+
+7 Aug 21, 00:19
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:19
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:21
+'Crate Api Client'
+
+7 Aug 21, 00:21
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:21
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:23
+'Crate Api Client'
+
+7 Aug 21, 00:23
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:23
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:25
+'Crate Api Client'
+
+7 Aug 21, 00:25
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:25
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:27
+'Crate Api Client'
+
+7 Aug 21, 00:27
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:27
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:29
+'Crate Api Client'
+
+7 Aug 21, 00:29
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:29
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:38
+'Crate Api Client'
+
+7 Aug 21, 00:38
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:38
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:40
+'Crate Api Client'
+
+7 Aug 21, 00:40
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:40
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:42
+'Crate Api Client'
+
+7 Aug 21, 00:42
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:42
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:42
+'Crate Api Client'
+
+7 Aug 21, 00:42
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:42
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:44
+'Crate Api Client'
+
+7 Aug 21, 00:44
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:44
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:46
+'Crate Api Client'
+
+7 Aug 21, 00:46
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:46
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:46
+'Crate Api Client'
+
+7 Aug 21, 00:46
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:46
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:47
+'Crate Api Client'
+
+7 Aug 21, 00:47
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:47
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:48
+'Crate Api Client'
+
+7 Aug 21, 00:48
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:48
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:48
+'Crate Api Client'
+
+7 Aug 21, 00:48
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:48
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:49
+'Crate Api Client'
+
+7 Aug 21, 00:49
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:49
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:49
+'Crate Api Client'
+
+7 Aug 21, 00:49
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:49
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:50
+'Crate Api Client'
+
+7 Aug 21, 00:50
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:50
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:51
+'Crate Api Client'
+
+7 Aug 21, 00:51
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:51
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:51
+'Crate Api Client'
+
+7 Aug 21, 00:51
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:51
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:52
+'Crate Api Client'
+
+7 Aug 21, 00:52
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:52
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:52
+'Crate Api Client'
+
+7 Aug 21, 00:52
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:52
+'API Host: https://eu1-api.doofinder.com'
+
+7 Aug 21, 00:52
+'Crate Api Client'
+
+7 Aug 21, 00:52
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+7 Aug 21, 00:52
+'API Host: https://eu1-api.doofinder.com'
+
+12 Aug 21, 09:48
+'Crate Api Client'
+
+12 Aug 21, 09:48
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+12 Aug 21, 09:48
+'API Host: https://eu1-api.doofinder.com'
+
+12 Aug 21, 09:52
+'Crate Api Client'
+
+12 Aug 21, 09:52
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+12 Aug 21, 09:52
+'API Host: https://eu1-api.doofinder.com'
+
+12 Aug 21, 09:53
+'Crate Api Client'
+
+12 Aug 21, 09:53
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+12 Aug 21, 09:53
+'API Host: https://eu1-api.doofinder.com'
+
+12 Aug 21, 09:58
+'Crate Api Client'
+
+12 Aug 21, 09:58
+'API Key: 82bc064a10c61d53db03043c882f474e2a9836a0'
+
+12 Aug 21, 09:58
+'API Host: https://eu1-api.doofinder.com'

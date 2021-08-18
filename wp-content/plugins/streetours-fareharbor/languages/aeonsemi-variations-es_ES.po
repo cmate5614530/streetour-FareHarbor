@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gestion-Pymes\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/invoices-pro\n"
+"POT-Creation-Date: 2017-10-11 17:35+0200\n"
+"PO-Revision-Date: 2017-10-11 17:35+0200\n"
+"Last-Translator: eggemplo <eggemplo@gmail.com>\n"
+"Language-Team: invoices-pro <antonio@blancoleon.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../core/class-gp-budgets.php:46
+msgid "Show all statuses"
+msgstr "Mostrar todos los estados"
+
+#: ../core/class-gp-budgets.php:185 ../core/class-gp-products.php:122
+#: ../core/class-post-types.php:223
+msgid "General Details"
+msgstr "Detalles generales"
+
+#: ../core/class-gp-budgets.php:190
+msgid "Budget items"
+msgstr "Líneas de presupuesto"
+
+#: ../core/class-gp-budgets.php:195 ../core/class-post-types.php:233
+msgid "Actions"
+msgstr "Acciones"
+
+#: ../core/class-gp-budgets.php:238 ../core/class-post-types.php:333
+msgid "Select one"
+msgstr "Seleccione uno"
+
+#: ../core/class-gp-budgets.php:256 ../core/class-post-types.php:111
+#: ../core/class-post-types.php:154 ../core/class-post-types.php:356
+#: ../core/class-post-types.php:642 ../core/class-post-types.php:644
+msgid "Customer"
+msgstr "Cliente"
+
+#: ../core/class-gp-budgets.php:258 ../core/class-post-types.php:109
+#: ../core/class-post-types.php:152 ../core/class-post-types.php:352
+msgid "Number"
+msgstr "Número"
+
+#: ../core/class-gp-budgets.php:259
+msgid "Project's Description"
+msgstr "Descripción del proyecto"
+
+#: ../core/class-gp-budgets.php:260 ../core/class-post-types.php:112
+#: ../core/class-post-types.php:353
+msgid "Date"
+msgstr "Fecha"
+
+#: ../core/class-gp-budgets.php:261
+msgid "End Date"
+msgstr "Fecha final"
+
+#: ../core/class-gp-budgets.php:262
+msgid "Days"
+msgstr "Días"
+
+#: ../core/class-gp-budgets.php:263 ../core/class-post-types.php:354
+msgid "TAX"
+msgstr "IVA"
+
+#: ../core/class-gp-budgets.php:280 ../core/class-post-types.php:36
+#: ../core/class-post-types.php:46 ../core/class-post-types.php:426
+msgid "Print"
+msgstr "Imprimir"
+
+#: ../core/class-gp-budgets.php:282
+msgid "@ a Trello"
+msgstr "@ a Trello"
+
+#: ../core/class-gp-budgets.php:387 ../core/class-post-types.php:416
+msgid "Añadir línea"
+msgstr "Añadir línea"
+
+#: ../core/class-gp-budgets.php:495 ../core/class-post-types.php:97
+msgid "budget-"
+msgstr "Presupuesto-"
+
+#: ../core/class-gp-customers.php:23
+msgid "Show all types"
+msgstr "Mostrar todos los tipos"
+
+#: ../core/class-gp-customers.php:48
+msgid "Alias"
+msgstr "Alias"
+
+#: ../core/class-gp-customers.php:49 ../core/class-post-types.php:262
+#: ../invoices-pro.php:394
+msgid "Company"
+msgstr "Compañía"
+
+#: ../core/class-gp-customers.php:50 ../core/class-post-types.php:267
+#: ../invoices-pro.php:419
+msgid "Email"
+msgstr "Email"
+
+#: ../core/class-gp-customers.php:51 ../invoices-pro.php:424
+msgid "Phone"
+msgstr "Teléfono"
+
+#: ../core/class-gp-customers.php:52 ../core/class-taxonomies.php:64
+msgid "Type"
+msgstr "Tipo"
+
+#: ../core/class-gp-days.php:8
+msgid "Prices"
+msgstr "Precios"
+
+#: ../core/class-gp-days.php:14
+msgid "Values updated"
+msgstr "Valores actualizados"
+
+#: ../core/class-gp-days.php:56
+msgid "Days:"
+msgstr "Días:"
+
+#: ../core/class-gp-days.php:60
+msgid "Levels:"
+msgstr "Niveles:"
+
+#: ../core/class-gp-days.php:80
+msgid "Range 0:"
+msgstr "Rango 0:"
+
+#: ../core/class-gp-days.php:98
+msgid "Range "
+msgstr "Rango"
+
+#: ../core/class-gp-days.php:133
+msgid "Types:"
+msgstr "Tipos:"
+
+#: ../core/class-gp-days.php:164 ../core/class-gp-google-calendar.php:200
+#: ../core/class-gp-import.php:92 ../invoices-pro.php:504
+msgid "Save"
+msgstr "Guardar"
+
+#: ../core/class-gp-google-calendar.php:156
+msgid "Google Calendar settings"
+msgstr "Configuración Google Calendar"
+
+#: ../core/class-gp-google-calendar.php:161
+msgid "Updated"
+msgstr "Actualizado"
+
+#: ../core/class-gp-google-calendar.php:185
+msgid "ClientID"
+msgstr "ClientID"
+
+#: ../core/class-gp-google-calendar.php:190
+msgid "ClientSecret"
+msgstr "ClientSecret"
+
+#: ../core/class-gp-google-calendar.php:195
+msgid "CalendarID"
+msgstr "CalendarID"
+
+#: ../core/class-gp-import.php:13
+msgid "Import products"
+msgstr "Importar Productos"
+
+#: ../core/class-gp-import.php:89
+msgid "CSV file:"
+msgstr "Archivo CSV (separador ; ):"
+
+#: ../core/class-gp-pdf-template.php:45 ../core/class-post-types.php:714
+#: ../core/class-post-types.php:716
+msgid "Budget"
+msgstr "Presupuesto"
+
+#: ../core/class-gp-pdf-template.php:50
+msgid "Date "
+msgstr "Fecha "
+
+#: ../core/class-gp-pdf-template.php:114
+msgid "Description"
+msgstr "Descripción"
+
+#: ../core/class-gp-pdf-template.php:115
+msgid "QTY"
+msgstr "Cantidad"
+
+#: ../core/class-gp-pdf-template.php:116
+msgid "Price"
+msgstr "Precio"
+
+#: ../core/class-gp-pdf-template.php:117
+msgid "Coef."
+msgstr "Coef."
+
+#: ../core/class-gp-pdf-template.php:118
+msgid "Desc."
+msgstr "Desc."
+
+#: ../core/class-gp-pdf-template.php:119
+msgid "Line total"
+msgstr "Subtotal"
+
+#: ../core/class-gp-pdf-template.php:137 ../core/class-gp-pdf-template.php:138
+#: ../core/class-gp-pdf-template.php:173 ../core/class-gp-pdf-template.php:218
+#: ../core/class-gp-pdf-template.php:219 ../core/class-gp-pdf-template.php:220
+#: ../core/class-gp-pdf-template.php:221 ../core/class-gp-pdf-template.php:222
+#: ../core/class-gp-pdf-template.php:223
+msgid " €"
+msgstr " €"
+
+#: ../core/class-gp-products.php:37
+msgid "Show all categories"
+msgstr "Mostrar todas las categorías"
+
+#: ../core/class-gp-products.php:66
+msgid "ID"
+msgstr "ID"
+
+#: ../core/class-gp-products.php:67 ../core/class-post-types.php:110
+#: ../core/class-post-types.php:153
+msgid "Title"
+msgstr "Título"
+
+#: ../core/class-gp-products.php:68 ../core/class-taxonomies.php:9
+msgid "Category"
+msgstr "Categoría"
+
+#: ../core/class-gp-products.php:69
+msgid "Location"
+msgstr "Ubicación"
+
+#: ../core/class-gp-products.php:70 ../invoices-pro.php:401
+msgid "Image"
+msgstr "Imagen"
+
+#: ../core/class-gp-products.php:154
+msgid "Unidades"
+msgstr "Unidades"
+
+#: ../core/class-gp-products.php:158
+msgid "Location (street/section)"
+msgstr "Ubicación (pasillo/sección)"
+
+#: ../core/class-gp-products.php:159
+msgid "Original Price"
+msgstr "Precio de compra"
+
+#: ../core/class-gp-products.php:160
+msgid "Original Date"
+msgstr "Fecha de compra"
+
+#: ../core/class-gp-products.php:163
+msgid "Default Price"
+msgstr "Precio por defecto"
+
+#: ../core/class-gp-products.php:165
+msgid "Apply discounts per days?"
+msgstr "¿Aplicar descuentos por días?"
+
+#: ../core/class-gp-products.php:166
+msgid "Apply discounts per customer?"
+msgstr "¿Aplicar descuentos por clientes?"
+
+#: ../core/class-gp-products.php:170
+msgid "Observations"
+msgstr "Observaciones"
+
+#: ../core/class-invoices-pro.php:177
+msgid "Invoice from budget "
+msgstr "Factura desde presupuesto"
+
+#: ../core/class-post-types.php:113 ../core/class-post-types.php:156
+msgid "Total"
+msgstr "Total"
+
+#: ../core/class-post-types.php:155
+msgid "Dates"
+msgstr "Fechas"
+
+#: ../core/class-post-types.php:157 ../core/class-taxonomies.php:35
+#: ../core/class-taxonomies.php:36
+msgid "Status"
+msgstr "Estado"
+
+#: ../core/class-post-types.php:201
+msgid "Information"
+msgstr "Información"
+
+#: ../core/class-post-types.php:206
+msgid "Invoices"
+msgstr "Facturas"
+
+#: ../core/class-post-types.php:213 ../core/class-post-types.php:713
+#: ../core/class-post-types.php:715
+msgid "Budgets"
+msgstr "Presupuestos"
+
+#: ../core/class-post-types.php:228
+msgid "Invoice items"
+msgstr "Líneas de factura"
+
+#: ../core/class-post-types.php:263
+msgid "Contact name"
+msgstr "Persona de contacto"
+
+#: ../core/class-post-types.php:264 ../invoices-pro.php:414
+msgid "VAT number"
+msgstr "C.I.F."
+
+#: ../core/class-post-types.php:265 ../core/class-post-types.php:355
+msgid "IRPF"
+msgstr "IRPF"
+
+#: ../core/class-post-types.php:266
+msgid "Telephone"
+msgstr "Teléfono"
+
+#: ../core/class-post-types.php:268 ../invoices-pro.php:429
+msgid "Address"
+msgstr "Dirección"
+
+#: ../core/class-post-types.php:535
+msgid "invoice-"
+msgstr "Factura-"
+
+#: ../core/class-post-types.php:641 ../core/class-post-types.php:643
+msgid "Customers"
+msgstr "Clientes"
+
+#: ../core/class-post-types.php:645 ../core/class-post-types.php:717
+#: ../core/class-post-types.php:752
+msgid "Add New"
+msgstr "Añadir nuevo"
+
+#: ../core/class-post-types.php:646
+msgid "Add New Customer"
+msgstr "Añadir nuevo cliente"
+
+#: ../core/class-post-types.php:647
+msgid "New Customer"
+msgstr "Nuevo cliente"
+
+#: ../core/class-post-types.php:648
+msgid "Edit Customer"
+msgstr "Editar cliente"
+
+#: ../core/class-post-types.php:649
+msgid "View Customer"
+msgstr "Ver cliente"
+
+#: ../core/class-post-types.php:650
+msgid "All Customers"
+msgstr "Todos los clientes"
+
+#: ../core/class-post-types.php:651
+msgid "Search Customers"
+msgstr "Buscar clientes"
+
+#: ../core/class-post-types.php:652
+msgid "Parent Customers:"
+msgstr "Clientes padres:"
+
+#: ../core/class-post-types.php:653
+msgid "No customers found."
+msgstr "Clientes no encontrados."
+
+#: ../core/class-post-types.php:654
+msgid "No customers found in Trash."
+msgstr "Clientes no encontrados en la papelera."
+
+#: ../core/class-post-types.php:658
+msgid "Customers/clients."
+msgstr "Clientes."
+
+#: ../core/class-post-types.php:718
+msgid "Add New budget"
+msgstr "Añadir nuevo presupuesto"
+
+#: ../core/class-post-types.php:719
+msgid "New budget"
+msgstr "Nuevo presupuesto"
+
+#: ../core/class-post-types.php:720
+msgid "Edit budget"
+msgstr "Editar presupuesto"
+
+#: ../core/class-post-types.php:721
+msgid "View budget"
+msgstr "Ver presupuesto"
+
+#: ../core/class-post-types.php:722
+msgid "All Budgets"
+msgstr "Todos los presupuestos"
+
+#: ../core/class-post-types.php:723
+msgid "Search Budgets"
+msgstr "Buscar presupuestos"
+
+#: ../core/class-post-types.php:724
+msgid "Parent Budgets:"
+msgstr "Presupuestos padres:"
+
+#: ../core/class-post-types.php:725
+msgid "No budgets found."
+msgstr "Presupuestos no encontrados."
+
+#: ../core/class-post-types.php:726
+msgid "No budgets found in Trash."
+msgstr "Presupuestos no encontrados en la papelera."
+
+#: ../core/class-post-types.php:730
+msgid "Budgets ...."
+msgstr "Presupuestos ..."
+
+#: ../core/class-post-types.php:748 ../core/class-post-types.php:750
+#: ../core/class-post-types.php:765
+msgid "Products"
+msgstr "Productos"
+
+#: ../core/class-post-types.php:749 ../core/class-post-types.php:751
+msgid "Product"
+msgstr "Producto"
+
+#: ../core/class-post-types.php:753
+msgid "Add New Product"
+msgstr "Añadir nuevo producto"
+
+#: ../core/class-post-types.php:754
+msgid "New Product"
+msgstr "Nuevo producto"
+
+#: ../core/class-post-types.php:755
+msgid "Edit Product"
+msgstr "Editar producto"
+
+#: ../core/class-post-types.php:756
+msgid "View Product"
+msgstr "Ver producto"
+
+#: ../core/class-post-types.php:757
+msgid "All Products"
+msgstr "Todos los productos"
+
+#: ../core/class-post-types.php:758
+msgid "Search Products"
+msgstr "Buscar productos"
+
+#: ../core/class-post-types.php:759
+msgid "Parent Product:"
+msgstr "Producto padre:"
+
+#: ../core/class-post-types.php:760
+msgid "No products found."
+msgstr "No se encontró ningún producto"
+
+#: ../core/class-post-types.php:761
+msgid "No products found in Trash."
+msgstr "No se han encontrado Productos en la papelera"
+
+#: ../core/class-taxonomies.php:8 ../core/class-taxonomies.php:22
+msgid "Categories"
+msgstr "Categorías"
+
+#: ../core/class-taxonomies.php:10
+msgid "Search Categories"
+msgstr "Buscar categorías"
+
+#: ../core/class-taxonomies.php:11
+msgid "Popular Categories"
+msgstr "Categorías populares"
+
+#: ../core/class-taxonomies.php:12
+msgid "All Categories"
+msgstr "Todas las categorías"
+
+#: ../core/class-taxonomies.php:15
+msgid "Edit Category"
+msgstr "Editar Categoría"
+
+#: ../core/class-taxonomies.php:16
+msgid "Update Category"
+msgstr "Actualizar categoría"
+
+#: ../core/class-taxonomies.php:17
+msgid "Add New Category"
+msgstr "Añadir nueva categoría"
+
+#: ../core/class-taxonomies.php:18
+msgid "New Category Name"
+msgstr "Nuevo Nombre de Categoría"
+
+#: ../core/class-taxonomies.php:19
+msgid "Separate categories with commas"
+msgstr "Separar categorías por coma"
+
+#: ../core/class-taxonomies.php:20
+msgid "Add or remove categories"
+msgstr "Añadir o quitar categorías"
+
+#: ../core/class-taxonomies.php:21
+msgid "Choose from the most used categories"
+msgstr "Elige entre las categorías más utilizadas"
+
+#: ../core/class-taxonomies.php:37
+msgid "Search Status"
+msgstr "Buscar estado"
+
+#: ../core/class-taxonomies.php:38
+msgid "Popular Statuses"
+msgstr "Estados frecuentes"
+
+#: ../core/class-taxonomies.php:39
+msgid "All Statuses"
+msgstr "Todos los estados"
+
+#: ../core/class-taxonomies.php:42
+msgid "Edit Status"
+msgstr "Editar estado"
+
+#: ../core/class-taxonomies.php:43
+msgid "Update Status"
+msgstr "Actualizar estado"
+
+#: ../core/class-taxonomies.php:44
+msgid "Add New Status"
+msgstr "Añadir nuevo estado"
+
+#: ../core/class-taxonomies.php:45
+msgid "New Status Name"
+msgstr "Nuevo nombre de estado"
+
+#: ../core/class-taxonomies.php:46
+msgid "Separate statuses with commas"
+msgstr "Separar estados por comas"
+
+#: ../core/class-taxonomies.php:47
+msgid "Add or remove statuses"
+msgstr "Añadir o eliminar estados"
+
+#: ../core/class-taxonomies.php:48
+msgid "Choose from the most used statuses"
+msgstr "Elija entre los estados más usados"
+
+#: ../core/class-taxonomies.php:49
+msgid "Statuses"
+msgstr "Estados"
+
+#: ../core/class-taxonomies.php:63 ../core/class-taxonomies.php:77
+msgid "Types"
+msgstr "Tipos"
+
+#: ../core/class-taxonomies.php:65
+msgid "Search Types"
+msgstr "Buscar tipos"
+
+#: ../core/class-taxonomies.php:66
+msgid "Popular Types"
+msgstr "Tipos frecuentes"
+
+#: ../core/class-taxonomies.php:67
+msgid "All Types"
+msgstr "Todos los tipos"
+
+#: ../core/class-taxonomies.php:70
+msgid "Edit Type"
+msgstr "Editar tipo"
+
+#: ../core/class-taxonomies.php:71
+msgid "Update Type"
+msgstr "Actualizar tipo"
+
+#: ../core/class-taxonomies.php:72
+msgid "Add New Type"
+msgstr "Añadir nuevo tipo"
+
+#: ../core/class-taxonomies.php:73
+msgid "New Type Name"
+msgstr "Nuevo nombre de tipo"
+
+#: ../core/class-taxonomies.php:74
+msgid "Separate types with commas"
+msgstr "Tipos separados por comas"
+
+#: ../core/class-taxonomies.php:75
+msgid "Add or remove types"
+msgstr "Añadir o eliminar tipos"
+
+#: ../core/class-taxonomies.php:76
+msgid "Choose from the most used types"
+msgstr "Elegir entre los tipos más usados"
+
+#: ../invoices-pro.php:275 ../invoices-pro.php:390
+msgid "PROFUSE"
+msgstr "PROFUSE"
+
+#: ../invoices-pro.php:279
+msgid "Calendar"
+msgstr "Calendario"
+
+#: ../invoices-pro.php:287 ../invoices-pro.php:288
+msgid "Discounts"
+msgstr "Descuentos"
+
+#: ../invoices-pro.php:297 ../invoices-pro.php:298
+msgid "Google Calendar"
+msgstr "Google Calendar"
+
+#: ../invoices-pro.php:307 ../invoices-pro.php:308
+msgid "Import"
+msgstr "Importar"
+
+#: ../invoices-pro.php:405
+msgid "Upload Image"
+msgstr "Subir imagen"
+
+#: ../invoices-pro.php:409
+msgid "Name"
+msgstr "Nombre"
+
+#: ../invoices-pro.php:437
+msgid "VAT"
+msgstr "IVA"
+
+#: ../invoices-pro.php:439
+msgid "VAT name"
+msgstr "Nombre del IVA"
+
+#: ../invoices-pro.php:444
+msgid "VAT 1 (%)"
+msgstr "IVA 1 (%)"
+
+#: ../invoices-pro.php:449
+msgid "VAT 2 (%)"
+msgstr "IVA 2 (%)"
+
+#: ../invoices-pro.php:454
+msgid "VAT 3 (%)"
+msgstr "IVA 3 (%)"
+
+#: ../invoices-pro.php:463
+msgid "Numeración"
+msgstr "Numeración"
+
+#: ../invoices-pro.php:465
+msgid "Último presupuesto:"
+msgstr "Último presupuesto:"
+
+#: ../invoices-pro.php:473
+msgid "Trello"
+msgstr "Trello"
+
+#: ../invoices-pro.php:475
+msgid "Email del tablero:"
+msgstr "Email del tablero:"
+
+#: ../invoices-pro.php:483
+msgid "PDF templates"
+msgstr "Plantillas PDF"
+
+#: ../invoices-pro.php:485
+msgid "Terms & Conditions PDF:"
+msgstr "PDF de términos y condiciones:"
+
+#: ../invoices-pro.php:489
+msgid "Invoice footer"
+msgstr "Pie de página en facturas"
+
+#: ../invoices-pro.php:493
+msgid "Budget footer"
+msgstr "Pie de página en presupuestos"
+
+#~ msgid "2SIFICA"
+#~ msgstr "2SIFICA"
+
+#~ msgid "Customer:"
+#~ msgstr "Cliente:"
+
+#~ msgid "Name:"
+#~ msgstr "Nombre:"
+
+#~ msgid "VAT Number:"
+#~ msgstr "C.I.F.:"
+
+#~ msgid "Address:"
+#~ msgstr "Dirección:"
+
+#~ msgid "INVOICE Nº: "
+#~ msgstr "FACTURA Nº:"
+
+#~ msgid "Unit price"
+#~ msgstr "Precio Unidad"
+
+#~ msgid "Date: "
+#~ msgstr "Fecha: "
+
+#~ msgid "Date:"
+#~ msgstr "Fecha:"
+
+#~ msgid "BUGDET"
+#~ msgstr "PRESUPUESTO"
+
+#~ msgid "BUDGET Nº: "
+#~ msgstr "PRESUPUESTO Nº: "
+
+#~ msgid "Surname"
+#~ msgstr "Apellidos"
+
+#~ msgid "Show all groups"
+#~ msgstr "Mostrar todos los grupos"
+
+#~ msgid "Group"
+#~ msgstr "Grupo"
+
+#~ msgid "To Invoice"
+#~ msgstr "Gen. Factura"
+
+#~ msgid "Invoice"
+#~ msgstr "Factura"
+
+#~ msgid "Add New Invoice"
+#~ msgstr "Añadir nueva factura"
+
+#~ msgid "New Invoice"
+#~ msgstr "Nueva factura"
+
+#~ msgid "Edit Invoice"
+#~ msgstr "Editar factura"
+
+#~ msgid "View Invoice"
+#~ msgstr "Ver factura"
+
+#~ msgid "All Invoices"
+#~ msgstr "Todas las facturas"
+
+#~ msgid "Search Invoices"
+#~ msgstr "Buscar facturas"
+
+#~ msgid "Parent Invoices:"
+#~ msgstr "Facturas padres:"
+
+#~ msgid "No invoices found."
+#~ msgstr "Facturas no encontradas."
+
+#~ msgid "No invoices found in Trash."
+#~ msgstr "Facturas no encontradas en la papelera."
+
+#~ msgid "Invoices...."
+#~ msgstr "Facturas..."
+
+#~ msgid "Google"
+#~ msgstr "Google"
+
+#~ msgid "Days range"
+#~ msgstr "Rango de días"
+
+#~ msgid "Options updated"
+#~ msgstr "Opciones actualizadas"
+
+#~ msgid "Groups"
+#~ msgstr "Grupos"
+
+#~ msgid "Search Groups"
+#~ msgstr "Buscar Grupos"
+
+#~ msgid "Popular Groups"
+#~ msgstr "Grupos frecuentes"
+
+#~ msgid "All Groups"
+#~ msgstr "Todos los Grupos"
+
+#~ msgid "Edit Group"
+#~ msgstr "Editar Grupo"
+
+#~ msgid "Update Group"
+#~ msgstr "Actualizar Grupo"
+
+#~ msgid "Add New Group"
+#~ msgstr "Añadir nuevo Grupo"
+
+#~ msgid "New Group Name"
+#~ msgstr "Nuevo nombre de Grupo"
+
+#~ msgid "Separate groups with commas"
+#~ msgstr "Grupos separados por comas"
+
+#~ msgid "Add or remove groups"
+#~ msgstr "Añadir o eliminar Grupos"
+
+#~ msgid "Choose from the most used groups"
+#~ msgstr "Elegir entre los Grupos más usados"
+
+#~ msgid "Range %d (until %s days)"
+#~ msgstr "Rango %d (hasta %s días)"
+
+#~ msgid "Normal Price"
+#~ msgstr "Precio normal"
+
+#~ msgid "Invoices Pro"
+#~ msgstr "2SIFICA"
+
+#~ msgid "Gestion Pymes"
+#~ msgstr "Gestion Pymes"
+
+#~ msgid "Gestion-Pymes"
+#~ msgstr "Gestion-Pymes"
+
+#~ msgid "http://www.eggemplo.com"
+#~ msgstr "http://www.eggemplo.com"
+
+#~ msgid "SME management"
+#~ msgstr "Software de Gestión para Pymes"
+
+#~ msgid "invoices-pro"
+#~ msgstr "invoices-pro"
+
+#~ msgid "http://www.invoices-pro.com"
+#~ msgstr "http://www.invoices-pro.com"
+
+#~ msgid "Groups2MailChimp"
+#~ msgstr "Groups2MailChimp"
+
+#~ msgid "Groups to MailChimp"
+#~ msgstr "Groups to MailChimp"
+
+#~ msgid "API Key:"
+#~ msgstr "API Key:"
+
+#~ msgid "MailChimp API KEY. You can get it in MailChimp: Account -> API Keys & Authorized Apps "
+#~ msgstr "API KEY de Mailchimp. Puede conseguirla dentro de tu cuenta de Mailchimp: Mi cuenta -> API Keys"
+
+#~ msgid "List name:"
+#~ msgstr "Nombre de la lista:"
+
+#~ msgid "Group name:"
+#~ msgstr "Nombre del grupo:"
+
+#~ msgid "Need confirm:"
+#~ msgstr "Necesita confirmación:"
+
+#~ msgid "Control whether a double opt-in confirmation message is sent. Abusing this may cause your mailchimp account to be suspended."
+#~ msgstr "Un mensaje de confirmación será enviado a los usuarios. Si abusa de no usar confirmaciones, su cuenta de mailchimp puede ser suspendida por considerarle spam."
+
+#~ msgid "Synchronize"
+#~ msgstr "Sincronizar"
+
+#~ msgid "Use this for synchronize existing users in website with mailchimp. If the user has not subscribed, then he will not be synchronized."
+#~ msgstr "Úsalo para sincronizar los usuarios ya existentes con Mailchimp. Si el usuario no se ha suscrito, entonces no será sincronizado."
+
+#~ msgid "Subscribe me to newsletter"
+#~ msgstr "Suscríbeme al boletín de noticias"
+
+#~ msgid "Subscribe me to newsletter."
+#~ msgstr "Suscríbeme al boletín de noticias."
+
+#~ msgid "Use roles as subgroups:"
+#~ msgstr "Usar roles como subgrupos:"
+
+#~ msgid "Creates as many subgroups as there are roles (if checked, \"Subgroup name\" is ignored)."
+#~ msgstr "Crea tantos subgrupos como roles tienen los usuarios (la opción de \"Nombre del subgrupo\" será ignorada)."
