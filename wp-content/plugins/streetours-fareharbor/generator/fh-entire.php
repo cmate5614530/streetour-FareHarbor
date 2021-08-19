@@ -36,22 +36,18 @@ if (!empty($book_item)) {
 }
 else{?>
     <a href="https://fareharbor.com/embeds/book/companyname/" onclick="return !(window.FH && FH.open({ shortname: 'bodyglove',flow:409,view: {item: 409} }));">Book now!</a>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
-        document.getElementById('my-button')
-            .addEventListener('click', function(){
-                FH.open({
-                    shortname: 'bodyglove',
-                    items:[409],
-                    view: {item: 409}
-                });
-            });
+
     </script>
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12">
                 <div class="card-deck st-fare" >
                     <div class="card st-item" style="width: 100% !important;">
+                        <div id="myCalendar">
+
+                        </div>
                         <a href="<?php echo $_SERVER['PHP_SELF'] ?>?item=183&company=bodyglove"
                            class="st-item-dolphin st-f-1">
                             <div class="card-body st-p-0">
