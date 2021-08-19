@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
     .st-fare .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -59,5 +60,26 @@
         text-decoration: none!important;
         color: inherit;
         cursor: pointer;
+    }
+
+    .fc-other-month{
+        visibility: hidden;
+    }
+    .fc-header-toolbar{
+        background: #4d4d4d;
+        color: white;
+        padding: 7px;
+    }
+    .fc-content-skeleton{
+        padding-top: 1.5em;
+    }
+    .fc-day-number{
+        float: none !important;
+    }
+    .fc-day-top{
+        text-align: center;
+    }
+    .fc td, .fc th{
+        border:none !important;
     }
 </style>

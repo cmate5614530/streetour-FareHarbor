@@ -35,19 +35,68 @@ if (!empty($book_item)) {
     endforeach;
 }
 else{?>
-    <a href="https://fareharbor.com/embeds/book/companyname/" onclick="return !(window.FH && FH.open({ shortname: 'bodyglove',flow:409,view: {item: 409} }));">Book now!</a>
+    <link rel="stylesheet" href="../js/fullcalendar/fullcalendar.min.css">
+<!--    <script src="../js/jquery.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+<!--    <script src="../js/bootstrap.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/swiper/js/swiper.min.js"></script>
+    <script src="../js/moment.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../js/daterangepicker/daterangepicker.js"></script>
+
+    <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../js/fullcalendar/fullcalendar.min.js"></script>
     <script type="text/javascript">
 
+
+        $(document).ready(function(){
+            var $this = this;
+            $this.$calendarObj = $('#calendar').fullCalendar({
+                slotDuration: '00:30:00', /* If we want to split day time each 30minutes */
+                minTime: '08:00:00',
+                maxTime: '18:00:00',
+                defaultView: 'month',
+                handleWindowResize: true,
+                header: {
+                    left: 'prev',
+                    center: 'title',
+                    right: 'next'
+                },
+                events: null,
+                editable: false,
+                droppable: false, // this allows things to be dropped onto the calendar !!!
+                eventLimit: false, // allow "more" link when too many events
+                selectable: true,
+                drop: function(date) { $this.onDrop($(this), date); },
+                select: function (start, end, allDay) { $this.onSelect(start, end, allDay); },
+                eventClick: function(calEvent, jsEvent, view) { $this.onEventClick(calEvent, jsEvent, view); }
+
+            });
+        });
+        var CalendarApp = function() {
+            this.$body = $("body")
+            this.$calendar = $('#calendar'),
+                this.$event = ('#calendar-events div.calendar-events'),
+                this.$categoryForm = $('#add_new_event form'),
+                this.$extEvents = $('#calendar-events'),
+                this.$modal = $('#my_event'),
+                this.$saveCategoryBtn = $('.save-category'),
+                this.$calendarObj = null
+        };
+        //init CalendarApp
+        $.CalendarApp = new CalendarApp, $.CalendarApp.Constructor = CalendarApp
     </script>
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12">
                 <div class="card-deck st-fare" >
-                    <div class="card st-item" style="width: 100% !important;">
-                        <div id="myCalendar">
+                    <div id="calendar">
 
-                        </div>
+                    </div>
+                    <div class="card st-item" style="width: 100% !important;display: none;">
+
                         <a href="<?php echo $_SERVER['PHP_SELF'] ?>?item=183&company=bodyglove"
                            class="st-item-dolphin st-f-1">
                             <div class="card-body st-p-0">
@@ -81,4 +130,4 @@ else{?>
 }
 ?>
 
-<?php require 'fh-footer.php' ?>
+<?php //require 'fh-footer.php' ?>
