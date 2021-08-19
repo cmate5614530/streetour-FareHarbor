@@ -57,7 +57,7 @@
         </div>
         <div class="col-4 col-lg-4 col-md-4 col-sm-12">
           <div class="sidebar">
-            
+
           </div>
         </div>
       </div>

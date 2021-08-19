@@ -60,3 +60,84 @@ Stack trace:
 
 2021-08-18T04:47:01+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\taxonomy.php on line 265
 
+2021-08-18T08:57:11+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-18T13:05:21+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-18T13:22:49+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-18T13:40:14+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-18T13:42:13+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-18T13:43:39+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-18T13:49:24+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-18T21:34:23+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(381, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-18T21:37:29+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+

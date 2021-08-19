@@ -1,0 +1,384 @@
+2021-08-19T08:03:28+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:04:21+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:05:17+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:07:45+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:09:22+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:14:13+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:15:49+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:20:17+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:21:24+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:22:51+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:24:41+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:26:43+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T08:26:56+00:00 CRITICAL Uncaught Error: Class 'Doofinder\GuzzleHttp\Client' not found in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php:37
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-doofinder-api.php(127): Doofinder\Management\ManagementClient->__construct('https://eu1-api...', '82bc064a10c61d5...')
+#1 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\api\class-api-factory.php(62): Doofinder\WC\Api\Doofinder_Api->__construct(NULL)
+#2 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(221): Doofinder\WC\Api\Api_Factory::get()
+#3 F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\includes\class-post.php(127): Doofinder\WC\Post::webhook_update_post(Object(WP_Post), true)
+#4 F:\WordPress\php-fareharbor\wp-includes\class-wp-hook.php(303): Doofinder\WC\Post::Doofinder\WC\{closure}(397, Object(WP_Post), true)
+#5  in F:\WordPress\php-fareharbor\wp-content\plugins\doofinder-for-woocommerce\lib\src\Management\ManagementClient.php on line 37
+
+2021-08-19T08:28:40+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T08:29:57+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T08:31:39+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T08:33:12+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T08:34:20+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T08:34:55+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T08:40:30+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T08:43:29+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T08:44:13+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T08:58:07+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T09:18:26+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T09:20:33+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T09:22:01+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T09:24:08+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T09:25:48+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T10:16:52+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T10:17:17+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T10:18:33+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T10:18:48+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T10:19:51+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T10:20:51+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+
+2021-08-19T10:21:06+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+Stack trace:
+#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
+#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
+#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
+#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
+#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
+#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
+#7 {main}
+  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
+

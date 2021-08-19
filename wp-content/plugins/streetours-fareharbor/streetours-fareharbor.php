@@ -49,7 +49,7 @@ class StreetoursFareharbor_Plugin
         add_action('admin_init', array(__CLASS__, 'admin_init'));
         register_activation_hook(STREETOURS_FAREHARBOR_FILE, array(__CLASS__, 'activate'));
         add_shortcode('st_fh_book', array(__CLASS__, 'st_fh_companies'));
-
+//<div class="load-turitop" data-service="P1" data-lang="en"  data-embed="box"></div>
     }
 
     public static function st_fh_companies($atts)
@@ -57,7 +57,7 @@ class StreetoursFareharbor_Plugin
         $type = $atts['type'] ?? "list";
 
         $pageUrl = plugin_dir_url(__FILE__) . "generator/fh-entire.php?type=$type";
-        return '<iframe src="' . $pageUrl . '" frameborder="0" width="100%" scrolling="no" style="margin-top:7.2rem;height:318.6rem!important;overflow:hidden;"></iframe>';
+        return '<iframe src="' . $pageUrl . '" frameborder="0" width="100%" scrolling="no" style="overflow:hidden;"></iframe>';
     }
 
     public static function wp_init()

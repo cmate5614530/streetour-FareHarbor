@@ -277,12 +277,12 @@ function ci_comment_rating_display_average_rating( $content ) {
 	if ( false === ci_comment_rating_get_average_ratings( $post->ID ) ) {
 		return $content;
 	}
-	
+
 	$stars   = '';
 	$average = ci_comment_rating_get_average_ratings( $post->ID );
 
 	for ( $i = 1; $i <= $average + 1; $i++ ) {
-		
+
 		$width = intval( $i - $average > 0 ? 20 - ( ( $i - $average ) * 20 ) : 20 );
 
 		if ( 0 === $width ) {
@@ -295,7 +295,7 @@ function ci_comment_rating_display_average_rating( $content ) {
 			$stars .= '<span style="overflow:hidden; position:relative; left:-' . $width .'px;" class="dashicons dashicons-star-empty"></span>';
 		}
 	}
-	
+
 	$custom_content  = '<p class="average-rating">This post\'s average rating is: ' . $average .' ' . $stars .'</p>';
 	$custom_content .= $content;
 	return $custom_content;
@@ -333,4 +333,3 @@ function start_info(){
 	return $custom_content;
 
 }
-
