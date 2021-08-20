@@ -50,13 +50,32 @@ class StreetoursFareharbor_Plugin
         register_activation_hook(STREETOURS_FAREHARBOR_FILE, array(__CLASS__, 'activate'));
         add_shortcode('st_fh_book', array(__CLASS__, 'st_fh_companies'));
 //<div class="load-turitop" data-service="P1" data-lang="en"  data-embed="box"></div>
+
+        require_once ('includes/class.streetours-fareharbor-ajax.php');
+        streetours_fareharbor_ajax::instance();
+//        $admin_ajax = streetours_fareharbor_ajax::instance();
+//
+//        add_filter( 'script_loader_tag',
+//            'add_attributes_to_script',
+//            99, 3 );
+
+//        add_action( 'wp_enqueue_scripts', array( $thiss, 'enqueue_scripts' ), 10 );
+
+
+    }
+
+    public function add_attributes_to_script( $tag, $handle, $src ) {
+
+
+        return $tag;
+
     }
 
     public static function st_fh_companies($atts)
     {
         $type = $atts['type'] ?? "list";
 
-        $pageUrl = plugin_dir_url(__FILE__) . "generator/fh-entire.php?type=$type";
+        $pageUrl = plugin_dir_url(__FILE__) . "generator/fh-entire.php?type=$type&item=183";
         return '<iframe src="' . $pageUrl . '" frameborder="0" width="100%" scrolling="no" style="overflow:hidden;"></iframe>';
     }
 
