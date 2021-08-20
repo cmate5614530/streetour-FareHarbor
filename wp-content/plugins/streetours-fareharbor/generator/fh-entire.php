@@ -65,6 +65,7 @@ if (!empty($book_item)) {
                        }
 
                    });
+                   $('#events').html('<h4 style="color: green;">Click a date to browse availability</h4>');
                });
 
                function checkAbilityOfSelectedDate(date) {
@@ -75,7 +76,56 @@ if (!empty($book_item)) {
                    };
                    $.post('<?php echo admin_url('admin-ajax.php');?>', data, function (response) {
                         console.log('----response---', response);
+                        if(response.success === true){
+                            let res = response.data.response;
+                            let a= new Date(res[0].end_at);
+                            console.log(a, a.getHours(), a.toDateString(), a.toLocaleDateString());
+                            let event_time_html = '';
+                            for(let i=0; i<res.length; i++){
+                                let event_start_time = new Date(res[i].start_at);
+                                let event_end_time = new Date(res[i].end_at);
+                                event_time_html += '<h4>'+event_start_time.toDateString()+'</h4>';
+                                event_time_html += '<h5>'+('0'+event_start_time.getHours()).slice(-2)+':'+('0'+event_start_time.getMinutes()).slice(-2);
+                                event_time_html += ' - ' +('0'+event_end_time.getHours()).slice(-2)+':'+('0'+event_end_time.getMinutes()).slice(-2)+'</h5>';
+
+                                event_time_html += '<table style="font-size: small;"><tbody>';
+                                let customer_type_rates = res[i].customer_type_rates;
+                                for(let k=0; k<customer_type_rates.length; k++){
+                                    event_time_html += '<tr>';
+                                    event_time_html += '<td class="col1" style="padding: .5em 0;width: 60%; font-weight: 700;">'+
+                                                            '<div class="ticket-name">'+
+                                                                customer_type_rates[k].customer_prototype.display_name +
+                                                            '</div>'+
+                                                        '</td>' +
+                                                        '<td class="col2" style="text-align: right;">' +
+                                                            '<span> $'+Math.ceil(customer_type_rates[k].customer_prototype.total_including_tax/100)+'</span>'+
+                                                        '</td>' +
+                                                        '<td class="col3" style="text-align: right; width: 4.3em;">' ;
+
+                                    // if(k == 0){
+                                        event_time_html += '<select name="ticket_type_count">';
+                                        for(let m=0; m<=customer_type_rates[k].capacity; m++){
+                                            event_time_html += '<option value="'+m+'">'+m+'</option>';
+                                        }
+                                        event_time_html +=  '</select>';
+                                    // }
+
+
+                                    event_time_html +=  '</td>';
+                                    event_time_html += '</tr>';
+                                }
+                                event_time_html += '</tbody></table>';
+                                $('#announcement').html('<h5 style="color:green;">Max capacity(excluding infants): '+ res[i].capacity+'</h5>');
+
+                            }
+                            $('#events').html(event_time_html);
+                            $('#next_btn').html('<button onclick="next_step()" style="background: #00b22d;color: white; border: none; padding: .5em 1em;border-radius: 3px; margin-top: 20px;">NEXT'+'</button>')
+                        }
                    })
+               }
+               
+               function next_step() {
+
                }
            </script>
 
@@ -87,47 +137,14 @@ if (!empty($book_item)) {
                            <div id="calendar">
 
                            </div>
-                           <div class="eventsCalendar-list-wrap" style="width: 216px;">
-                               <div class="eventsCalendar-subtitle" style="height: 2em;">
-                                   <img class="arrow-select-hour" src="/img/arrow-select-hour.png?20161020" style="height: 30px;">
-                                   <span class="arrow-select-hour">Select time</span>
-                               </div>
-                               <div class="eventsCalendar-list-content">
-                                   <ul class="eventsCalendar-list" style="opacity: 1; left: 0px; height: auto; display: block;">
-                                       <label class="event-label event-label-selected" id="event_label_1700" onclick="updateBox('2021-08-20','17:00');">
-                                           <span id="0" class="event">
-                                               <input style="display:none" class="hour-to-select" type="radio" id="hour-2021-08-20" name="hour-to-select" value="17:00">
-                                               17:00
-                                           </span>
-                                       </label>
-                                   </ul>
-                               </div>
-                           </div>
-                           <div class="card st-item" style="width: 100% !important;display: none;">
+                           <div id="events" style="margin-top: 20px;">
 
-                               <a href="<?php echo $_SERVER['PHP_SELF'] ?>?item=183&company=bodyglove"
-                                  class="st-item-dolphin st-f-1">
-                                   <div class="card-body st-p-0">
-                                       <img src="https://d1a2dkr8rai8e2.cloudfront.net/api/file/goyMvVpnQkWAAGm9vLbH">
-                                   </div>
-                               </a>
-                               <div class="card-body">
-                                   <a href="<?php echo $_SERVER['PHP_SELF'] ?>?item=183&company=bodyglove"
-                                      class="st-item-dolphin st-f-1"><b>Snorkel
-                                           & Dolphin Adventure</b></a>
-                                   <p>
-                                       Step aboard our 65′ Catamaran for a fun-filled day of adventure! This 4.5 hour cruise
-                                       offers breakfast, lunch, plenty of shade, cushioned seating, 20′ waterslide, and
-                                       more!
-                                   </p>
-                                   <a href="<?php echo $_SERVER['PHP_SELF'] ?>?item=183&company=bodyglove" class="st-a-btn">
-                                <span id="btn-1" style="margin-top: 1rem!important;" class="btn st-learn-more">
-                                    <span class="inner btn-1">
-                                        <span class="label">Learn More</span>
-                                    </span>
-                                </span>
-                                   </a>
-                               </div>
+                           </div>
+                           <div id="announcement">
+
+                           </div>
+                           <div id="next_btn" style="text-align: center;">
+
                            </div>
                        </div>
                    </div>

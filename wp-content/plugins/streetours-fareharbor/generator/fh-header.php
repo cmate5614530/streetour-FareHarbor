@@ -82,4 +82,7 @@
     .fc td, .fc th{
         border:none !important;
     }
+    .fc-header-toolbar h2{
+        font-size: 1.5em !important;
+    }
 </style>

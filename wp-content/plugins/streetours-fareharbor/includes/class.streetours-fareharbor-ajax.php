@@ -88,7 +88,7 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
                     'X-FareHarbor-API-User'=> $api_user
                 ),
             ));
-
+            //$api_app1 = get_option('streetours-fareharbor-app-key');
             $res = json_decode($response_encoded['body']);
             $availabilities = $res->availabilities;
             wp_send_json_success( array(
