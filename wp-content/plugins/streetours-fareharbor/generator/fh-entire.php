@@ -81,7 +81,8 @@ if (!empty($book_item)) {
                             let a= new Date(res[0].end_at);
                             console.log(a, a.getHours(), a.toDateString(), a.toLocaleDateString());
                             let event_time_html = '';
-                            for(let i=0; i<res.length; i++){
+                            // for(let i=0; i<res.length; i++){
+                            let i =0;
                                 let event_start_time = new Date(res[i].start_at);
                                 let event_end_time = new Date(res[i].end_at);
                                 event_time_html += '<h4>'+event_start_time.toDateString()+'</h4>';
@@ -117,7 +118,7 @@ if (!empty($book_item)) {
                                 event_time_html += '</tbody></table>';
                                 $('#announcement').html('<h5 style="color:green;">Max capacity(excluding infants): '+ res[i].capacity+'</h5>');
 
-                            }
+                            // }
                             $('#events').html(event_time_html);
                             $('#next_btn').html('<button onclick="next_step()" style="background: #00b22d;color: white; border: none; padding: .5em 1em;border-radius: 3px; margin-top: 20px;">NEXT'+'</button>')
                         }
