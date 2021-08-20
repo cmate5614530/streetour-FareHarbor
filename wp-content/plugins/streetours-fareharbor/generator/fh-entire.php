@@ -68,6 +68,8 @@ if (!empty($book_item)) {
                    $('#events').html('<h4 style="color: green;">Click a date to browse availability</h4>');
                });
 
+               var i = 0;
+               var res_global = [];
                function checkAbilityOfSelectedDate(date) {
                    var data = {
                        'date': date,
@@ -78,11 +80,12 @@ if (!empty($book_item)) {
                         console.log('----response---', response);
                         if(response.success === true){
                             let res = response.data.response;
+                            res_global = res;
                             let a= new Date(res[0].end_at);
                             console.log(a, a.getHours(), a.toDateString(), a.toLocaleDateString());
                             let event_time_html = '';
                             // for(let i=0; i<res.length; i++){
-                            let i =0;
+                            i = 0;
                                 let event_start_time = new Date(res[i].start_at);
                                 let event_end_time = new Date(res[i].end_at);
                                 event_time_html += '<h4>'+event_start_time.toDateString()+'</h4>';
@@ -104,7 +107,7 @@ if (!empty($book_item)) {
                                                         '<td class="col3" style="text-align: right; width: 4.3em;">' ;
 
                                     // if(k == 0){
-                                        event_time_html += '<select name="ticket_type_count">';
+                                        event_time_html += '<select name="ticket_type_count" id="ticket_type_count_'+i+'_'+k+'">';
                                         for(let m=0; m<=customer_type_rates[k].capacity; m++){
                                             event_time_html += '<option value="'+m+'">'+m+'</option>';
                                         }
@@ -126,7 +129,8 @@ if (!empty($book_item)) {
                }
                
                function next_step() {
-
+                   console.log('====', res_global);
+                    // for(let k = 0; k< res_global.length;)
                }
            </script>
 
