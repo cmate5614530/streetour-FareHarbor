@@ -107,7 +107,7 @@ if (!empty($book_item)) {
                                                         '<td class="col3" style="text-align: right; width: 4.3em;">' ;
 
                                     // if(k == 0){
-                                        event_time_html += '<select name="ticket_type_count" id="ticket_type_count_'+i+'_'+k+'">';
+                                        event_time_html += '<select name="ticket_type_count" id="ticket_type_count_'+i+'_'+k+'" onchange="validate_and_calculate()">';
                                         for(let m=0; m<=customer_type_rates[k].capacity; m++){
                                             event_time_html += '<option value="'+m+'">'+m+'</option>';
                                         }
@@ -130,7 +130,32 @@ if (!empty($book_item)) {
                
                function next_step() {
                    console.log('====', res_global);
-                    // for(let k = 0; k< res_global.length;)
+                    if(!!res_global){
+                        let count1 = $('#ticket_type_count_0_0').val();
+                        let count2 = $('#ticket_type_count_0_1').val();
+                        let count3 = $('#ticket_type_count_0_2').val();
+                        if(count1 == 0 && (count2 > 0 || count3 > 0)){
+                            $('#error').html('<h5 style="color:red;">Error: Children and Infants must be accompanied by 18+ adult!</h5>')
+                        }else if(count1 + count2 + count3 > res_global[0].capacity){
+                            $('#error').html('<h5 style="color:red;">Error: Capacity exceeded!</h5>')
+                        }else{
+
+                        }
+                    }
+               }
+
+               function validate_and_calculate() {
+                   $('#error').html('');
+                    let count1 = $('#ticket_type_count_0_0').val();
+                    let count2 = $('#ticket_type_count_0_1').val();
+                    let count3 = $('#ticket_type_count_0_2').val();
+
+                    if(parseFloat(count1) + parseFloat(count2) + parseFloat(count3) > 0 && parseFloat(count1) + parseFloat(count2) + parseFloat(count3) < res_global[0].capacity){
+
+                    }
+                    let total_price = Math.ceil(res_global[0].customer_type_rates[0].customer_prototype.total_including_tax/100) * count1
+                        + Math.ceil(res_global[0].customer_type_rates[1].customer_prototype.total_including_tax/100) * count2;
+                    $('#total_price').html('<h3>Total:  $' + total_price + '</h3>');
                }
            </script>
 
@@ -146,6 +171,12 @@ if (!empty($book_item)) {
 
                            </div>
                            <div id="announcement">
+
+                           </div>
+                           <div id="error">
+
+                           </div>
+                           <div id="total_price" style="text-align: right;">
 
                            </div>
                            <div id="next_btn" style="text-align: center;">
