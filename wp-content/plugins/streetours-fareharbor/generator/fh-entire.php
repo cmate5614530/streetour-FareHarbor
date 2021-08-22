@@ -19,7 +19,10 @@ if (!empty($book_item)) {
     $company = 'bodyglove';
     $availabilities_url = "$root_url/companies/$company/items/";
 
-
+    $response = \Httpful\Request::get($availabilities_url)
+        ->addHeader("X-FareHarbor-API-App", $api_app)
+        ->addHeader("X-FareHarbor-API-User", $api_user)
+        ->send();
 
     $fhItems = $response->body->items;
 
