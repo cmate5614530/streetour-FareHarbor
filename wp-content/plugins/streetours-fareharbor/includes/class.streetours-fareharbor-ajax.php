@@ -14,7 +14,21 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
 
         protected static $_instance = null;
 
+        protected $api_app;
+        protected $api_user;
+        protected $root_url;
+        protected $company;
+        protected $item;
+
         public function __construct() {
+
+            $this->api_app = get_option('streetours-fareharbor-app-key') ?? "646cb627-293d-41dc-9f69-3d5cb25ec2fc";
+            $this->api_user = get_option('streetours-fareharbor-user-key') ?? "c7ebe150-95e2-4dba-bb0b-64c3022ec99b";
+            $this->company = get_option('streetours_fareharbor_company') ?? 'bodyglove';
+            $this->root_url = 'https://demo.fareharbor.com/api/external/v1';
+            $this->company = 'bodyglove';
+            $this->item = 183;
+
 
             /* Display round trip services */
             add_action( 'wp_ajax_checkAbilityOfSelectedDate', array(
@@ -27,7 +41,15 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
                 $this,
                 'checkAbilityOfSelectedDateAction'
             ) );
-
+            //clicked Next Button during booking
+            add_action( 'wp_ajax_clickedNextButton', array(
+                $this,
+                'clickedNextButton'
+            ) );
+            add_action( 'wp_ajax_nopriv_clickedNextButton', array(
+                $this,
+                'clickedNextButton'
+            ) );
 
         }
 
@@ -54,28 +76,8 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
 
             $date = $_REQUEST['date'];
 
-//            $to_options = '';
-//            ob_start();
-//            echo "<option value='0'>" . TURITOP_BS()->common_translations[ 'choose_to' ] . "</option>";
-//            foreach ( TURITOP_BS()->get_round_trip_booking_data() as $trip ){
-//
-//                if ( $trip[ 'from' ] == $from )
-//                    echo "<option value='" . $trip[ 'to' ] . "'>" . $trip[ 'to' ] . "</option>";
-//
-//            }
-//            $to_options = ob_get_clean();
 
-//            require_once("../../../../wp-load.php");
-//            include("../generator/httpful.phar");
-
-            $api_app = get_option('streetours-fareharbor-app-key') ?? "646cb627-293d-41dc-9f69-3d5cb25ec2fc";
-            $api_user = get_option('streetours-fareharbor-user-key') ?? "c7ebe150-95e2-4dba-bb0b-64c3022ec99b";
-            $company = get_option('streetours_fareharbor_company') ?? 'bodyglove';
-
-            $root_url = 'https://demo.fareharbor.com/api/external/v1';
-            $company = 'bodyglove';
-            $item = 183;
-            $availabilities_url = "$root_url/companies/$company/items/$item/minimal/availabilities/date/$date/";
+            $availabilities_url = "$this->root_url/companies/$this->company/items/$this->item/minimal/availabilities/date/$date/";
             //https://demo.fareharbor.com/api/external/v1/companies/bodyglove/items/183/minimal/availabilities/date/2021-12-01
 //            $response = \Httpful\Request::get($availabilities_url)
 //                ->addHeader("X-FareHarbor-API-App", $api_app)
@@ -84,11 +86,10 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
 
             $response_encoded = wp_remote_get($availabilities_url, array(
                 'headers' => array(
-                    'X-FareHarbor-API-App' => $api_app,
-                    'X-FareHarbor-API-User'=> $api_user
+                    'X-FareHarbor-API-App' => $this->api_app,
+                    'X-FareHarbor-API-User'=> $this->api_user
                 ),
             ));
-            //$api_app1 = get_option('streetours-fareharbor-app-key');
             $res = json_decode($response_encoded['body']);
             $availabilities = $res->availabilities;
             wp_send_json_success( array(
@@ -98,6 +99,12 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
 
         }
 
+        public function clickedNextButton(){
+            wp_verify_nonce( 'streetours_fareharbor_nonce', 'security' );
+
+
+
+        }
 
 
     }

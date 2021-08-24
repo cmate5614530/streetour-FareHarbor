@@ -88,6 +88,7 @@ if (!empty($book_item)) {
                             i = 0;
                                 let event_start_time = new Date(res[i].start_at);
                                 let event_end_time = new Date(res[i].end_at);
+                                $('#date').html('<h4>'+event_start_time.toDateString()+'</h4>');
                                 event_time_html += '<h4>'+event_start_time.toDateString()+'</h4>';
                                 event_time_html += '<h5>'+('0'+event_start_time.getHours()).slice(-2)+':'+('0'+event_start_time.getMinutes()).slice(-2);
                                 event_time_html += ' - ' +('0'+event_end_time.getHours()).slice(-2)+':'+('0'+event_end_time.getMinutes()).slice(-2)+'</h5>';
@@ -129,16 +130,27 @@ if (!empty($book_item)) {
                }
                
                function next_step() {
-                   console.log('====', res_global);
+                   console.log('====', res_global, res_global[0].capacity);
                     if(!!res_global){
-                        let count1 = $('#ticket_type_count_0_0').val();
-                        let count2 = $('#ticket_type_count_0_1').val();
-                        let count3 = $('#ticket_type_count_0_2').val();
+                        let count1 = parseFloat($('#ticket_type_count_0_0').val());
+                        let count2 = parseFloat($('#ticket_type_count_0_1').val());
+                        let count3 = parseFloat($('#ticket_type_count_0_2').val());
+                        console.log(count1, count2, count3, count3+count2+count1);
                         if(count1 == 0 && (count2 > 0 || count3 > 0)){
                             $('#error').html('<h5 style="color:red;">Error: Children and Infants must be accompanied by 18+ adult!</h5>')
                         }else if(count1 + count2 + count3 > res_global[0].capacity){
                             $('#error').html('<h5 style="color:red;">Error: Capacity exceeded!</h5>')
                         }else{
+                            //var data = {
+                            //    'date': date,
+                            //    'action':'clickedNextButton',
+                            //    'security':'streetours_fareharbor_nonce'
+                            //};
+                            //$.post('<?php //echo admin_url('admin-ajax.php');?>//', data, function (response){
+                            //
+                            //}
+                            $('#step1').attr('style', 'display:none;');
+                            $('#step2').attr('style', 'display:block;');
 
                         }
                     }
@@ -156,6 +168,7 @@ if (!empty($book_item)) {
                     let total_price = Math.ceil(res_global[0].customer_type_rates[0].customer_prototype.total_including_tax/100) * count1
                         + Math.ceil(res_global[0].customer_type_rates[1].customer_prototype.total_including_tax/100) * count2;
                     $('#total_price').html('<h3>Total:  $' + total_price + '</h3>');
+                    $('#price').html('<h4>Total:  $' + total_price + '</h4>');
                }
            </script>
 
@@ -163,7 +176,7 @@ if (!empty($book_item)) {
                <h3 style="text-align: center;"><?php echo $fhItem->name;?></h3>
                <div class="row">
                    <div class="col-12 col-sm-12">
-                       <div class="card-deck st-fare" >
+                       <div class="card-deck st-fare" id="step1" style="display:block;">
                            <div id="calendar">
 
                            </div>
@@ -180,6 +193,35 @@ if (!empty($book_item)) {
 
                            </div>
                            <div id="next_btn" style="text-align: center;">
+
+                           </div>
+                       </div>
+
+                       <div class="card-deck st-fare" id="step2" style="display: none;">
+                            <div id="date">
+
+                            </div>
+                           <div id="price">
+
+                           </div>
+                           <div id="payment_form">
+                               <ul class="form-generator-front-fields-list">
+                                    <li>
+                                        <div class="label"> Full name <span id="name_required" class="required-asterisk">*</span> <div class="error2"></div> </div>
+                                        <div class="input"> <input type="text" name="name" value="" id="name" maxlength="100" class="name"> </div>
+                                    </li>
+                                   <li>
+                                       <div class="label"> Email <span id="email_required" class="required-asterisk">*</span> <div class="error2"></div> </div>
+                                       <div class="input"> <input type="text" name="email" value="" id="email" maxlength="512" class="email"> </div>
+                                   </li>
+                                   <li>
+                                       <div class="label"> Phone <span id="phone_required" class="required-asterisk">*</span> <div class="error2"></div> </div>
+                                       <div id="phone_field_" class="input"> <div class="intl-tel-input allow-dropdown separate-dial-code iti-sdc-3"><div class="flag-container"><div class="selected-flag" role="combobox" aria-owns="country-listbox" tabindex="0" title="United Kingdom: +44"><div class="iti-flag gb"></div><div class="selected-dial-code">+44</div><div class="iti-arrow"></div></div></div><input type="text" name="phone_dummy" value="" id="phone_dummy" maxlength="50" style="width: 182px;" class="phone" autocomplete="off"><input type="hidden" name="phone"></div> </div>
+                                   </li>
+
+                               </ul>
+                           </div>
+                           <div id="book_btn">
 
                            </div>
                        </div>
