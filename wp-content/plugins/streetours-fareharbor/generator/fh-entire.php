@@ -140,6 +140,8 @@ if (!empty($book_item)) {
                             $('#error').html('<h5 style="color:red;">Error: Children and Infants must be accompanied by 18+ adult!</h5>')
                         }else if(count1 + count2 + count3 > res_global[0].capacity){
                             $('#error').html('<h5 style="color:red;">Error: Capacity exceeded!</h5>')
+                        }else if(count1 + count2 + count3 == 0){
+                            $('#error').html('<h5 style="color: red;">Error: Please input participants</h5>');
                         }else{
                             //var data = {
                             //    'date': date,
@@ -170,6 +172,22 @@ if (!empty($book_item)) {
                     $('#total_price').html('<h3>Total:  $' + total_price + '</h3>');
                     $('#price').html('<h4>Total:  $' + total_price + '</h4>');
                }
+               
+               function checkAbilityAndBook() {
+                   var data = {
+                       'name': $('#name').val(),
+                       'email':$('#email').val(),
+                       'phone_dummy':$('#phone_dummy').val(),
+                       'action':'checkAbilityAndBook',
+                       'security':'streetours_fareharbor_nonce'
+                   };
+                   $.post('<?php echo admin_url('admin-ajax.php');?>', data, function (response) {
+                       console.log('----ability check response---', response);
+                       if(response.success === true) {
+                           let res = response.data.response;
+                       }
+                   });
+               }
            </script>
 
            <div class="container">
@@ -198,31 +216,31 @@ if (!empty($book_item)) {
                        </div>
 
                        <div class="card-deck st-fare" id="step2" style="display: none;">
-                            <div id="date">
+                            <div id="date" style="margin-left: 40px;">
 
                             </div>
-                           <div id="price">
+                           <div id="price" style="margin-left: 40px;">
 
                            </div>
                            <div id="payment_form">
                                <ul class="form-generator-front-fields-list">
                                     <li>
-                                        <div class="label"> Full name <span id="name_required" class="required-asterisk">*</span> <div class="error2"></div> </div>
+                                        <div class="label1"> Full name <span id="name_required" class="required-asterisk">*</span> <div class="error2"></div> </div>
                                         <div class="input"> <input type="text" name="name" value="" id="name" maxlength="100" class="name"> </div>
                                     </li>
                                    <li>
-                                       <div class="label"> Email <span id="email_required" class="required-asterisk">*</span> <div class="error2"></div> </div>
+                                       <div class="label1"> Email <span id="email_required" class="required-asterisk">*</span> <div class="error2"></div> </div>
                                        <div class="input"> <input type="text" name="email" value="" id="email" maxlength="512" class="email"> </div>
                                    </li>
                                    <li>
-                                       <div class="label"> Phone <span id="phone_required" class="required-asterisk">*</span> <div class="error2"></div> </div>
-                                       <div id="phone_field_" class="input"> <div class="intl-tel-input allow-dropdown separate-dial-code iti-sdc-3"><div class="flag-container"><div class="selected-flag" role="combobox" aria-owns="country-listbox" tabindex="0" title="United Kingdom: +44"><div class="iti-flag gb"></div><div class="selected-dial-code">+44</div><div class="iti-arrow"></div></div></div><input type="text" name="phone_dummy" value="" id="phone_dummy" maxlength="50" style="width: 182px;" class="phone" autocomplete="off"><input type="hidden" name="phone"></div> </div>
+                                       <div class="label1"> Phone <span id="phone_required" class="required-asterisk">*</span> <div class="error2"></div> </div>
+                                       <div id="phone_field_" class="input"> <input type="text" name="phone_dummy" value="" id="phone_dummy" maxlength="50" style="width: 182px;" class="phone" autocomplete="off"><input type="hidden" name="phone"> </div>
                                    </li>
 
                                </ul>
                            </div>
-                           <div id="book_btn">
-
+                           <div id="book_btn" style="text-align: center;">
+                               <button onclick="checkAbilityAndBook()" style="background: #00b22d;color: white; border: none; padding: .5em 1em;border-radius: 3px; margin-top: 20px;">MAKE BOOKING</button>
                            </div>
                        </div>
                    </div>

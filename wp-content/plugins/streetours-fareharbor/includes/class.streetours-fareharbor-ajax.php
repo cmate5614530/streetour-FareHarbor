@@ -51,6 +51,16 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
                 'clickedNextButton'
             ) );
 
+            //check ability and book
+            add_action('wp_ajax_checkAbilityAndBook', array(
+                $this,
+                'checkAbilityAndBook'
+            ));
+            add_action('wp_ajax_nopriv_checkAbilityAndBook', array(
+                $this,
+                'checkAbilityAndBook'
+            ));
+
         }
 
         public static function instance() {
@@ -104,6 +114,95 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
 
 
 
+        }
+
+        public function checkAbilityAndBook(){
+            wp_verify_nonce( 'streetours_fareharbor_nonce', 'security' );
+
+            //check ability from FareHarbor
+
+            $name = $_REQUEST['name'];
+            $email = $_REQUEST['email'];
+            $phone = $_REQUEST['phone_dummy'];
+
+
+//            $response_encoded = wp_remote_get('https://demo.fareharbor.com/api/external/v1/companies/bodyglove/availabilities/25635933/bookings/validate', array(
+//                'headers' => array(
+//                    'X-FareHarbor-API-App' => $this->api_app,
+//                    'X-FareHarbor-API-User'=> $this->api_user
+//                ),
+//            ));
+
+
+            $p = 1;
+                //{
+            //  "voucher_number": "VN-123456",
+            //  "contact": {
+            //    "name": "John Doe",
+            //    "phone": "123-456-7890",
+            //    "email": "example@example.com"
+            //  },
+            //  "customers": [
+            //    {
+            //      "customer_type_rate": 63165761
+            //    },
+            //    {
+            //      "customer_type_rate": 63165761
+            //    },
+            //    {
+            //      "customer_type_rate": 63165761
+            //    }
+            //  ],
+            //  "note": "Optional booking note"
+            //}
+              $data = [
+                  'voucher_number'=>'',
+                  'contact'=>[
+                      'name'=>$name,
+                      'phone'=>$phone,
+                      'email'=>$email,
+                  ],
+                  'customers'=>[
+                      ['customer_type_rate'=>63165485],
+                      ['customer_type_rate'=>63165486],
+                      ['customer_type_rate'=>63165487],
+                  ],
+                  'note'=>'PPPPPPPP',
+              ];
+//            $data = new stdClass();
+//            $data->voucher_number = NULL;
+//            $data->contact = new stdClass();
+//            $data->contact->name = $name;
+//            $data->contact->email = $email;
+//            $data->contact->phone = $phone;
+//            $data->customers = array();
+//
+//            //array_push($data->customers, $name);
+//            $data->note = NULL;
+
+            $response_encoded = wp_remote_post('https://demo.fareharbor.com/api/external/v1/companies/bodyglove/availabilities/25635841/bookings/validate/', array(
+                'method'      => 'POST',
+                'headers' => array(
+                    'X-FareHarbor-API-App' => $this->api_app,
+                    'X-FareHarbor-API-User'=> $this->api_user
+                ),
+                'body'=>json_encode($data)
+            ));
+
+            $response_encoded1 = wp_remote_post('https://demo.fareharbor.com/api/external/v1/companies/bodyglove/availabilities/25635841/bookings/', array(
+                'method'      => 'POST',
+                'headers' => array(
+                    'X-FareHarbor-API-App' => $this->api_app,
+                    'X-FareHarbor-API-User'=> $this->api_user
+                ),
+                'body'=>json_encode($data)
+            ));
+            $p = 1;
+            $res = json_decode($response_encoded1['body']);
+            wp_send_json_success(array(
+                'response' => 'ddddd',
+                'type'=>'success'
+            ));
         }
 
 

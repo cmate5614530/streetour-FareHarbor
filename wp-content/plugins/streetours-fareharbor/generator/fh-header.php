@@ -85,4 +85,14 @@
     .fc-header-toolbar h2{
         font-size: 1.5em !important;
     }
+    .label1{
+        text-align: left;
+    }
+    .form-generator-front-fields-list{
+        list-style: none;
+    }
+    .required-asterisk{
+        color: #f25540;
+        font-size: 16px;
+    }
 </style>

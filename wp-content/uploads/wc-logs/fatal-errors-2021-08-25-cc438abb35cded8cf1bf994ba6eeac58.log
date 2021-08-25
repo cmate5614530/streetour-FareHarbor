@@ -1,4 +1,4 @@
-2021-08-24T01:17:59+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T00:30:26+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -10,7 +10,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T02:08:39+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T01:20:59+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -22,7 +22,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T07:44:13+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T01:45:25+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -34,7 +34,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T07:44:42+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T01:45:26+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -46,7 +46,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:13:16+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:05:10+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -58,7 +58,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:13:24+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:05:16+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -70,7 +70,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:13:25+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:05:16+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -82,7 +82,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:19:54+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:30:24+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -94,7 +94,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:19:59+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:30:30+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -106,7 +106,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:20:00+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:30:30+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -118,7 +118,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:21:24+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:31:48+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -130,7 +130,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:21:29+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:31:53+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -142,7 +142,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:21:29+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:31:53+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -154,7 +154,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:23:27+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:34:40+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -166,7 +166,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:23:33+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:34:45+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -178,7 +178,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:23:33+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T02:34:45+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -190,7 +190,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:31:38+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T06:42:37+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -202,7 +202,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:31:38+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T06:45:17+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -214,7 +214,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:36:45+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T06:45:17+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -226,7 +226,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T09:36:45+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T06:48:32+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -238,7 +238,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T12:37:10+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T06:48:43+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -250,7 +250,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T12:37:15+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T06:48:43+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -262,7 +262,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T12:37:20+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T12:52:46+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -274,7 +274,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T12:38:09+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T12:52:46+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -286,7 +286,9 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T12:38:24+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T12:58:50+00:00 CRITICAL Object of class stdClass could not be converted to string in F:\WordPress\php-fareharbor\wp-includes\Requests\Transport\cURL.php on line 573
+
+2021-08-25T12:59:41+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -298,7 +300,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T12:38:24+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T12:59:50+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -310,7 +312,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T12:40:42+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T12:59:51+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -322,7 +324,13 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T13:09:11+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T13:00:25+00:00 CRITICAL Object of class stdClass could not be converted to string in F:\WordPress\php-fareharbor\wp-includes\Requests\Transport\cURL.php on line 573
+
+2021-08-25T13:01:08+00:00 CRITICAL Object of class stdClass could not be converted to string in F:\WordPress\php-fareharbor\wp-includes\Requests\Transport\cURL.php on line 573
+
+2021-08-25T13:04:19+00:00 CRITICAL Object of class stdClass could not be converted to string in F:\WordPress\php-fareharbor\wp-includes\Requests\Transport\cURL.php on line 573
+
+2021-08-25T16:04:09+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -334,7 +342,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T13:09:17+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T16:38:45+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -346,7 +354,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T13:09:17+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:18:21+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -358,7 +366,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T13:17:08+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:18:21+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -370,7 +378,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T16:08:48+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:19:14+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -382,7 +390,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T17:51:46+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:19:14+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -394,7 +402,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T18:12:58+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:20:14+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -406,7 +414,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T18:13:24+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:20:15+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -418,7 +426,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T18:13:25+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:21:15+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -430,7 +438,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T18:22:25+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:21:15+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -442,7 +450,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T18:22:32+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:22:15+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -454,7 +462,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T18:22:32+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:22:15+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -466,7 +474,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T18:38:51+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:22:39+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -478,7 +486,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T18:38:56+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:22:39+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -490,7 +498,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T18:38:56+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:22:39+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -502,7 +510,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T19:10:04+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:22:39+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -514,7 +522,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T19:10:09+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:22:40+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -526,7 +534,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T19:10:10+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:22:41+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -538,7 +546,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T19:24:12+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:22:42+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
@@ -550,19 +558,7 @@ Stack trace:
 #7 {main}
   thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
 
-2021-08-24T19:24:17+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
-Stack trace:
-#0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
-#1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
-#2 F:\WordPress\php-fareharbor\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
-#3 F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\index.php(54): get_template_part('components/expe...', 'box')
-#4 F:\WordPress\php-fareharbor\wp-includes\template-loader.php(106): include('F:\\WordPress\\ph...')
-#5 F:\WordPress\php-fareharbor\wp-blog-header.php(19): require_once('F:\\WordPress\\ph...')
-#6 F:\WordPress\php-fareharbor\index.php(17): require('F:\\WordPress\\ph...')
-#7 {main}
-  thrown in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php on line 24
-
-2021-08-24T19:24:17+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
+2021-08-25T19:23:39+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in F:\WordPress\php-fareharbor\wp-content\themes\StreetTours\components\experience-box.php:24
 Stack trace:
 #0 F:\WordPress\php-fareharbor\wp-includes\template.php(772): require()
 #1 F:\WordPress\php-fareharbor\wp-includes\template.php(716): load_template('F:\\WordPress\\ph...', false, Array)
