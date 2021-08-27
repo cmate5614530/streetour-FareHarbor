@@ -74,8 +74,9 @@ class StreetoursFareharbor_Plugin
     public static function st_fh_companies($atts)
     {
         $type = $atts['type'] ?? "list";
-
-        $pageUrl = plugin_dir_url(__FILE__) . "generator/fh-entire.php?type=$type&item=183";
+        $turitop_product_short_id = $atts['turitop_product_short_id'] ?? '';
+        $fareharbor_item = $attrs['fareharbor_item'] ?? '183';
+        $pageUrl = plugin_dir_url(__FILE__) . "generator/fh-entire.php?type=$type&fareharbor_item=$fareharbor_item&turitop_product_short_id=$turitop_product_short_id";
         return '<iframe src="' . $pageUrl . '" frameborder="0" width="100%" scrolling="no" style="overflow:hidden;"></iframe>';
 //        return '<iframe src="https://app.turitop.com/booking/box/S1114/P1/en/0/0/0/0?ts=1629787648636&returnUrl=aHR0cHM6Ly93d3cuc3RyZWV0b3Vycy5jb20vcHJvZHVjdC93aGlza3ktYW5kLWZvbGtsb3JlLWVkaW5idXJnaC10b3VyLw==&loading=1"></iframe>';
     }

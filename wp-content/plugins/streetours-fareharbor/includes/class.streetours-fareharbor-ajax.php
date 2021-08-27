@@ -19,6 +19,8 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
         protected $root_url;
         protected $company;
         protected $item;
+        protected $short_id;
+        protected $secret_key;
 
         public function __construct() {
 
@@ -29,6 +31,8 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
             $this->company = 'bodyglove';
             $this->item = 183;
 
+            $this->short_id = get_option('turitop_short_id') ? get_option('turitop_short_id') : 'S1114';
+            $this->secret_key = get_option('turitop_secret_key') ? get_option('turitop_secret_key') : '6lM9v5HLZieciwuEbDx4kuYXuWBBIFNJ';
 
             /* Display round trip services */
             add_action( 'wp_ajax_checkAbilityOfSelectedDate', array(
@@ -121,66 +125,32 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
 
             //check ability from FareHarbor
 
+            $customers = array();
             $name = $_REQUEST['name'];
             $email = $_REQUEST['email'];
             $phone = $_REQUEST['phone_dummy'];
+            $pk = (int)$_REQUEST['pk'];
+            $turitop_product_short_id = $_REQUEST['turitop_product_short_id'];
+            foreach ($_REQUEST['customers'] as $customer){
+                for ($i = 0; $i< $customer['count']; $i++){
+                    $it = ['customer_type_rate'=>(int)$customer['customer_type_rate']['pk']];
+                    array_push($customers, $it);
+                }
+            }
+
+            $data = [
+              'voucher_number'=>'',
+              'contact'=>[
+                  'name'=>$name,
+                  'phone'=>$phone,
+                  'email'=>$email,
+              ],
+              'customers'=>$customers,
+              'note'=>'',
+            ];
 
 
-//            $response_encoded = wp_remote_get('https://demo.fareharbor.com/api/external/v1/companies/bodyglove/availabilities/25635933/bookings/validate', array(
-//                'headers' => array(
-//                    'X-FareHarbor-API-App' => $this->api_app,
-//                    'X-FareHarbor-API-User'=> $this->api_user
-//                ),
-//            ));
-
-
-            $p = 1;
-                //{
-            //  "voucher_number": "VN-123456",
-            //  "contact": {
-            //    "name": "John Doe",
-            //    "phone": "123-456-7890",
-            //    "email": "example@example.com"
-            //  },
-            //  "customers": [
-            //    {
-            //      "customer_type_rate": 63165761
-            //    },
-            //    {
-            //      "customer_type_rate": 63165761
-            //    },
-            //    {
-            //      "customer_type_rate": 63165761
-            //    }
-            //  ],
-            //  "note": "Optional booking note"
-            //}
-              $data = [
-                  'voucher_number'=>'',
-                  'contact'=>[
-                      'name'=>$name,
-                      'phone'=>$phone,
-                      'email'=>$email,
-                  ],
-                  'customers'=>[
-                      ['customer_type_rate'=>63165485],
-                      ['customer_type_rate'=>63165486],
-                      ['customer_type_rate'=>63165487],
-                  ],
-                  'note'=>'PPPPPPPP',
-              ];
-//            $data = new stdClass();
-//            $data->voucher_number = NULL;
-//            $data->contact = new stdClass();
-//            $data->contact->name = $name;
-//            $data->contact->email = $email;
-//            $data->contact->phone = $phone;
-//            $data->customers = array();
-//
-//            //array_push($data->customers, $name);
-//            $data->note = NULL;
-
-            $response_encoded = wp_remote_post('https://demo.fareharbor.com/api/external/v1/companies/bodyglove/availabilities/25635841/bookings/validate/', array(
+            $ability = wp_remote_post($this->root_url.'/companies/'.$this->company.'/availabilities/'.$pk.'/bookings/validate/', array(
                 'method'      => 'POST',
                 'headers' => array(
                     'X-FareHarbor-API-App' => $this->api_app,
@@ -189,20 +159,98 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
                 'body'=>json_encode($data)
             ));
 
-            $response_encoded1 = wp_remote_post('https://demo.fareharbor.com/api/external/v1/companies/bodyglove/availabilities/25635841/bookings/', array(
-                'method'      => 'POST',
-                'headers' => array(
-                    'X-FareHarbor-API-App' => $this->api_app,
-                    'X-FareHarbor-API-User'=> $this->api_user
-                ),
-                'body'=>json_encode($data)
-            ));
-            $p = 1;
-            $res = json_decode($response_encoded1['body']);
-            wp_send_json_success(array(
-                'response' => 'ddddd',
-                'type'=>'success'
-            ));
+            if($ability){
+                //make booking on FareHarbor
+                $response_encoded1 = wp_remote_post($this->root_url.'/companies/'.$this->company.'/availabilities/'.$pk.'/bookings/', array(
+                    'method'      => 'POST',
+                    'headers' => array(
+                        'X-FareHarbor-API-App' => $this->api_app,
+                        'X-FareHarbor-API-User'=> $this->api_user
+                    ),
+                    'body'=>json_encode($data)
+                ));
+                $res = json_decode($response_encoded1['body']);
+
+                //make booking on Turitop
+                //get access_token
+                $grant_encoded = wp_remote_post('https://app.turitop.com/v1/authorization/grant', array(
+                    'method'=>'POST',
+                    'body'=> array(
+                        'short_id'=> $this->short_id,
+                        'secret_key'=> $this->secret_key
+                    )
+                ));
+                $grant = json_decode($grant_encoded['body']);
+                $access_token = $grant->code == '200' ? $grant->data->access_token : '';
+
+                //get ticket
+                $tickets_encoded = wp_remote_post('https://app.turitop.com/v1/tickets/get', array(
+                   'method'=>'POST',
+                   'body'=>array(
+                       'access_token'=>$access_token,
+                       'data'=>array(
+                           'product_short_id'=>$turitop_product_short_id,
+                           'language'=>'en'
+                       ),
+
+                   )
+                ));
+                $tickets = json_decode($tickets_encoded['body'])->data->tickets;
+
+                $ticket_type_count = array();
+                foreach ($_REQUEST['customers'] as $customer){
+
+                    foreach ($tickets as $key=>$ticket){
+                        if($ticket->name == $customer['customer_prototype']['display_name'])
+                            array_push($ticket_type_count, [$key=>$customer['count']]);
+                    }
+                }
+
+                $start_at = $_REQUEST['start_at'];
+                $start_at1 = strtotime($start_at);
+                $turitop_booking_data = array(
+                  'access_token'=>$access_token,
+                  'data'=>array(
+                      'product_short_id'=>$turitop_product_short_id,
+                      'override_client_data'=> true,
+
+                      'booking'=>array(
+                          'event_start'=>$start_at1,
+//                          'ticket_type_count'=>array(
+//                              '137601'=>1
+//                          ),
+                        'ticket_type_count'=>$ticket_type_count,
+                          'client_data'=>array(
+                              'name'=>$name,
+                              'email'=>$email,
+                              'phone'=>$phone,
+
+                          ),
+                          'short_id_seat'=>'',
+                          'status'=>'not paid',
+                          'payment_gateway'=>'stripe'
+                      )
+                  )
+                );
+
+                $booking_encoded_turitop = wp_remote_post('https://app.turitop.com/v1/booking/tour/insert', array(
+                    'method'=>'POST',
+                    'body'=> $turitop_booking_data
+                ));
+                $booking_turitop = json_decode($booking_encoded_turitop['body']);
+
+                wp_send_json_success(array(
+                    'response' => $res,
+                    'type'=>'success'
+                ));
+            }else{
+                wp_send_json_success(array(
+                    'response' => 'Booking to this day is not allowed now.',
+                    'type'=>'fail'
+                ));
+            }
+
+
         }
 
 

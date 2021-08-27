@@ -3,10 +3,11 @@
 require 'fh-header.php';
 //require_once '../includes/class.streetours-fareharbor-ajax.php';
 $type = $_REQUEST['type'] ?? 'list';
-$book_item = $_REQUEST['item'] ?? '183';
+$book_item = $_REQUEST['fareharbor_item'] ?? '183';
 $date = $_REQUEST['date'] ?? '';
+$turitop_product_short_id = $_REQUEST['turitop_product_short_id'] ?? '';
 //$ajax_nonce = wp_create_nonce('streetours_fareharbor_nonce');
-if (!empty($book_item)) {
+if (!empty($book_item) && !empty($turitop_product_short_id)) {
 
     require_once("../../../../wp-load.php");
     include("./httpful.phar");
@@ -70,6 +71,8 @@ if (!empty($book_item)) {
 
                var i = 0;
                var res_global = [];
+               var event_start_time;
+               var event_start_at;
                function checkAbilityOfSelectedDate(date) {
                    var data = {
                        'date': date,
@@ -80,13 +83,15 @@ if (!empty($book_item)) {
                         console.log('----response---', response);
                         if(response.success === true){
                             let res = response.data.response;
-                            res_global = res;
-                            let a= new Date(res[0].end_at);
-                            console.log(a, a.getHours(), a.toDateString(), a.toLocaleDateString());
-                            let event_time_html = '';
-                            // for(let i=0; i<res.length; i++){
-                            i = 0;
-                                let event_start_time = new Date(res[i].start_at);
+                            if(res.length>0){
+                                res_global = res;
+                                let a= new Date(res[0].end_at);
+                                console.log(a, a.getHours(), a.toDateString(), a.toLocaleDateString());
+                                let event_time_html = '';
+                                // for(let i=0; i<res.length; i++){
+                                i = 0;
+                                event_start_at = res[i].start_at;
+                                event_start_time = new Date(res[i].start_at);
                                 let event_end_time = new Date(res[i].end_at);
                                 $('#date').html('<h4>'+event_start_time.toDateString()+'</h4>');
                                 event_time_html += '<h4>'+event_start_time.toDateString()+'</h4>';
@@ -98,21 +103,21 @@ if (!empty($book_item)) {
                                 for(let k=0; k<customer_type_rates.length; k++){
                                     event_time_html += '<tr>';
                                     event_time_html += '<td class="col1" style="padding: .5em 0;width: 60%; font-weight: 700;">'+
-                                                            '<div class="ticket-name">'+
-                                                                customer_type_rates[k].customer_prototype.display_name +
-                                                            '</div>'+
-                                                        '</td>' +
-                                                        '<td class="col2" style="text-align: right;">' +
-                                                            '<span> $'+Math.ceil(customer_type_rates[k].customer_prototype.total_including_tax/100)+'</span>'+
-                                                        '</td>' +
-                                                        '<td class="col3" style="text-align: right; width: 4.3em;">' ;
+                                        '<div class="ticket-name">'+
+                                        customer_type_rates[k].customer_prototype.display_name +
+                                        '</div>'+
+                                        '</td>' +
+                                        '<td class="col2" style="text-align: right;">' +
+                                        '<span> $'+Math.ceil(customer_type_rates[k].customer_prototype.total_including_tax/100)+'</span>'+
+                                        '</td>' +
+                                        '<td class="col3" style="text-align: right; width: 4.3em;">' ;
 
                                     // if(k == 0){
-                                        event_time_html += '<select name="ticket_type_count" id="ticket_type_count_'+i+'_'+k+'" onchange="validate_and_calculate()">';
-                                        for(let m=0; m<=customer_type_rates[k].capacity; m++){
-                                            event_time_html += '<option value="'+m+'">'+m+'</option>';
-                                        }
-                                        event_time_html +=  '</select>';
+                                    event_time_html += '<select name="ticket_type_count" id="ticket_type_count_'+i+'_'+k+'" onchange="validate_and_calculate()">';
+                                    for(let m=0; m<=customer_type_rates[k].capacity; m++){
+                                        event_time_html += '<option value="'+m+'">'+m+'</option>';
+                                    }
+                                    event_time_html +=  '</select>';
                                     // }
 
 
@@ -122,13 +127,18 @@ if (!empty($book_item)) {
                                 event_time_html += '</tbody></table>';
                                 $('#announcement').html('<h5 style="color:green;">Max capacity(excluding infants): '+ res[i].capacity+'</h5>');
 
-                            // }
-                            $('#events').html(event_time_html);
-                            $('#next_btn').html('<button onclick="next_step()" style="background: #00b22d;color: white; border: none; padding: .5em 1em;border-radius: 3px; margin-top: 20px;">NEXT'+'</button>')
+                                // }
+                                $('#events').html(event_time_html);
+                                $('#next_btn').html('<button onclick="next_step()" style="background: #00b22d;color: white; border: none; padding: .5em 1em;border-radius: 3px; margin-top: 20px;">NEXT'+'</button>')
+
+                            }else{
+                                $('#announcement').html('<h5 style="color: red;">Not available date!</h5>');
+                            }
                         }
                    })
                }
-               
+               var customers = [];
+               var pk = '';
                function next_step() {
                    console.log('====', res_global, res_global[0].capacity);
                     if(!!res_global){
@@ -154,6 +164,22 @@ if (!empty($book_item)) {
                             $('#step1').attr('style', 'display:none;');
                             $('#step2').attr('style', 'display:block;');
 
+                            let customer1 = {
+                                'customer_type_rate':res_global[0].customer_type_rates[0],
+                                'count': count1
+                            };
+                            let customer2 = {
+                                'customer_type_rate':res_global[0].customer_type_rates[1],
+                                'count': count2
+                            };
+                            let customer3 = {
+                                'customer_type_rate':res_global[0].customer_type_rates[2],
+                                'count': count3
+                            };
+                            customers.push(customer1);
+                            customers.push(customer2);
+                            customers.push(customer3);
+                            pk = res_global[0].pk;
                         }
                     }
                }
@@ -178,6 +204,10 @@ if (!empty($book_item)) {
                        'name': $('#name').val(),
                        'email':$('#email').val(),
                        'phone_dummy':$('#phone_dummy').val(),
+                       'customers':customers,
+                       'pk':pk,
+                       'start_at':event_start_at,
+                       'turitop_product_short_id':'<?php echo $turitop_product_short_id;?>',
                        'action':'checkAbilityAndBook',
                        'security':'streetours_fareharbor_nonce'
                    };
