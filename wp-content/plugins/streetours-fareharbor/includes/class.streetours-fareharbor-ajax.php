@@ -207,7 +207,9 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
                 }
 
                 $start_at = $_REQUEST['start_at'];
+//                $$end_at = $_REQUEST['end_at'];
                 $start_at1 = strtotime($start_at);
+                $end_at_2 = $_REQUEST['start_at'];
                 $turitop_booking_data = array(
                   'access_token'=>$access_token,
                   'data'=>array(
