@@ -73,10 +73,11 @@ class StreetoursFareharbor_Plugin
 
     public static function st_fh_companies($atts)
     {
-        $type = $atts['type'] ?? "list";
-        $turitop_product_short_id = $atts['turitop_product_short_id'] ?? '';
-        $fareharbor_item = $attrs['fareharbor_item'] ?? '183';
-        $pageUrl = plugin_dir_url(__FILE__) . "generator/fh-entire.php?type=$type&fareharbor_item=$fareharbor_item&turitop_product_short_id=$turitop_product_short_id";
+//        $type = $atts['type'] ?? "list";
+        $turitop_product_short_id = $atts['turitop_product_short_id'];
+        $fareharbor_item = $atts['fareharbor_item'];
+        $partner_company = $atts['partner_company'];
+        $pageUrl = plugin_dir_url(__FILE__) . "generator/fh-entire.php?partner_company=$partner_company&fareharbor_item=$fareharbor_item&turitop_product_short_id=$turitop_product_short_id";
         return '<iframe src="' . $pageUrl . '" frameborder="0" width="100%" scrolling="no" style="overflow:hidden;"></iframe>';
 //        return '<iframe src="https://app.turitop.com/booking/box/S1114/P1/en/0/0/0/0?ts=1629787648636&returnUrl=aHR0cHM6Ly93d3cuc3RyZWV0b3Vycy5jb20vcHJvZHVjdC93aGlza3ktYW5kLWZvbGtsb3JlLWVkaW5idXJnaC10b3VyLw==&loading=1"></iframe>';
     }
@@ -146,7 +147,8 @@ class StreetoursFareharbor_Plugin
         if (isset($_POST ["streetours_fareharbor_settings"]) && wp_verify_nonce($_POST ["streetours_fareharbor_settings"], "streetours_fareharbor_settings")) {
             update_option("streetours-fareharbor-app-key", sanitize_text_field($_POST ["streetours_fareharbor_app_key"]));
             update_option("streetours-fareharbor-user-key", sanitize_text_field($_POST ["streetours_fareharbor_user_key"]));
-            update_option("streetours_fareharbor_company", sanitize_text_field($_POST ["streetours_fareharbor_company"]));
+//            update_option("streetours_fareharbor_company", sanitize_text_field($_POST ["streetours_fareharbor_company"]));
+            update_option("fareharbor_root_url", sanitize_text_field($_POST ["fareharbor_root_url"]));
         }
 
         ?>
@@ -168,12 +170,12 @@ class StreetoursFareharbor_Plugin
                            value="<?php echo get_option('streetours-fareharbor-user-key'); ?>" size="100"/>
                 </p>
                 <h3><?php echo __('Settings', 'streetours-fareharbor'); ?></h3>
-<!--                <p>-->
-<!--                    <label>--><?php //echo __("Company", 'aeonsemi-variations'); ?><!--:</label>-->
-<!--                    <select class="st-key-in" name="streetours_fareharbor_company" size="100">-->
-<!--                        <option value="bodyglove">Bodyg Glove (SandBox)</option>-->
-<!--                    </select>-->
-<!--                </p>-->
+
+                <p>
+                    <label><?php echo __("Root URL", 'aeonsemi-variations'); ?>:</label>
+                    <input class="st-key-in" name="fareharbor_root_url"
+                           value="<?php echo get_option('fareharbor_root_url'); ?>" size="100"/>
+                </p>
             </div>
             <?php wp_nonce_field('streetours_fareharbor_settings', 'streetours_fareharbor_settings') ?>
             <div class="st-m-3">

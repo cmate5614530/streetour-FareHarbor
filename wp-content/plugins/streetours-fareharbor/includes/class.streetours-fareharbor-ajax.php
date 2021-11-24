@@ -24,12 +24,12 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
 
         public function __construct() {
 
-            $this->api_app = get_option('streetours-fareharbor-app-key') ?? "646cb627-293d-41dc-9f69-3d5cb25ec2fc";
-            $this->api_user = get_option('streetours-fareharbor-user-key') ?? "c7ebe150-95e2-4dba-bb0b-64c3022ec99b";
-            $this->company = get_option('streetours_fareharbor_company') ?? 'bodyglove';
-            $this->root_url = 'https://demo.fareharbor.com/api/external/v1';
-            $this->company = 'bodyglove';
-            $this->item = 183;
+            $this->api_app = get_option('streetours-fareharbor-app-key');
+            $this->api_user = get_option('streetours-fareharbor-user-key');
+//            $this->company = get_option('streetours_fareharbor_company');
+            $this->root_url = get_option('fareharbor_root_url');
+//            $this->company = 'bodyglove';
+//            $this->item = 183;
 
             $this->short_id = get_option('turitop_short_id') ? get_option('turitop_short_id') : 'S1114';
             $this->secret_key = get_option('turitop_secret_key') ? get_option('turitop_secret_key') : '6lM9v5HLZieciwuEbDx4kuYXuWBBIFNJ';
@@ -89,9 +89,11 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
             wp_verify_nonce( 'streetours_fareharbor_nonce', 'security' );
 
             $date = $_REQUEST['date'];
+            $fareharbor_item = $_REQUEST['fareharbor_item'];
+            $turitop_product_short_id = $_REQUEST['turitop_product_short_id'];
+            $partner_company = $_REQUEST['partner_company'];
 
-
-            $availabilities_url = "$this->root_url/companies/$this->company/items/$this->item/minimal/availabilities/date/$date/";
+            $availabilities_url = "$this->root_url/companies/$partner_company/items/$fareharbor_item/minimal/availabilities/date/$date/";
             //https://demo.fareharbor.com/api/external/v1/companies/bodyglove/items/183/minimal/availabilities/date/2021-12-01
 //            $response = \Httpful\Request::get($availabilities_url)
 //                ->addHeader("X-FareHarbor-API-App", $api_app)
@@ -106,8 +108,35 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
             ));
             $res = json_decode($response_encoded['body']);
             $availabilities = $res->availabilities;
+
+            //get access_token
+            $grant_encoded = wp_remote_post('https://app.turitop.com/v1/authorization/grant', array(
+                'method'=>'POST',
+                'body'=> array(
+                    'short_id'=> $this->short_id,
+                    'secret_key'=> $this->secret_key
+                )
+            ));
+            $grant = json_decode($grant_encoded['body']);
+            $access_token = $grant->code == '200' ? $grant->data->access_token : '';
+
+            //get ticket
+            $tickets_encoded = wp_remote_post('https://app.turitop.com/v1/tickets/get', array(
+                'method'=>'POST',
+                'body'=>array(
+                    'access_token'=>$access_token,
+                    'data'=>array(
+                        'product_short_id'=>$turitop_product_short_id,
+                        'language'=>'en'
+                    ),
+
+                )
+            ));
+            $tickets = json_decode($tickets_encoded['body'])->data->tickets;
+
             wp_send_json_success( array(
                 'response'       => $availabilities,
+                'tickets' => $tickets,
                 'type'=>'success'
             ) );
 
@@ -131,6 +160,9 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
             $phone = $_REQUEST['phone_dummy'];
             $pk = (int)$_REQUEST['pk'];
             $turitop_product_short_id = $_REQUEST['turitop_product_short_id'];
+            $fareharbor_item = $_REQUEST['fareharbor_item'];
+            $partner_company = $_REQUEST['partner_company'];
+
             foreach ($_REQUEST['customers'] as $customer){
                 for ($i = 0; $i< $customer['count']; $i++){
                     $it = ['customer_type_rate'=>(int)$customer['customer_type_rate']['pk']];
@@ -150,7 +182,7 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
             ];
 
 
-            $ability = wp_remote_post($this->root_url.'/companies/'.$this->company.'/availabilities/'.$pk.'/bookings/validate/', array(
+            $ability = wp_remote_post($this->root_url.'/companies/'.$partner_company.'/availabilities/'.$pk.'/bookings/validate/', array(
                 'method'      => 'POST',
                 'headers' => array(
                     'X-FareHarbor-API-App' => $this->api_app,
@@ -161,7 +193,7 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
 
             if($ability){
                 //make booking on FareHarbor
-                $response_encoded1 = wp_remote_post($this->root_url.'/companies/'.$this->company.'/availabilities/'.$pk.'/bookings/', array(
+                $response_encoded1 = wp_remote_post($this->root_url.'/companies/'.$partner_company.'/availabilities/'.$pk.'/bookings/', array(
                     'method'      => 'POST',
                     'headers' => array(
                         'X-FareHarbor-API-App' => $this->api_app,
@@ -171,6 +203,14 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
                 ));
                 $res = json_decode($response_encoded1['body']);
 
+//                $response_encoded1 = wp_remote_post($this->root_url.'/companies/'.$partner_company.'/bookings/'.$res->booking->uuid.'/', array(
+//                    'method'      => 'DELETE',
+//                    'headers' => array(
+//                        'X-FareHarbor-API-App' => $this->api_app,
+//                        'X-FareHarbor-API-User'=> $this->api_user
+//                    ),
+//                    'body'=>json_encode($data)
+//                ));
                 //make booking on Turitop
                 //get access_token
                 $grant_encoded = wp_remote_post('https://app.turitop.com/v1/authorization/grant', array(
@@ -197,12 +237,25 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
                 ));
                 $tickets = json_decode($tickets_encoded['body'])->data->tickets;
 
+                //get events
+                $events_encoded = wp_remote_post('https://app.turitop.com/v1/product/tour/getevents', array(
+                    'method'=>'POST',
+                    'body'=>array(
+                        'access_token'=>$access_token,
+                        'data'=>array(
+                            'product_short_id'=>$turitop_product_short_id,
+                            'language'=>'en'
+                        ),
+
+                    )
+                ));
                 $ticket_type_count = array();
                 foreach ($_REQUEST['customers'] as $customer){
 
                     foreach ($tickets as $key=>$ticket){
-                        if($ticket->name == $customer['customer_prototype']['display_name'])
-                            array_push($ticket_type_count, [$key=>$customer['count']]);
+                        if($ticket->name == $customer['customer_type_rate']['customer_type']['singular'])
+                            $ticket_type_count[$key] = $customer['count'];
+//                            array_push($ticket_type_count, array($key=>$customer['count']));
                     }
                 }
 
@@ -217,6 +270,7 @@ if ( ! class_exists( 'streetours_fareharbor_ajax' ) ) {
                       'override_client_data'=> true,
 
                       'booking'=>array(
+//                          'event_start'=>1637053200,
                           'event_start'=>$start_at1,
 //                          'ticket_type_count'=>array(
 //                              '137601'=>1

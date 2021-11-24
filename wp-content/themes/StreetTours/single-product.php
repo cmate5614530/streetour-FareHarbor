@@ -300,7 +300,9 @@ $duration = get_field('duration');
                     $iframe_field = get_field('turitop_iframe');
                     if(strpos($iframe_field, '[st_fh_book') !== false)
                         echo '<div class="fareharbor">'.do_shortcode($iframe_field).'</div>';
-                    else
+                    else if(strpos($iframe_field, '[st_eb_book') !== false){
+                        echo '<div class="fareharbor">'.do_shortcode($iframe_field).'</div>';
+                    }else
                         echo $iframe_field;
                     ?>
 		    	</div>
