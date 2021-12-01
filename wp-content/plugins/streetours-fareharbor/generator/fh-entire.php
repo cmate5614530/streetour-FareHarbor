@@ -1,13 +1,9 @@
 <?php
 
 require 'fh-header.php';
-//require_once '../includes/class.streetours-fareharbor-ajax.php';
-//$type = $_REQUEST['type'] ?? 'list';
-//$date = $_REQUEST['date'] ?? '';
 $fareharbor_item = $_REQUEST['fareharbor_item'];
 $turitop_product_short_id = $_REQUEST['turitop_product_short_id'];
 $partner_company = $_REQUEST['partner_company'];
-//$ajax_nonce = wp_create_nonce('streetours_fareharbor_nonce');
 if (!empty($fareharbor_item) && !empty($turitop_product_short_id) && !empty($partner_company)) {
 
     require_once("../../../../wp-load.php");
@@ -15,18 +11,7 @@ if (!empty($fareharbor_item) && !empty($turitop_product_short_id) && !empty($par
 
     $api_app = get_option('streetours-fareharbor-app-key');
     $api_user = get_option('streetours-fareharbor-user-key');
-//    $company = get_option('streetours_fareharbor_company');
     $root_url = get_option('fareharbor_root_url');
-
-//    $partner_companies_url = "$root_url/companies/";
-//    $partner_companies_res = \Httpful\Request::get($partner_companies_url)
-//        ->addHeader("X-FareHarbor-API-App", $api_app)
-//        ->addHeader("X-FareHarbor-API-User", $api_user)
-//        ->send();
-//    print_r($partner_companies_res); exit;
-    //partner_companies = $partner_companies_res->body->companies
-    //partner_companies[$i]->shortname
-    //bodyglove, mauioceancenter, sharktourshawaii, oahuphotographytours
 
     $availabilities_url = "$root_url/companies/$partner_company/items/";
 
@@ -36,15 +21,12 @@ if (!empty($fareharbor_item) && !empty($turitop_product_short_id) && !empty($par
         ->send();
 
     $fhItems = $response->body->items;
-//print_r($fhItems);exit;
     foreach ($fhItems as $fhItem):
         if ($fhItem->pk == $fareharbor_item):
             ?>
             <link rel="stylesheet" href="../js/fullcalendar/fullcalendar.min.css">
-            <!--    <script src="../js/jquery.min.js"></script>-->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="../js/popper.min.js"></script>
-            <!--    <script src="../js/bootstrap.min.js"></script>-->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
             <script src="../js/swiper/js/swiper.min.js"></script>
             <script src="../js/moment.min.js"></script>
@@ -54,15 +36,7 @@ if (!empty($fareharbor_item) && !empty($turitop_product_short_id) && !empty($par
             <script src="../js/jquery-ui/jquery-ui.min.js"></script>
             <script src="../js/fullcalendar/fullcalendar.min.js"></script>
         <style>
-            /*body {*/
-            /*    background: #FFF url("https://i.imgur.com/KheAuef.png") top left repeat-x;*/
-            /*    font-family: 'Alex Brush', cursive !important;*/
-            /*}*/
-
             .page    { display: none; padding: 0 0.5em; }
-            /*.page h1 { font-size: 2em; line-height: 1em; margin-top: 1.1em; font-weight: bold; }*/
-            /*.page p  { font-size: 1.5em; line-height: 1.275em; margin-top: 0.15em; }*/
-
             #loading {
                 display: block;
                 position: absolute;
@@ -82,7 +56,7 @@ if (!empty($fareharbor_item) && !empty($turitop_product_short_id) && !empty($par
                 function setVisible(selector, visible) {
                     document.querySelector(selector).style.display = visible ? 'block' : 'none';
                 }
-
+                var demo = []
                 $(document).ready(function(){
                     setVisible('.page', true);
                     setVisible('#loading', false);
@@ -101,6 +75,12 @@ if (!empty($fareharbor_item) && !empty($turitop_product_short_id) && !empty($par
                         selectable: true,
                         dayClick: function (date, jsEvent, view) {
                             console.log('---clicked---',  date.toISOString());
+                            $('#total_price').html('');
+                            $('#price').html('');
+                            $('#announcement').html('');
+                            $('#error').html('');
+                            $('#next_btn').html('');
+                            demo = [];
                             var date_string = date.toISOString().split('T')[0]
                             console.log('---clicked date is--', date_string)
                             checkAbilityOfSelectedDate(date_string);
@@ -135,6 +115,7 @@ if (!empty($fareharbor_item) && !empty($turitop_product_short_id) && !empty($par
 
                             let res = response.data.response;
                             let tickets = response.data.tickets;
+                            console.log('++++tickets++++', tickets)
                             if(res.length>0){
                                 res_global = res;
                                 let a= new Date(res[0].end_at);
@@ -153,42 +134,56 @@ if (!empty($fareharbor_item) && !empty($turitop_product_short_id) && !empty($par
                                 event_time_html += '<table style="font-size: small;"><tbody>';
                                 let customer_type_rates = res[i].customer_type_rates;
                                 for(let k=0; k<customer_type_rates.length; k++){
-                                    event_time_html += '<tr>';
-                                    event_time_html += '<td class="col1" style="padding: .5em 0;width: 60%; font-weight: 700;">'+
-                                        '<div class="ticket-name">'+
-                                        customer_type_rates[k].customer_prototype.display_name +
-                                        '</div>'+
-                                        '</td>' +
-                                        '<td class="col2" style="text-align: right;">' +
-                                        '<span> $'+Math.ceil(customer_type_rates[k].customer_prototype.total_including_tax/100)+'</span>'+
-                                        '</td>' +
-                                        '<td class="col3" style="text-align: right; width: 4.3em;">' ;
+                                    let customer_prototype_pk = customer_type_rates[k].customer_prototype.pk;
 
-                                    // if(k == 0){
-                                    event_time_html += '<select name="ticket_type_count" id="ticket_type_count_'+i+'_'+k+'" onchange="validate_and_calculate()">';
-                                    for(let m=0; m<=customer_type_rates[k].capacity; m++){
-                                        event_time_html += '<option value="'+m+'">'+m+'</option>';
+                                    for (const [key, ticket] of Object.entries(tickets)) {
+                                        if (ticket.ticket_notes === customer_prototype_pk.toString()) {
+                                            event_time_html += '<tr>';
+                                            event_time_html += '<td class="col1" style="padding: .5em 0;width: 60%; font-weight: 700;">'+
+                                                '<div class="ticket-name">'+
+                                                ticket.name +
+                                                '</div>'+
+                                                '</td>' +
+                                                '<td class="col2" style="text-align: right;">' +
+                                                '<span> '+ ticket.price + ticket.currency + '</span>'+
+                                                '</td>' +
+                                                '<td class="col3" style="text-align: right; width: 4.3em;">' ;
+
+                                            // if(k == 0){
+                                            let ticket_n = customer_prototype_pk.toString();
+                                            let price = ticket.price;
+                                            event_time_html += '<select class="ticket_type_count" name="ticket_type_count" id="ticket_type_count_'+key+'_'+k+'" onchange="validate_and_calculate1('+ticket_n+', '+price+', this)">';
+                                            // event_time_html += '<select name="ticket_type_count" id="ticket_type_count_'+i+'_'+k+'" onchange="validate_and_calculate()">';
+                                            for(let m=0; m<=customer_type_rates[k].capacity; m++){
+                                                event_time_html += '<option value="'+m+'">'+m+'</option>';
+                                            }
+                                            event_time_html +=  '</select>';
+                                            // }
+
+
+                                            event_time_html +=  '</td>';
+                                            event_time_html += '</tr>';
+
+                                        }
                                     }
-                                    event_time_html +=  '</select>';
-                                    // }
-
-
-                                    event_time_html +=  '</td>';
-                                    event_time_html += '</tr>';
                                 }
                                 event_time_html += '</tbody></table>';
                                 $('#announcement').html('<h5 style="color:green;">Max capacity(excluding infants): '+ res[i].capacity+'</h5>');
 
                                 // }
                                 $('#events').html(event_time_html);
-                                $('#next_btn').html('<button onclick="next_step()" style="background: #00b22d;color: white; border: none; padding: .5em 1em;border-radius: 3px; margin-top: 20px;">NEXT'+'</button>')
+                                $('#next_btn').html('<button onclick="next_step1()" style="background: #00b22d;color: white; border: none; padding: .5em 1em;border-radius: 3px; margin-top: 20px;">NEXT'+'</button>')
 
                             }else{
                                 $('#events').html('');
                                 $('#announcement').html('<h5 style="color: red;">Not available date!</h5>');
+                                $('#next_btn').html('');
                             }
                         }
                     })
+                }
+                function next_step1() {
+                    console.log('****demo****', demo);
                 }
                 var customers = [];
                 var pk = '';
@@ -199,9 +194,7 @@ if (!empty($fareharbor_item) && !empty($turitop_product_short_id) && !empty($par
                         let count2 = parseFloat($('#ticket_type_count_0_1').val());
                         let count3 = parseFloat($('#ticket_type_count_0_2').val());
                         console.log(count1, count2, count3, count3+count2+count1);
-                        if(count1 == 0 && (count2 > 0 || count3 > 0)){
-                            $('#error').html('<h5 style="color:red;">Error: Children and Infants must be accompanied by 18+ adult!</h5>')
-                        }else if(count1 + count2 + count3 > res_global[0].capacity){
+                        if(count1 + count2 + count3 > res_global[0].capacity){
                             $('#error').html('<h5 style="color:red;">Error: Capacity exceeded!</h5>')
                         }else if(count1 + count2 + count3 == 0){
                             $('#error').html('<h5 style="color: red;">Error: Please input participants</h5>');
@@ -237,6 +230,26 @@ if (!empty($fareharbor_item) && !empty($turitop_product_short_id) && !empty($par
                     }
                 }
 
+                function validate_and_calculate1(customer_prototype_pk, ticket, tthis) {
+                    let pp = {
+                        'pk': customer_prototype_pk,
+                        'price': ticket,
+                        'count': parseInt(tthis.value)
+                    };
+                     let ch = demo.findIndex(item => item.pk === customer_prototype_pk);
+                     if (ch >= 0) {
+                         demo[ch].count = parseInt(tthis.value);
+                     } else {
+                         demo.push(pp)
+                     }
+
+                    let total = 0;
+                    for (let j = 0; j < demo.length; j++) {
+                        total += demo[j].price * demo[j].count;
+                    }
+                    $('#total_price').html('<h3>Total:  ' + total + ' GBP</h3>');
+                    $('#price').html('<h4>Total:  ' + total + ' GBP</h4>');
+                }
                 function validate_and_calculate() {
                     $('#error').html('');
                     let count1 = $('#ticket_type_count_0_0').val();
@@ -256,8 +269,8 @@ if (!empty($fareharbor_item) && !empty($turitop_product_short_id) && !empty($par
                             + Math.ceil(res_global[0].customer_type_rates[1].customer_prototype.total_including_tax/100) * count2;
                     }
 
-                    $('#total_price').html('<h3>Total:  $' + total_price + '</h3>');
-                    $('#price').html('<h4>Total:  $' + total_price + '</h4>');
+                    $('#total_price').html('<h3>Total:  ' + total_price + ' GBP</h3>');
+                    $('#price').html('<h4>Total:  ' + total_price + ' GBP</h4>');
                 }
 
                 function checkAbilityAndBook() {
